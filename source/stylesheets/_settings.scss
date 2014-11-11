@@ -1,0 +1,26 @@
+// Brand colours
+
+$minco-black: RGBA(0, 0, 0, 1);
+$minco-white: RGBA(255, 255, 255, 1);
+$minco-white-transparent: RGBA(255, 255, 255, 0.2);
+$minco-blue: RGBA(0, 129, 198, 1);
+
+$border-thick: 10px solid $minco-blue;
+
+// Fonts
+
+$brand-font-family: calibri;
+$default-font-stack: $brand-font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$default-font-size: 16;
+$default-line-height: 1.7;
+
+
+$font-bold: 700;
+$font-medium: 500;
+$font-light: 300;
+
+// Baseline unit
+
+$baseline-unit: 6;
+$browser-default-font-size: 16;

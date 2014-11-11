@@ -1,0 +1,33 @@
+@viewport {
+  width: device-width;
+  min-zoom: 1;
+  max-zoom: 2;
+}
+
+body {
+  font-family: $default-font-stack;
+  font-size: $default-font-size + px;
+  line-height: $default-line-height;
+}
+
+p {
+  @extend %basic-paragraph;
+}
+
+blockquote {
+  @extend %basic-paragraph;
+}
+
+li {
+  @extend %basic-paragraph
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  width:100%;
+}
+
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');

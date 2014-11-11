@@ -1,0 +1,146 @@
+//susy setup ------------------------
+$total-columns    : 12;
+$column-width     : 4em;
+$gutter-width     : 1em;
+$grid-padding:    : $gutter-width;
+
+@include border-box-sizing;
+
+$small            : 30em;
+$medium           : 47em;
+$large            : 75em;
+
+
+//content ---------------------------
+.layout {
+  @include container;
+  padding: 0 3%;
+//primary ---------------------------
+  .primary {
+    margin-top: .2em;
+    @include at-breakpoint($medium) {
+      @include span-columns(9 omega,12);
+    }//medium layout
+  }//primary section
+
+//sidebar ---------------------------
+.secondary {
+  i{
+  color: $minco-blue;
+  font-size: 1rem;
+  }//i
+  
+  @include at-breakpoint($medium) {
+    @include span-columns(3, 12);
+
+
+  }//medium breakpoint
+
+}//secondary
+
+
+}//content layout
+
+
+//header ---------------------------
+header{
+  width: 100%;
+  @include at-breakpoint($medium) {
+    @include single-transition(all, 1s, ease-out);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 68px;
+  }//medium breakpoint
+
+  .logo{
+    position: absolute;
+  }//logo
+
+}//header
+
+//navigation ---------------------------
+.navigation{
+  background: $minco-black;
+  ul.nav{
+    @include at-breakpoint($small) {
+      @include horizontal-list;
+    }//breakpoint small
+
+    li{
+    }//li
+
+    a{
+      @include single-transition(all, .5s, ease-out);
+      display: block;
+      text-decoration: none;
+      padding: 5px;
+      color: $minco-white;
+
+
+      &:hover{
+        background: $minco-blue;
+      }//a:hover
+
+    }//a
+
+
+  }//ul.nav
+
+}//navigation
+
+//Promoboxes ---------------------------
+.promobox{
+  i{
+  color: $minco-blue;
+  font-size: 1rem;
+ }//i
+
+  @include at-breakpoint($small) {
+    border: solid 0.1em #ccc;
+  }//small breakpoint
+
+  @include at-breakpoint($medium) {
+    text-align: center;
+    overflow: hiden;
+    padding-bottom: 20px;
+  }//medium breakpoint
+
+  a{
+    text-decoration: none;
+    color: $minco-blue;
+
+
+    &:hover{
+      background: $minco-black;
+    }//a:hover
+
+  }//a
+
+  .box{
+    @include span-columns(3,12);
+    color: $minco-black;
+    border-right: solid 0.1em #000;
+    text-align: center;
+  }//box
+
+  .box:nth-of-type(3) {
+    @include span-columns(3 omega,12);
+    border-right: none;
+  }//box:nth-of-type
+
+
+
+}//promobox
+
+
+
+
+//footer ---------------------------
+footer{
+  color:$minco-white;
+  background: $minco-black;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
