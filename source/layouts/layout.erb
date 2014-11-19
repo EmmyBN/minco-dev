@@ -7,14 +7,72 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Minco" %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
   </head>
-
   <body class="<%= page_classes %>">
-    <%= partial 'shared/header' %>
-    <%= yield %>
+    <header>
+      <div class="l-constrained">
+        <div class="h-logo-container">
+          <div class="logo">
+            <a href="/">
+              <%= image_tag 'MincoLogo.png' %>
+            </a>
+          </div><!-- logo-->
+        </div><!-- h-logo-container-->
+        <div class="h-nav-container">
+          <nav role="navigation">
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__link" href="/about.html">Company</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Products</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Washing</a></li>
+              <li class="nav__item"><a class="nav__link" href="">CSR</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
+            </ul>
+         </nav>
+        </div><!-- h-nav-container -->
+        <div class="h-container3">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-globe"></i>
+        </div><!--l-constrained -->
+      </div><!--h-container3 -->
+    </header><!-- header-->
+    <div class="layout">
+      <main>
+        <%= yield %>
+      </main><!--main-->
+      <aside>
+        <div class="sidebar-container">
+          <nav>
+            <ul>
+              <li><a class="list-group-item" href="#">Buy Now <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Approvals <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Quality <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Reviews <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Packaging <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Downloads <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Videos <i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">News<i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Links<i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">Careers<i class="fa fa-chevron-right"></i></a></li>
+              <li><a class="list-group-item" href="#">FAQ<i class="fa fa-chevron-right"></i></a></li>
+            </ul><!--ul-->
+          </nav><!--nav-->
+        </div><!--sidebar-container-->
+      </aside><!--aside-->
+    </div><!--layout-->
+    <footer>
+      <div class="box1"><br />
+          <p style="font-size: 0.9rem" align="left"><a style="padding-left:10px; vertical-align: middle;" style="vertical-align: bottom;" class="footer-content" href="tel:"><i class="fa fa-phone"></i>+44 20 8133 3916</a></p>
+      </div><!-- section footer -->
+      <div class="box2"><br />
+        <p style="font-size: 0.9rem" align="centre"><a href="">Terms of Use</a> | <a href="">Privacy Policy</a></p>
+      </div><!-- section footer -->
+      <div class="box3">
+        <p style="font-size: 0.9rem; line-height: 1.3rem;" align="right">Minco UK Ltd &#169; 2014, All rights reserved Co Reg No 3135911, VAT No 618 3986 04</p>
+      </div><!-- section footer -->
+    </footer><!-- footer -->
   </body>
 </html>

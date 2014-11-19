@@ -1,0 +1,194 @@
+//susy setup ------------------------
+$total-columns    : 12;
+$column-width     : 4em;
+$gutter-width     : 1em;
+$grid-padding     : $gutter-width;
+
+@include border-box-sizing;
+
+$small            : 30em;
+$medium           : 47em;
+$large            : 75em;
+
+
+//content ---------------------------
+.layout {
+  @include container;
+  padding: 0 3%;
+}
+
+//primary ---------------------------
+  .primary {
+    margin-top: .2em;
+    @include at-breakpoint($medium) {
+      @include span-columns(10 omega,12);
+    }//medium breakpoint
+  }//primary section
+
+//sidebar ---------------------------
+.secondary {
+  i{
+  color: $minco-blue;
+  font-size: 1rem;
+  }//i
+
+  @include at-breakpoint($medium) {
+    @include span-columns(2, 12);
+
+
+  }//medium breakpoint
+
+}//secondary
+
+
+}//content layout
+
+
+//header ---------------------------
+header{
+  overflow: hidden;
+  border-bottom: $border-thick;
+
+
+  // Gradient
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #595658),
+    color-stop(1, #000000)
+  );
+  background-image: -o-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -moz-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -webkit-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
+
+  .language{color: white;}
+
+  @include at-breakpoint($medium) {
+    @include single-transition(all, 1s, ease-out);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 68px;
+  }//medium breakpoint
+
+  .logo{
+    width: 20%;
+    max-width: 300px;
+    float: left;
+    margin: 0 1.5%;
+    vertical-align: middle;
+  }//logo
+
+}//header
+
+//navigation ---------------------------
+.navigation{
+  float: left;
+  padding-left: 0;
+  margin: 0;
+  ul.nav{
+    @include at-breakpoint($small) {
+      @include horizontal-list;
+    }//breakpoint small
+
+    li{
+    }//li
+
+    a{
+      @include single-transition(all, .5s, ease-out);
+      display: block;
+      text-decoration: none;
+      padding: 5px;
+      color: $minco-white;
+
+
+      &:hover{
+        background: $minco-blue;
+      }//a:hover
+
+    }//a
+
+
+  }//ul.nav
+
+}//navigation
+
+//Promoboxes ---------------------------
+.promobox{
+  i{
+  color: $minco-blue;
+  font-size: 1rem;
+ }//i
+
+  @include at-breakpoint($small) {
+    border: solid 0.1em #ccc;
+  }//small breakpoint
+
+  @include at-breakpoint($medium) {
+    text-align: center;
+    overflow: hiden;
+    padding-bottom: 20px;
+  }//medium breakpoint
+
+  a{
+    text-decoration: none;
+    color: $minco-blue;
+
+
+    &:hover{
+      background: $minco-black;
+    }//a:hover
+
+  }//a
+
+  .box{
+    @include span-columns(2 of 6);
+    color: $minco-black;
+    border-right: solid 0.1em #000;
+    text-align: center;
+  }//box
+
+  .box:nth-of-type(3) {
+    @include span-columns(4 omega,12);
+  }//box:nth-of-type
+
+
+
+}//promobox
+
+
+
+
+//footer ---------------------------
+footer{
+  color:$minco-white;
+  background: $minco-black;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+
+  a{
+    @include single-transition(all, .5s, ease-out);
+    text-decoration: none;
+    color: $minco-white;
+  }//a
+
+.footerinfo{
+  @include span-columns(4,12);
+  text-align: center;
+}//footerinfo
+
+.footerinfo:nth-of-type(3) {
+  @include span-columns(4 omega,12);
+}//footerinfo:nth-of-type
+
+i{
+  color: $minco-white;
+  font-size:4rem;
+}
+
+}//footer

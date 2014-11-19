@@ -2,7 +2,8 @@
 
 @import 'compass';
 @import 'compass/reset';
-@import 'susy';
+@import "susy";
+@import "breakpoint";
 
 @import 'settings';
 
@@ -10,6 +11,10 @@
 
 @import 'layout';
 
+@import 'lib/mixins';
+@import 'lib/placeholders';
+@import 'lib/colours';
+@import 'lib/functions';
 
 
 

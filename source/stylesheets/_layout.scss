@@ -1,71 +1,292 @@
-//susy setup ------------------------
-$total-columns    : 12;
-$column-width     : 4em;
-$gutter-width     : 1em;
-$grid-padding:    : $gutter-width;
+$susy: (
+  columns: 12,
+  gutters: 1/20,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
 
-@include border-box-sizing;
+$small: 200px;
+$medium: 800px;
+$large: 1200px;
 
-$small            : 30em;
-$medium           : 47em;
-$large            : 75em;
-
+//body ---------------------------
+body {
+  background: #fff;
+  @include container(80%);
+}
 
 //content ---------------------------
+
+.l-constrained {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .layout {
   @include container;
-  padding: 0 3%;
-//primary ---------------------------
-  .primary {
-    margin-top: .2em;
-    @include at-breakpoint($medium) {
-      @include span-columns(9 omega,12);
-    }//medium layout
-  }//primary section
-
-//sidebar ---------------------------
-.secondary {
-  i{
-  color: $minco-blue;
-  font-size: 1rem;
-  }//i
-  
-  @include at-breakpoint($medium) {
-    @include span-columns(3, 12);
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
 
 
-  }//medium breakpoint
+//main ------------------------------
 
-}//secondary
+main {
+  background: $minco-white;
+  margin-top: .2em;
+  height: 100%;
+  @include span(10);
+  float: right;
+}
+
+.promobox{
+  padding-bottom: 3em;
+  @include span(1 of 1);
+}
+
+.col1, .col2, .col3 {
+  a{
+    @include single-transition(all, .5s, ease-out);
+    text-decoration: none;
+    color: $minco-blue;
+
+    .fa{
+      top: 1px;
+      //float: right;
+      color: $minco-blue;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1px;
+      vertical-align: baseline;
+      padding-left: 0.3em;
+      font-size: 1em;
+    }//fa
 
 
-}//content layout
+    &:hover{
+      color: $minco-black;
 
+
+        i{
+          top: 1px;
+          color: $minco-blue;
+          -webkit-font-smoothing: antialiased;
+          line-height: 1;
+          vertical-align: baseline;
+          padding-left: 0.3em;
+          font-size: 1em;
+        }//i
+    }//a:hover
+
+  }//a
+
+
+}//cols
+
+//slides
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+
+.slides-container{
+  @include span(1 of 1);
+  margin-left: 2em;
+  margin-bottom: 2em;
+
+}
+
+.rslides {
+  width:100%;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+
+    @include respond-to($small, $medium) {
+      width: 100%;
+    }
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+//aside ------------------------------
+
+aside{
+  margin-top: .2em;
+  @include span(2 at 0);
+  background: $minco-white;
+  float: left;
+  padding-left: 5em;
+  border-right: solid 0.1em $minco-blue;
+  padding-bottom:1em;
+
+/*  .sidebar-container{
+    border-right: solid 0.1em $minco-blue;
+  }*/
+
+  ul.nav{
+    display: inline-block;
+    padding-left: 5em;
+  }//ul
+
+  li{
+  }//li
+
+  a{
+    @include single-transition(all, .5s, ease-out);
+    padding-left: 5em;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: $minco-blue;
+
+    .fa{
+      top: 1px;
+      //float: right;
+      color: $minco-blue;
+      font-size: 0.7rem;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1px;
+      padding-left: 1em;
+      vertical-align: baseline;
+    }//fa
+
+
+    &:hover{
+      background: $minco-blue;
+      color: $minco-white;
+
+
+        i{
+          top: 1px;
+          //float: right;
+          color: $minco-white;
+          font-size: 0.7rem;
+          -webkit-font-smoothing: antialiased;
+          padding-left: 1em;
+          line-height: 1;
+          vertical-align: baseline;
+        }//i
+    }//a:hover
+
+  }//a
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+  }
+}
 
 //header ---------------------------
 header{
-  width: 100%;
-  @include at-breakpoint($medium) {
-    @include single-transition(all, 1s, ease-out);
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 68px;
-  }//medium breakpoint
+    overflow: hidden;
+    border-bottom: $border-thick;
+
+
+    // Gradient
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #595658),
+      color-stop(1, #000000)
+    );
+    background-image: -o-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -moz-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -webkit-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
+
+  .language{color: white;}
 
   .logo{
-    position: absolute;
+    width: 70%;
+    max-width: 300px;
+    float: left;
+    padding-left: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
   }//logo
+
+  .h-logo-container{
+    @include span(3 at 0);
+
+  }//.h-logo-container
+
+  .h-nav-container{
+    @include span(6 at 4);
+
+  }//h-nav-container
+
+  .h-container3 {
+    @include span(3 at 10);
+    vertical-align: middle;
+
+
+    p{
+
+      padding: 5px;
+    }//p
+
+
+    .fa-search{
+      float: right;
+      color: $minco-white;
+      font-size:1.5rem;
+      padding-top: 1.3em;
+      padding-right: 2em;
+    }
+
+    .fa-globe{
+      float: right;
+      color: $minco-white;
+      font-size:1.5rem;
+      padding-top: 1.3em;
+      padding-right: 1em;
+    }
+
+
+
+  }//h-nav-container
 
 }//header
 
+
+
 //navigation ---------------------------
 .navigation{
-  background: $minco-black;
+  float: left;
+
+
   ul.nav{
-    @include at-breakpoint($small) {
-      @include horizontal-list;
-    }//breakpoint small
+    display: inline-block;
 
     li{
     }//li
@@ -75,6 +296,7 @@ header{
       display: block;
       text-decoration: none;
       padding: 5px;
+      padding-bottom: 5px;
       color: $minco-white;
 
 
@@ -89,58 +311,128 @@ header{
 
 }//navigation
 
-//Promoboxes ---------------------------
-.promobox{
-  i{
-  color: $minco-blue;
-  font-size: 1rem;
- }//i
-
-  @include at-breakpoint($small) {
-    border: solid 0.1em #ccc;
-  }//small breakpoint
-
-  @include at-breakpoint($medium) {
-    text-align: center;
-    overflow: hiden;
-    padding-bottom: 20px;
-  }//medium breakpoint
-
-  a{
-    text-decoration: none;
-    color: $minco-blue;
+.nav__item {
+  list-style: none;
+  border-left: 1px solid $minco-white-transparent;
 
 
-    &:hover{
-      background: $minco-black;
-    }//a:hover
+  @include respond-to(45em) {
+    display: inline-block;
+    margin-right: -4px;
+  }
 
-  }//a
+  &:last-of-type {
+    border-right: 1px solid $minco-white-transparent;
+  }
+}
 
-  .box{
-    @include span-columns(3,12);
-    color: $minco-black;
-    border-right: solid 0.1em #000;
-    text-align: center;
-  }//box
+.nav__link {
+  display: block;
+  padding:1.5em;
+  color: $minco-white;
+  font-weight: $font-medium;
+  text-decoration: none;
+  padding: baseline-unit(7) baseline-unit(3);
 
-  .box:nth-of-type(3) {
-    @include span-columns(3 omega,12);
-    border-right: none;
-  }//box:nth-of-type
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $minco-blue;
+  }
 
-
-
-}//promobox
-
-
-
+}
 
 //footer ---------------------------
 footer{
   color:$minco-white;
   background: $minco-black;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: $border-thick-footer;
+
+
+  a{
+    @include single-transition(all, .5s, ease-out);
+    text-decoration: none;
+    color: $minco-white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $minco-blue;
+      i{
+        color: $minco-blue;
+      }
+
+    }
+
+  }//a
+
+i{
+  color: $minco-white;
+  font-size:4rem;
+  padding-right: 0.5em;
 }
+
+}//footer
+
+//breakpoints ---------------------------
+
+
+@include breakpoint($small) {
+  main{
+    @include span(12);
+  }
+
+  aside{
+    @include span(12);
+  }
+}//small
+
+@include breakpoint($medium) {
+  main{
+    @include span(10 at 3);
+  }
+
+  aside{
+    @include span(2 at 0);
+  }
+}//medium
+
+@include breakpoint($large) {
+  @include layout(24);
+
+  main{
+    @include span(20 at 5);
+    .col1, .col2, .col3 {
+      @include span(1 of 3);
+      padding-left:3em;
+      text-align: center;
+      vertical-align: center;
+      color: $minco-black;
+      border-right: solid 0.1em #000;
+
+    .slides-container{
+      @include span(1 of 1);
+      margin-left: 3em;
+      margin-bottom: 2em;
+
+    }
+
+    }
+  }
+
+  aside{
+    @include span(4 at 0);
+  }
+
+  footer{
+    @include span(24);
+    .box1, .box2, .box3 {
+      @include span(1 of 3);
+      font-size: 0.5rem;
+      padding-left:3em;
+    }
+  }
+}//large
