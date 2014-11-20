@@ -1,0 +1,209 @@
+//navigation ---------------------------
+.navigation{
+  float: left;
+
+
+  ul.nav{
+    display: inline-block;
+
+    li{
+    }//li
+
+    a{
+      @include single-transition(all, .5s, ease-out);
+      display: block;
+      text-decoration: none;
+      padding: 5px;
+      padding-bottom: 5px;
+      color: $minco-white;
+
+
+      &:hover{
+        background: $minco-blue;
+      }//a:hover
+
+    }//a
+
+
+  }//ul.nav
+
+}//navigation
+
+.nav__item {
+  list-style: none;
+  border-left: 1px solid $minco-white-transparent;
+
+
+  @include respond-to(45em) {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  &:last-of-type {
+    border-right: 1px solid $minco-white-transparent;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding:1.5em;
+  color: $minco-white;
+  font-weight: $font-medium;
+  text-decoration: none;
+  padding: baseline-unit(7) baseline-unit(3);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $minco-blue;
+  }
+
+}
+
+// responsive nav
+
+/*
+
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+
+*/
+
+.rmm {
+	display:block;
+	position:relative;
+	width:100%;
+	padding:0px;
+	margin:0 auto !important;
+	text-align: center;
+	line-height:5em !important;
+}
+.rmm * {
+	-webkit-tap-highlight-color:transparent !important;
+}
+.rmm a {
+	color:#fff;
+	text-decoration:none;
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+	margin:0px;
+	padding:0px;
+}
+.rmm ul {
+	display:block;
+	width:auto !important;
+	margin:0 auto !important;
+	overflow:hidden;
+	list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+	display:none !important;
+	height:0px !important;
+	width:0px !important;
+}
+/* */
+
+
+.rmm .rmm-main-list li {
+	display:inline;
+	padding:0px;
+	margin:0px !important;
+}
+.rmm-toggled {
+	display:none;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+.rmm-button:hover {
+	cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+	display:none;
+	margin:0px !important;
+	padding:0px !important;
+}
+.rmm .rmm-toggled ul li {
+	display:block;
+	margin:0 auto !important;
+}
+
+
+
+
+/* GRAPHITE STYLE */
+
+.rmm.graphite .rmm-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+	font-size:15px;
+	text-shadow:1px 1px 1px #333333;
+	//background-color:#444444;
+	border-left:1px solid #555555;
+	//background: #000;
+	background-repeat:repeat-x;
+}
+.rmm.graphite .rmm-main-list li a:hover {
+	background: #0081c6;
+}
+
+
+.rmm.graphite .rmm-toggled {
+	width:95%;
+	background-color:#000;
+	min-height:36px;
+	/*border-radius:6px;*/
+}
+.rmm.graphite .rmm-toggled-controls {
+	display:block;
+	height:36px;
+	color:white;
+	text-align:left;
+	position:relative;
+}
+
+
+.rmm.graphite .rmm-button {
+	display:block;
+	position:absolute;
+	right:15px;
+	top:8px;
+}
+
+.rmm.graphite .rmm-button span {
+	display:block;
+	margin-top:4px;
+	height:2px;
+	background:white;
+	width:24px;
+}
+.rmm.graphite .rmm-toggled ul li a {
+	display:block;
+	width:100%;
+	height:1.5em;
+	background-color:#000;
+	text-align:center;
+	padding:0px;
+	border-bottom:1px solid #333333;
+	border-top:1px solid #777777;
+	text-shadow:1px 1px 1px #333333;
+}
+.rmm.graphite .rmm-toggled ul li a:active {
+	background-color:#444444;
+	border-bottom:1px solid #444444;
+	border-top:1px solid #444444;
+}
+
+.rmm.graphite .rmm-toggled ul li a:hover {
+	background-color:#0081c6;
+}

@@ -1,0 +1,34 @@
+//footer ---------------------------
+footer{
+  color:$minco-white;
+  background: $minco-black;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: $border-thick-footer;
+
+
+  a{
+    @include single-transition(all, .5s, ease-out);
+    text-decoration: none;
+    color: $minco-white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $minco-blue;
+      i{
+        color: $minco-blue;
+      }
+
+    }
+
+  }//a
+
+i{
+  color: $minco-white;
+  font-size:4rem;
+  padding-right: 0.5em;
+}
+
+}//footer

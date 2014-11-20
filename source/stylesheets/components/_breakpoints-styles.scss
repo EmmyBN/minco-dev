@@ -1,0 +1,59 @@
+//breakpoints ---------------------------
+
+
+@include breakpoint($small) {
+  main{
+    @include span(12);
+  }
+
+  aside{
+    @include span(12);
+  }
+}//small
+
+@include breakpoint($medium) {
+  main{
+    @include span(10 at 3);
+  }
+
+  aside{
+    @include span(2 at 0);
+  }
+}//medium
+
+@include breakpoint($large) {
+  @include layout(24);
+
+  main{
+    @include span(20 at 5);
+    .col1, .col2, .col3 {
+      @include span(1 of 3);
+      padding-left:3em;
+      text-align: center;
+      vertical-align: center;
+      color: $minco-black;
+      border-right: solid 0.1em #000;
+
+    .slides-container{
+      @include span(1 of 1);
+      margin-left: 3em;
+      margin-bottom: 2em;
+
+    }
+
+    }
+  }
+
+  aside{
+    @include span(4 at 0);
+  }
+
+  footer{
+    @include span(24);
+    .box1, .box2, .box3 {
+      @include span(1 of 3);
+      font-size: 0.5rem;
+      padding-left:3em;
+    }
+  }
+}//large

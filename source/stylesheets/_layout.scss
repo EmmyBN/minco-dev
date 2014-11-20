@@ -84,53 +84,7 @@ main {
 
 }//cols
 
-//slides
-/*! http://responsiveslides.com v1.54 by @viljamis */
 
-
-.slides-container{
-  @include span(1 of 1);
-  margin-left: 2em;
-  margin-bottom: 2em;
-
-}
-
-.rslides {
-  width:100%;
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-
-
-    @include respond-to($small, $medium) {
-      width: 100%;
-    }
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
 
 
 
@@ -230,9 +184,8 @@ header{
     width: 70%;
     max-width: 300px;
     float: left;
-    padding-left: 10%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-left: 3em;
+    padding-top: 1.5em;
   }//logo
 
   .h-logo-container{
@@ -249,18 +202,11 @@ header{
     @include span(3 at 10);
     vertical-align: middle;
 
-
-    p{
-
-      padding: 5px;
-    }//p
-
-
     .fa-search{
       float: right;
       color: $minco-white;
       font-size:1.5rem;
-      padding-top: 1.3em;
+      padding-top: 1.7em;
       padding-right: 2em;
     }
 
@@ -268,7 +214,7 @@ header{
       float: right;
       color: $minco-white;
       font-size:1.5rem;
-      padding-top: 1.3em;
+      padding-top: 1.7em;
       padding-right: 1em;
     }
 
@@ -277,162 +223,3 @@ header{
   }//h-nav-container
 
 }//header
-
-
-
-//navigation ---------------------------
-.navigation{
-  float: left;
-
-
-  ul.nav{
-    display: inline-block;
-
-    li{
-    }//li
-
-    a{
-      @include single-transition(all, .5s, ease-out);
-      display: block;
-      text-decoration: none;
-      padding: 5px;
-      padding-bottom: 5px;
-      color: $minco-white;
-
-
-      &:hover{
-        background: $minco-blue;
-      }//a:hover
-
-    }//a
-
-
-  }//ul.nav
-
-}//navigation
-
-.nav__item {
-  list-style: none;
-  border-left: 1px solid $minco-white-transparent;
-
-
-  @include respond-to(45em) {
-    display: inline-block;
-    margin-right: -4px;
-  }
-
-  &:last-of-type {
-    border-right: 1px solid $minco-white-transparent;
-  }
-}
-
-.nav__link {
-  display: block;
-  padding:1.5em;
-  color: $minco-white;
-  font-weight: $font-medium;
-  text-decoration: none;
-  padding: baseline-unit(7) baseline-unit(3);
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $minco-blue;
-  }
-
-}
-
-//footer ---------------------------
-footer{
-  color:$minco-white;
-  background: $minco-black;
-  margin-top: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-top: $border-thick-footer;
-
-
-  a{
-    @include single-transition(all, .5s, ease-out);
-    text-decoration: none;
-    color: $minco-white;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $minco-blue;
-      i{
-        color: $minco-blue;
-      }
-
-    }
-
-  }//a
-
-i{
-  color: $minco-white;
-  font-size:4rem;
-  padding-right: 0.5em;
-}
-
-}//footer
-
-//breakpoints ---------------------------
-
-
-@include breakpoint($small) {
-  main{
-    @include span(12);
-  }
-
-  aside{
-    @include span(12);
-  }
-}//small
-
-@include breakpoint($medium) {
-  main{
-    @include span(10 at 3);
-  }
-
-  aside{
-    @include span(2 at 0);
-  }
-}//medium
-
-@include breakpoint($large) {
-  @include layout(24);
-
-  main{
-    @include span(20 at 5);
-    .col1, .col2, .col3 {
-      @include span(1 of 3);
-      padding-left:3em;
-      text-align: center;
-      vertical-align: center;
-      color: $minco-black;
-      border-right: solid 0.1em #000;
-
-    .slides-container{
-      @include span(1 of 1);
-      margin-left: 3em;
-      margin-bottom: 2em;
-
-    }
-
-    }
-  }
-
-  aside{
-    @include span(4 at 0);
-  }
-
-  footer{
-    @include span(24);
-    .box1, .box2, .box3 {
-      @include span(1 of 3);
-      font-size: 0.5rem;
-      padding-left:3em;
-    }
-  }
-}//large
