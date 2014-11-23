@@ -1,0 +1,9 @@
+@include breakpoint($medium) {
+  main{
+    @include span(10 at 3);
+  }
+
+  aside{
+    @include span(2 at 0);
+  }
+}//medium

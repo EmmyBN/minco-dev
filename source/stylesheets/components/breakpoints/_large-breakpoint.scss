@@ -1,0 +1,111 @@
+@include breakpoint($large) {
+  @include layout(24);
+
+  header{
+
+    .h-logo-container{
+      @include span(6 at 0);
+    }//h-logo-container
+
+    .h-nav-container{
+      @include span(12 at 7);
+      float: left;
+
+    }//h-nav-container
+
+    .h-container3 {
+      @include span(5 at 19);
+      vertical-align: middle;
+
+      .fa-search{
+        float: right;
+        color: $minco-white;
+        font-size:1.5rem;
+        padding-top: 1.3em;
+        padding-right: 2em;
+      }//.fa-search
+
+      .fa-globe{
+        float: right;
+        color: $minco-white;
+        font-size:1.5rem;
+        padding-top: 1.3em;
+        padding-right: 1em;
+      }//.fa-globe
+
+    }//h-container3
+
+    .logo{
+      width: 80%;
+      max-width: 300px;
+      float: left;
+      padding-left: 3em;
+      padding-top: 0.7em;
+    }//logo
+  }//header
+
+  main{
+    @include span(20 at 5);
+    .col1, .col2 {
+      @include span(1 of 3);
+      padding-left:3em;
+      text-align: center;
+      vertical-align: center;
+      color: $minco-black;
+      border-right: solid 0.1em #000;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+    }//col1, col2
+
+    .col3 {
+      @include span(1 of 3);
+      padding-left:3em;
+      text-align: center;
+      vertical-align: center;
+      color: $minco-black;
+      border: none;
+    }//col3
+
+    .slides-container{
+      @include span(1 of 1);
+      margin-left: 3em;
+      margin-bottom: 2em;
+    }//.slides-container
+
+  }//main
+
+  aside{
+    @include span(4 at 0);
+  }//aside
+
+  footer{
+    @include span(24);
+
+    .box1 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-left:3em;
+      text-align: left;
+    }//box1
+
+    .box2 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-left:3em;
+      text-align: center;
+    }//box2
+
+    .box3 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-left:3em;
+      text-align: right;
+      padding-top:1.5em;
+
+      p{
+        line-height: 1.3em;
+      }//p
+    }//box3
+  }
+}//large

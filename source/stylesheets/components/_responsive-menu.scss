@@ -1,0 +1,192 @@
+// Variables
+$baseMenuBackground: #111;          // Base color theme
+$secondaryMenuBackground: #0186ba;  // Secondary color (highlights, triangles...)
+$gutter: 1.5em;                      // Base gutter
+
+// Latest CSS box model
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+// The classic hamburger icon
+// <button class="animenu__toggle">
+//   <span class="animenu__toggle__bar"></span>
+//   <span class="animenu__toggle__bar"></span>
+//   <span class="animenu__toggle__bar"></span>
+// </button>
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+  // Gradient
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #595658),
+    color-stop(1, #000000)
+  );
+  background-image: -o-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -moz-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -webkit-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
+  background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
+
+  border: 0;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+
+  &:hover {
+    background-color: $minco-blue;
+  }
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px; height: 2px;
+  background-color: #fff;
+  transition: .15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+
+  &+.animenu__toggle__bar {
+    margin-top: 4px;
+  }
+}
+
+.animenu__toggle--active {
+  .animenu__toggle__bar {
+    margin: 0;
+    position: absolute;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+// Clear some defaults
+.animenu {
+  display: block;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li, a {
+    display: inline-block;
+  }
+
+  a{
+    @include single-transition(all, .5s, ease-out);
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    //padding-bottom: 5px;
+    color: $minco-white;
+
+
+    &:hover{
+      background: $minco-blue;
+    }//a:hover
+
+  }//a
+
+}//.animenu
+
+// First level -> main menu items
+// <nav class="animenu">
+//    <ul class="animenu__nav">
+//    ...
+//    </ul>
+//  </nav>
+.animenu__nav {
+  background-color: none;
+
+   li {
+    position: relative;
+    border-right: 1px solid lighten($baseMenuBackground, 20%);
+
+     a {
+      padding: $gutter;
+     }
+
+    &:hover {
+      ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+// The main breakpoint is 767px
+// Adjust the first and second levels display
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  // First level -> main menu items
+  // <nav class="animenu">
+  //    <ul class="animenu__nav">
+  //    ...
+  //    </ul>
+  //  </nav>
+  .animenu__nav {
+    margin: $gutter 0;
+
+    li {
+      width: 100%;
+      border-right: 0;
+      border-bottom: 1px solid lighten($baseMenuBackground, 25%);
+
+      a {
+        width: 100%;
+        padding: 0.7em;
+        border-color: $baseMenuBackground;
+        position: relative; //dropdown caret
+      }//a
+    }//li
+
+    a:hover {
+      background-color: $minco-blue;
+      border-color: $minco-blue;
+      color: #fff;
+    }//a:hover
+  }//animenu__nav
+}
+
+// Expanding the animenu
+// <nav class="animenu">
+//    <ul class="animenu__nav animenu__nav--open">
+//      <li>
+//        <ul class="animenu__nav__child"></ul>
+//      </li>
+//    </ul>
+//  </nav>
+.animenu__nav--open {
+  display: block !important;
+
+  & .animenu__nav__child {
+    display: block;
+  }
+}

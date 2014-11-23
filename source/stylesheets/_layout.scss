@@ -180,15 +180,15 @@ header{
 
   .language{color: white;}
 
-  .logo{
-    width: 70%;
+  /*.logo{
+    width: 200%;
     max-width: 300px;
-    float: left;
-    padding-left: 3em;
+    //float: left;
+    padding-left: 0em;
     padding-top: 1.5em;
-  }//logo
+  }//logo*/
 
-  .h-logo-container{
+  /*.h-logo-container{
     @include span(3 at 0);
 
   }//.h-logo-container
@@ -196,7 +196,7 @@ header{
   .h-nav-container{
     @include span(6 at 4);
 
-  }//h-nav-container
+  }//h-nav-container*/
 
   .h-container3 {
     @include span(3 at 10);
@@ -206,19 +206,17 @@ header{
       float: right;
       color: $minco-white;
       font-size:1.5rem;
-      padding-top: 1.7em;
+      padding-top: 1.3em;
       padding-right: 2em;
-    }
+    }//.fa-search
 
     .fa-globe{
       float: right;
       color: $minco-white;
       font-size:1.5rem;
-      padding-top: 1.7em;
+      padding-top: 1.3em;
       padding-right: 1em;
-    }
-
-
+    }//.fa-globe
 
   }//h-nav-container
 
