@@ -1,4 +1,4 @@
-@include breakpoint($small) {
+@include breakpoint($iphone3-5) {
   @include layout(24);
 
 //header elements ---------------------------
@@ -39,11 +39,13 @@ header{
 
 
 .logo{
-  width: 80%;
+  width: 130%;
   max-width: 300px;
   float: left;
   padding-left: 1em;
-  padding-top: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
 }//logo
 
 }//header
@@ -52,9 +54,9 @@ header{
 
   .content {
     @include container;
-    padding-top: 4em;
+    padding-top: 1em;
     padding-bottom: 4em;
-    padding-left: 0em;
+    padding-left: 0.5em;
   }
 
   main{
