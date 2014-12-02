@@ -9,9 +9,11 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Minco UK</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script><!--for new menu, delete if not using it-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>for new menu, delete if not using it-->
     <!--<script type="text/javascript" src="javascripts/responsivemobilemenu.js"></script>-->
-    
+
+
     <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
       <script>
@@ -24,15 +26,15 @@
   <body class="index">
     <header>
   <div class="l-constrained">
-    <div class="h-logo-container">
+    <!-- <div class="h-logo-container">
       <div class="logo">
         <a href="/">
           <img src="/images/MincoLogo.png" />
         </a>
-      </div><!-- logo-->
-    </div><!-- h-logo-container-->
+      </div>logo
+    </div>h-logo-container
     <div class="h-nav-container">
-      <!--<nav role="navigation">
+      <nav role="navigation">
         <div class="rmm">
              <ul>
 				       <li><a href="/about.html">Company</a></li>
@@ -49,7 +51,7 @@
           <li class="nav__item"><a class="nav__link" href="">CSR</a></li>
           <li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
         </ul>
-     </nav>-->
+     </nav>
      <nav class="animenu">
        <button class="animenu__toggle">
          <span class="animenu__toggle__bar"></span>
@@ -67,15 +69,46 @@
        </ul>
      </nav>
      <script src="javascripts/animenu.js"></script>
-    </div><!-- h-nav-container -->
+    </div>h-nav-container
     <div class="h-container3">
       <i class="fa fa-search"></i>
       <i class="fa fa-globe"></i>
-    </div><!--l-constrained -->
+    </div>l-constrained -->
+
+    <ul role="menubar">
+      <li class="logo" role="menuitem">
+        <h1>
+          <div class="logo"><a href="#">
+            <img src="/images/MincoLogo.png" />
+          </a></div>
+        </h1>
+      </li>
+      <li class="menu">
+        <nav class="animenu">
+          <button class="animenu__toggle">
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+          </button>
+        <ul class="animenu__nav">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Washing</a></li>
+          <li><a href="#">CSR</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <script src="javascripts/animenu.js"></script>
+      </li>
+      <li class="language" role="menuitem"><i class="fa fa-globe"></i></li>
+      <li class="search" role="menuitem"><i class="fa fa-search"></i></li>
+    </u>
+
+
+
   </div><!--h-container3 -->
 </header><!-- header-->
 
-    <div class="layout">
+    <div class="content">
       <main>
             <div class="slides-container">
       <ul class="rslides" id="slider1">

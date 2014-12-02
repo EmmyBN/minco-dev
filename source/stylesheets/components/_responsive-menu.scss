@@ -16,6 +16,7 @@ $gutter: 1.5em;                      // Base gutter
 // </button>
 .animenu__toggle {
   display: none;
+  float: right !important;
   cursor: pointer;
   // Gradient
   background-image: -webkit-gradient(
@@ -74,6 +75,8 @@ $gutter: 1.5em;                      // Base gutter
 // Clear some defaults
 .animenu {
   display: block;
+  padding-top:1.5em;
+  padding-right: 0.7em;
 
   ul {
     padding: 0;

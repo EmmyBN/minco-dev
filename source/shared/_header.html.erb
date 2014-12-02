@@ -1,52 +1,84 @@
 <header>
   <div class="l-constrained">
-    <div class="h-logo-container">
-      <div class="logo">
-        <a href="/">
-          <%= image_tag 'MincoLogo.png' %>
-        </a>
-      </div><!-- logo-->
-    </div><!-- h-logo-container-->
-    <div class="h-nav-container">
-      <!--<nav role="navigation">
-        <div class="rmm">
-             <ul>
-				       <li><a href="/about.html">Company</a></li>
-          		 <li><a href="">Products</a></li>
-		           <li><a href="">Washing</a></li>
-               <li><a href="">CSR</a></li>
-               <li><a href="">Contact Us</a></li>
-             </ul>
-        </div>
-        <ul class="nav">
-          <li class="nav__item"><a class="nav__link" href="/about.html">Company</a></li>
-          <li class="nav__item"><a class="nav__link" href="">Products</a></li>
-          <li class="nav__item"><a class="nav__link" href="">Washing</a></li>
-          <li class="nav__item"><a class="nav__link" href="">CSR</a></li>
-          <li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
-        </ul>
-     </nav>-->
-     <nav class="animenu">
-       <button class="animenu__toggle">
-         <span class="animenu__toggle__bar"></span>
-         <span class="animenu__toggle__bar"></span>
-         <span class="animenu__toggle__bar"></span>
-       </button>
-       <ul class="animenu__nav">
-         <li>
-           <a href="#">Company</a>
-         </li>
-         <li><a href="#">Products</a></li>
-         <li><a href="#">Washing</a></li>
-         <li><a href="#">CSR</a></li>
-         <li><a href="#">Contact Us</a></li>
-       </ul>
-     </nav>
-     <script src="javascripts/animenu.js"></script>
-    </div><!-- h-nav-container -->
-    <div class="h-container3">
-      <i class="fa fa-search"></i>
-      <i class="fa fa-globe"></i>
-    </div><!--l-constrained -->
-  </div><!--h-container3 -->
+    <section class="h-container">
+      <!-- <div class="h-logo-container">
+        <div class="logo">
+          <a href="/">
+            <%= image_tag 'MincoLogo.png' %>
+          </a>
+        </div>logo
+      </div>h-logo-container
+      <div class="h-nav-container">
+        <nav role="navigation">
+          <div class="rmm">
+               <ul>
+  				       <li><a href="/about.html">Company</a></li>
+            		 <li><a href="">Products</a></li>
+  		           <li><a href="">Washing</a></li>
+                 <li><a href="">CSR</a></li>
+                 <li><a href="">Contact Us</a></li>
+               </ul>
+          </div>
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="/about.html">Company</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Products</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Washing</a></li>
+            <li class="nav__item"><a class="nav__link" href="">CSR</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Contact Us</a></li>
+          </ul>
+       </nav>
+       <nav class="animenu">
+         <button class="animenu__toggle">
+           <span class="animenu__toggle__bar"></span>
+           <span class="animenu__toggle__bar"></span>
+           <span class="animenu__toggle__bar"></span>
+         </button>
+         <ul class="animenu__nav">
+           <li>
+             <a href="#">Company</a>
+           </li>
+           <li><a href="#">Products</a></li>
+           <li><a href="#">Washing</a></li>
+           <li><a href="#">CSR</a></li>
+           <li><a href="#">Contact Us</a></li>
+         </ul>
+       </nav>
+       <script src="javascripts/animenu.js"></script>
+      </div>h-nav-container
+      <div class="h-container3">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-globe"></i>
+      </div>l-constrained -->
+
+      <ul role="menubar">
+        <li role="menuitem">
+          <h1>
+            <div class="logo"><a href="#">
+              <%= image_tag 'MincoLogo.png' %>
+            </a></div>
+          </h1>
+        </li>
+        <li class="menu">
+          <nav class="animenu">
+            <button class="animenu__toggle">
+              <span class="animenu__toggle__bar"></span>
+              <span class="animenu__toggle__bar"></span>
+              <span class="animenu__toggle__bar"></span>
+            </button>
+          <ul class="animenu__nav">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Washing</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <script src="javascripts/animenu.js"></script>
+          <ul role="menuitem">
+            <li><a href="#"><div style="padding: 0;" class="globe"><%= image_tag 'europe-globe.png' %></div></a></li>
+            <li><a href="#"><i class="magglass fa fa-search"></i></a></li>
+          </ul>
+
+
+    </div><!--h-container -->
+  </div><!--l-constrained -->
 </header><!-- header-->

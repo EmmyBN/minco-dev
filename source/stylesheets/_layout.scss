@@ -64,8 +64,6 @@ header{
     background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
     background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
 
-  .language{color: white;}
-
   /*.logo{
     width: 200%;
     max-width: 300px;
@@ -88,7 +86,7 @@ header{
     @include span(3 at 10);
     vertical-align: middle;
 
-    .fa-search{
+    /*.fa-search{
       float: right;
       color: $minco-white;
       font-size:1.5rem;
@@ -102,7 +100,7 @@ header{
       font-size:1.5rem;
       padding-top: 1.3em;
       padding-right: 1em;
-    }//.fa-globe
+    }//.fa-globe*/
 
   }//h-nav-container
 
@@ -130,7 +128,7 @@ main {
     text-decoration: none;
     color: $minco-blue;
 
-    .fa{
+    /*.fa{
       top: 1px;
       //float: right;
       color: $minco-blue;
@@ -139,7 +137,7 @@ main {
       vertical-align: baseline;
       padding-left: 0.3em;
       font-size: 1em;
-    }//fa
+    }//fa*/
 
 
     &:hover{

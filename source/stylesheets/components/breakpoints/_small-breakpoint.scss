@@ -4,45 +4,55 @@
 //header elements ---------------------------
 
 header{
-.h-logo-container{
-  @include span(10 at 0);
+.h-container{
+    @include span(1 of 1);
 
-}//.h-logo-container
+      ul {
+
+        li{
+
+          a{
+
+            .globe img{
+              height: 30px;
+              width: 30px;
+            }//globe
+
+            .magglass{
+              //float: right;
+              color: $minco-white;
+              font-size:1.7rem;
+              padding-bottom: 0.5em;
+              //min-height: 70px;
+            //  min-width: 30px;
+            }//search
+        }//a
+      }//li
+    }//ul
+  }//.h=-container
+
+
+/*}//.h-logo-container
 
 .h-container3 {
   @include span(4 omega);
   vertical-align: middle;
 
-  .fa-search{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-    padding-left: 0.3em
-  }//.fa-search
 
-  .fa-globe{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-  }//.fa-globe
 }
 
 .h-nav-container{
   @include span(10 at 12);
   float: right;
 
-}//h-nav-container
+}//h-nav-container*/
 
 
 .logo{
-  width: 80%;
-  max-width: 300px;
+  width: 70%;
+  //max-width: 300px;
   float: left;
-  padding-left: 1em;
+  //padding-left: 0.3em;
   padding-top: 1.5em;
 }//logo
 
