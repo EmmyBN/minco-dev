@@ -4,6 +4,10 @@
 //header elements ---------------------------
 
 header{
+.h-container{
+  @include span(24);
+}//h-container
+
 .h-logo-container{
   @include span(10 at 0);
 
