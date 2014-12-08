@@ -6,7 +6,7 @@ $susy: (
   gutter-position: inside,
 );
 
-$small: 200px;
+$small: 320px;
 $medium: 800px;
 $large: 1200px;
 
@@ -24,11 +24,7 @@ body {
   margin: 0 auto;
 }
 
-.layout {
-  @include container;
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
+
 
 
 //main ------------------------------
@@ -178,25 +174,8 @@ header{
     background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
     background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
 
-  .language{color: white;}
+  /*.language{color: white;}
 
-  /*.logo{
-    width: 200%;
-    max-width: 300px;
-    //float: left;
-    padding-left: 0em;
-    padding-top: 1.5em;
-  }//logo*/
-
-  /*.h-logo-container{
-    @include span(3 at 0);
-
-  }//.h-logo-container
-
-  .h-nav-container{
-    @include span(6 at 4);
-
-  }//h-nav-container*/
 
   .h-container3 {
     @include span(3 at 10);
@@ -218,6 +197,6 @@ header{
       padding-right: 1em;
     }//.fa-globe
 
-  }//h-nav-container
+  }//h-nav-container*/
 
 }//header

@@ -4,6 +4,15 @@
   header{
     .h-container{
       @include span(24);
+
+      .logo{
+        width: 70%;
+        max-width: 300px;
+        float: left;
+        padding-left: 3em;
+        padding-top: 0.7em;
+      }//logo
+
     }//h-container
 
     .h-logo-container{
@@ -38,14 +47,16 @@
 
     }//h-container3
 
-    .logo{
-      width: 80%;
-      max-width: 300px;
-      float: left;
-      padding-left: 3em;
-      padding-top: 0.7em;
-    }//logo
+
   }//header
+
+  //layout ---------------
+
+  .layout {
+    @include container;
+    padding-top: 3em;
+    padding-bottom: 2em;
+
 
   main{
     @include span(20 at 5);
@@ -81,6 +92,11 @@
   aside{
     @include span(4 at 0);
   }//aside
+
+
+}//layout
+
+// footer--------------------------
 
   footer{
     @include span(24);
