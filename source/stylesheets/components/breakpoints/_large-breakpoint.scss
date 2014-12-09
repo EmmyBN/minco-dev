@@ -3,6 +3,8 @@
 
   header{
     .h-container{
+      width: 100%;
+      max-width: 1200px;
       @include span(24);
 
       .logo{
@@ -10,43 +12,11 @@
         max-width: 300px;
         float: left;
         padding-left: 3em;
-        padding-top: 0.7em;
+        padding-top: 1em;
+        padding-right: 4em;
       }//logo
 
     }//h-container
-
-    .h-logo-container{
-      @include span(6 at 0);
-    }//h-logo-container
-
-    .h-nav-container{
-      @include span(12 at 7);
-      float: left;
-
-    }//h-nav-container
-
-    .h-container3 {
-      @include span(5 at 19);
-      vertical-align: middle;
-
-      .fa-search{
-        float: right;
-        color: $minco-white;
-        font-size:1.5rem;
-        padding-top: 1.3em;
-        padding-right: 2em;
-      }//.fa-search
-
-      .fa-globe{
-        float: right;
-        color: $minco-white;
-        font-size:1.5rem;
-        padding-top: 1.3em;
-        padding-right: 1em;
-      }//.fa-globe
-
-    }//h-container3
-
 
   }//header
 
@@ -56,13 +26,31 @@
     @include container;
     padding-top: 3em;
     padding-bottom: 2em;
+    padding-left: 12em;
+
+  //main content
+  .content {
+    @include container;
+    padding-top: 5em;
+    padding-bottom: 4em;
+    padding-left: 4em;
+  }
 
 
   main{
-    @include span(20 at 5);
+    @include span(20.5 at 4.5);
+    padding-left: 0.45em;
+
+    .promobox{
+      @include container(85%);
+      padding-bottom: 3em;
+      padding-left: 2.5em;
+      @include span(1 of 1);
+    }
+
     .col1, .col2 {
-      @include span(1 of 3);
-      padding-left:3em;
+      @include span(2 of 6);
+      //padding-left:1em;
       text-align: center;
       vertical-align: center;
       color: $minco-black;
@@ -73,8 +61,8 @@
     }//col1, col2
 
     .col3 {
-      @include span(1 of 3);
-      padding-left:3em;
+      @include span(2 of 6);
+      //padding-left:1em;
       text-align: center;
       vertical-align: center;
       color: $minco-black;
@@ -83,14 +71,14 @@
 
     .slides-container{
       @include span(1 of 1);
-      margin-left: 3em;
+      margin-left: 0;
       margin-bottom: 2em;
     }//.slides-container
 
   }//main
 
   aside{
-    @include span(4 at 0);
+    @include span(3.5 at 0);
   }//aside
 
 
@@ -104,7 +92,7 @@
     .box1 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      padding-left:3em;
+      padding-left:10em;
       text-align: left;
     }//box1
 
@@ -119,11 +107,12 @@
       @include span(1 of 3);
       font-size: 0.9rem;
       padding-left:3em;
+      padding-right: 11em;
       text-align: right;
       padding-top:1.5em;
 
       p{
-        line-height: 1.3em;
+        line-height: 1.35em;
       }//p
     }//box3
   }
