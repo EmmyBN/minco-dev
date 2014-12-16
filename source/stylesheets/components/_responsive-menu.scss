@@ -98,7 +98,6 @@ $gutter: 1.5em;                      // Base gutter
     display: block;
     text-decoration: none;
     padding: 5px;
-    //padding-bottom: 5px;
     color: $minco-white;
 
 
@@ -196,6 +195,7 @@ $gutter: 1.5em;                      // Base gutter
   //    </ul>
   //  </nav>
   .animenu__nav {
+    margin-left: 2em;
     margin: $gutter 0;
 
     li {
