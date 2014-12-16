@@ -1,9 +1,138 @@
 @include breakpoint($medium) {
-  main{
-    @include span(10 at 3);
+@include single-transition(all, 1s, ease-out);
+@include layout(24);
+
+header{
+  .h-container{
+    width: 100%;
+    max-width: 1200px;
+    @include span(24);
+
+    li{
+      margin-left:0;
+
+      .globe img{
+        height: 30px;
+        width: 30px;
+      }
+
+      .magglass{
+        //float: right;
+        color: $minco-white;
+        font-size:1.7rem;
+        padding-left: 1em;
+      }//.fa-search
+    }
+
+    .logo{
+      width: 70%;
+      max-width: 240px;
+      float: left;
+      padding-left: 1em;
+      padding-top: 1em;
+      padding-right: 3em;
+    }//logo
+
+  }//h-container
+
+}//header
+
+//layout ---------------
+
+.layout {
+  @include container;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  padding-left: 12em;
+
+//main content
+.content {
+  @include container;
+  padding-top: 5em;
+  padding-bottom: 4em;
+  padding-left: 4em;
+}
+
+
+main{
+  @include span(20.5 at 4.5);
+  padding-left: 0.45em;
+
+  .promobox{
+    @include container(85%);
+    padding-bottom: 3em;
+    padding-left: 2.5em;
+    @include span(1 of 1);
   }
 
-  aside{
-    @include span(2 at 0);
-  }
+  .col1, .col2 {
+    @include span(2 of 6);
+    //padding-left:1em;
+    text-align: center;
+    vertical-align: center;
+    color: $minco-black;
+    border-right: solid 0.1em #000;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }//col1, col2
+
+  .col3 {
+    @include span(2 of 6);
+    //padding-left:1em;
+    text-align: center;
+    vertical-align: center;
+    color: $minco-black;
+    border: none;
+  }//col3
+
+  .slides-container{
+    @include span(1 of 1);
+    margin-left: 0;
+    margin-bottom: 2em;
+  }//.slides-container
+
+}//main
+
+aside{
+  @include span(3.5 at 0);
+}//aside
+
+
+}//layout
+
+// footer--------------------------
+
+footer{
+  @include span(24);
+
+  .box1 {
+    @include span(1 of 3);
+    font-size: 0.9rem;
+    padding-left:10em;
+    text-align: left;
+  }//box1
+
+  .box2 {
+    @include span(1 of 3);
+    font-size: 0.9rem;
+    padding-left:3em;
+    text-align: center;
+  }//box2
+
+  .box3 {
+    @include span(1 of 3);
+    font-size: 0.9rem;
+    padding-left:3em;
+    padding-right: 11em;
+    text-align: right;
+    padding-top:1.5em;
+
+    p{
+      line-height: 1.35em;
+    }//p
+  }//box3
+}
+
+
 }//medium
