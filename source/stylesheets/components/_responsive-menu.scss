@@ -97,7 +97,7 @@ $gutter: 1.5em;                      // Base gutter
     @include single-transition(all, .5s, ease-out);
     display: block;
     text-decoration: none;
-    padding: 5px;
+    padding: 3px;
     color: $minco-white;
 
 
@@ -173,11 +173,11 @@ $gutter: 1.5em;                      // Base gutter
 
 // The main breakpoint is 767px
 // Adjust the first and second levels display
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
   .animenu {
     display: block;
     padding-top:1.3em;
-    padding-right: 2em;
+    padding-right: 1.3em;
   }
   .animenu__toggle {
     display: inline-block;
@@ -205,14 +205,14 @@ $gutter: 1.5em;                      // Base gutter
 
       a {
         width: 100%;
-        padding: 0.7em;
+        padding: 0.5em;
         border-color: $baseMenuBackground;
         position: relative; //dropdown caret
 
         .globe img{
           height: 30px;
           width: 30px;
-        }
+        }//.globe
 
         .magglass{
           //float: right;
