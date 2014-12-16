@@ -1,19 +1,51 @@
 @include breakpoint($large) {
+  @include single-transition(all, 1s, ease-out);
   @include layout(24);
+
+
+  .l-constrained {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 5em;
+  }
+
 
   header{
     .h-container{
+      @include container(70%);
       width: 100%;
       max-width: 1200px;
+      padding-left:2em;
       @include span(24);
+
+      li{
+        margin-left:0;
+
+        .globe img{
+          height: 30px;
+          width: 30px;
+        }
+
+        .magglass{
+          //float: right;
+          color: $minco-white;
+          font-size:1.7rem;
+          //padding-left: 1em;
+        }//.fa-search
+
+        .spacing{
+          color: white; border: none; padding-left: 2em;
+        }
+      }
 
       .logo{
         width: 70%;
-        max-width: 300px;
+        max-width: 240px;
         float: left;
-        padding-left: 3em;
+        padding-left: 1em;
         padding-top: 1em;
-        padding-right: 4em;
+        padding-right: 3em;
       }//logo
 
     }//h-container
@@ -23,10 +55,10 @@
   //layout ---------------
 
   .layout {
-    @include container;
-    padding-top: 3em;
-    padding-bottom: 2em;
-    padding-left: 12em;
+    @include container(80%);
+    padding-top: 2.7em;
+    padding-bottom: 0em;
+    padding-left: 4.2em;
 
   //main content
   .content {
@@ -42,8 +74,8 @@
     padding-left: 0.45em;
 
     .promobox{
-      @include container(85%);
-      padding-bottom: 3em;
+      @include container(95%);
+      padding-bottom: 2.7em;
       padding-left: 2.5em;
       @include span(1 of 1);
     }
@@ -54,10 +86,14 @@
       text-align: center;
       vertical-align: center;
       color: $minco-black;
-      border-right: solid 0.1em #000;
+      border-right: solid 0.1em #47484a;
       border-top: none;
       border-bottom: none;
       border-left: none;
+
+      p{
+        font-size: 1rem;
+      }//p
     }//col1, col2
 
     .col3 {
@@ -67,6 +103,10 @@
       vertical-align: center;
       color: $minco-black;
       border: none;
+
+      p{
+        font-size: 1rem;
+      }//p
     }//col3
 
     .slides-container{
@@ -79,6 +119,61 @@
 
   aside{
     @include span(3.5 at 0);
+
+    ul.nav{
+      display: inline-block;
+      padding-left: 5em;
+    }//ul
+
+    li{
+    }//li
+
+    a{
+      @include single-transition(all, .5s, ease-out);
+      padding-left: 5em;
+      display: block;
+      text-decoration: none;
+      padding: 5px;
+      color: $minco-blue;
+      font-size:1rem;
+
+      .fa{
+        top: 1px;
+        //float: right;
+        color: $minco-blue;
+        font-size: 0.7rem;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1px;
+        padding-left: 1em;
+        vertical-align: baseline;
+      }//fa
+
+
+      &:hover{
+        background: $minco-blue;
+        color: $minco-white;
+
+
+          i{
+            top: 1px;
+            //float: right;
+            color: $minco-white;
+            font-size: 0.7rem;
+            -webkit-font-smoothing: antialiased;
+            padding-left: 1em;
+            line-height: 1;
+            vertical-align: baseline;
+          }//i
+      }//a:hover
+
+    }//a
+
+    .list-group-item {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      margin-bottom: -1px;
+    }//.list-group-item
   }//aside
 
 

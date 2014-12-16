@@ -6,7 +6,8 @@ $susy: (
   gutter-position: inside,
 );
 
-$small: 320px;
+$smaller: 200px;
+$small: 200px;
 $medium: 800px;
 $large: 1200px;
 
@@ -22,6 +23,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 5em;
 }
 
 
@@ -93,7 +95,7 @@ aside{
   float: left;
   padding-left: 5em;
   border-right: solid 0.1em $minco-blue;
-  padding-bottom:1em;
+  padding-bottom:1.7em;
 
 /*  .sidebar-container{
     border-right: solid 0.1em $minco-blue;
@@ -151,8 +153,8 @@ aside{
     display: block;
     padding: 10px 15px;
     margin-bottom: -1px;
-  }
-}
+  }//.list-group-item
+}//aside
 
 //header ---------------------------
 header{
@@ -174,29 +176,6 @@ header{
     background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
     background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
 
-  /*.language{color: white;}
 
-
-  .h-container3 {
-    @include span(3 at 10);
-    vertical-align: middle;
-
-    .fa-search{
-      float: right;
-      color: $minco-white;
-      font-size:1.5rem;
-      padding-top: 1.3em;
-      padding-right: 2em;
-    }//.fa-search
-
-    .fa-globe{
-      float: right;
-      color: $minco-white;
-      font-size:1.5rem;
-      padding-top: 1.3em;
-      padding-right: 1em;
-    }//.fa-globe
-
-  }//h-nav-container*/
 
 }//header
