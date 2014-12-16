@@ -24,7 +24,7 @@
         }//.fa-search
 
         .spacing{
-          color: white; border: none; padding-left: 3em;
+          color: white; border: none; padding-left: 1em;
         }//spacing for language selector
       }//li
 
@@ -46,7 +46,7 @@
   .layout {
     @include container(90%);
     padding-top: 2.6em;
-    padding-bottom: 2em;
+    padding-bottom: 0em;
     //padding-left: 10em;
     margin-left: 1.75em;
 
@@ -54,7 +54,7 @@
   .content {
     @include container;
     padding-top: 5em;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
     padding-left: 4em;
   }
 
@@ -65,7 +65,7 @@
 
     .promobox{
       @include container(90%);
-      padding-bottom: 3em;
+      padding-bottom: 1em;
       padding-left: 2.5em;
       @include span(1 of 1);
     }
@@ -75,8 +75,8 @@
       //padding-left:1em;
       text-align: center;
       vertical-align: center;
-      color: $minco-black;
-      border-right: solid 0.1em #000;
+      color: #3e3e40;
+      border-right: solid 0.1em #595a5c;
       border-top: none;
       border-bottom: none;
       border-left: none;
@@ -89,7 +89,7 @@
       //padding-left:1em;
       text-align: center;
       vertical-align: center;
-      color: $minco-black;
+      color: #3e3e40;
       border: none;
 
       p{font-size: 1rem;}
