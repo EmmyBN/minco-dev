@@ -1,3 +1,4 @@
+//susy set up----------------------
 $susy: (
   columns: 12,
   gutters: 1/20,
@@ -6,6 +7,8 @@ $susy: (
   gutter-position: inside,
 );
 
+
+$smaller: 200px;
 $small: 200px;
 $medium: 800px;
 $large: 1200px;
@@ -22,13 +25,79 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 5em;
 }
 
-.layout {
+
+
+.content {
   @include container;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-left: 4em;
 }
+
+//header ---------------------------
+header{
+    overflow: hidden;
+    border-bottom: $border-thick;
+
+
+    // Gradient
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #595658),
+      color-stop(1, #000000)
+    );
+    background-image: -o-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -moz-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -webkit-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
+    background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
+
+  /*.logo{
+    width: 200%;
+    max-width: 300px;
+    //float: left;
+    padding-left: 0em;
+    padding-top: 1.5em;
+  }//logo*/
+
+  /*.h-logo-container{
+    @include span(3 at 0);
+
+  }//.h-logo-container
+
+  .h-nav-container{
+    @include span(6 at 4);
+
+  }//h-nav-container*/
+
+  .h-container3 {
+    @include span(3 at 10);
+    vertical-align: middle;
+
+    /*.fa-search{
+      float: right;
+      color: $minco-white;
+      font-size:1.5rem;
+      padding-top: 1.3em;
+      padding-right: 2em;
+    }//.fa-search
+
+    .fa-globe{
+      float: right;
+      color: $minco-white;
+      font-size:1.5rem;
+      padding-top: 1.3em;
+      padding-right: 1em;
+    }//.fa-globe*/
+
+  }//h-nav-container
+
+}//header
 
 
 //main ------------------------------
@@ -52,7 +121,7 @@ main {
     text-decoration: none;
     color: $minco-blue;
 
-    .fa{
+    /*.fa{
       top: 1px;
       //float: right;
       color: $minco-blue;
@@ -61,7 +130,7 @@ main {
       vertical-align: baseline;
       padding-left: 0.3em;
       font-size: 1em;
-    }//fa
+    }//fa*/
 
 
     &:hover{
@@ -97,7 +166,7 @@ aside{
   float: left;
   padding-left: 5em;
   border-right: solid 0.1em $minco-blue;
-  padding-bottom:1em;
+  padding-bottom:1.7em;
 
 /*  .sidebar-container{
     border-right: solid 0.1em $minco-blue;
@@ -155,8 +224,8 @@ aside{
     display: block;
     padding: 10px 15px;
     margin-bottom: -1px;
-  }
-}
+  }//.list-group-item
+}//aside
 
 //header ---------------------------
 header{
@@ -178,46 +247,6 @@ header{
     background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
     background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
 
-  .language{color: white;}
 
-  /*.logo{
-    width: 200%;
-    max-width: 300px;
-    //float: left;
-    padding-left: 0em;
-    padding-top: 1.5em;
-  }//logo*/
-
-  /*.h-logo-container{
-    @include span(3 at 0);
-
-  }//.h-logo-container
-
-  .h-nav-container{
-    @include span(6 at 4);
-
-  }//h-nav-container*/
-
-  .h-container3 {
-    @include span(3 at 10);
-    vertical-align: middle;
-
-    .fa-search{
-      float: right;
-      color: $minco-white;
-      font-size:1.5rem;
-      padding-top: 1.3em;
-      padding-right: 2em;
-    }//.fa-search
-
-    .fa-globe{
-      float: right;
-      color: $minco-white;
-      font-size:1.5rem;
-      padding-top: 1.3em;
-      padding-right: 1em;
-    }//.fa-globe
-
-  }//h-nav-container
 
 }//header

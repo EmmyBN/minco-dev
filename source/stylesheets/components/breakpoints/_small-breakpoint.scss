@@ -1,52 +1,59 @@
 @include breakpoint($small) {
+  @include single-transition(all, 1s, ease-out);
   @include layout(24);
 
 //header elements ---------------------------
 
 header{
-.h-logo-container{
-  @include span(10 at 0);
+.h-container{
 
-}//.h-logo-container
+  @include span(24);
+
+  .logo{
+    width: 70%;
+    max-width: 300px;
+    float: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+  }//logo
+
+  ul {
+
+    li{
+
+      a{
+  }//a
+  }//li
+}//ul
+
+}//h-container
+
+
 
 .h-container3 {
   @include span(4 omega);
   vertical-align: middle;
 
-  .fa-search{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-    padding-left: 0.3em
-  }//.fa-search
 
-  .fa-globe{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-  }//.fa-globe
 }
 
 .h-nav-container{
   @include span(10 at 12);
   float: right;
 
-}//h-nav-container
+}//h-nav-container*/
 
-
-.logo{
-  width: 150%;
-  max-width: 300px;
-  float: left;
-  padding-left: 1em;
-  padding-top: 1.5em;
-}//logo
 
 }//header
+
+//layout ---------------------
+
+.layout {
+  @include container;
+  padding-top: 0em;
+  padding-bottom: 2em;
+
+}//layout
 
   main{
     @include span(24);
@@ -75,12 +82,30 @@ header{
          text-align: center;
        }//p
      }//col3
+
+     .slides-container{
+       @include span(1 of 1);
+       margin-bottom: 2em;
+     }
+
  }//main
 
+//slideshow -----------------
+
+.slides-container{
+  @include span(1 of 1);
+  padding-left: 0em;
+  margin-bottom: 2em;
+}
+
+// sidebar ---------------
   aside{
     @include span(24);
   }//aside
 
+
+
+// footer -------------
   footer{
     @include span(24);
     .box1 {
