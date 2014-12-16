@@ -122,6 +122,7 @@
     .box2 {
       @include span(1 of 3);
       font-size: 0.9rem;
+      padding-top: 0.3em;
       padding-left:3em;
       text-align: center;
     }//box2

@@ -108,9 +108,10 @@ footer{
 
   .box1 {
     @include span(1 of 3);
-    font-size: 0.9rem;
     padding-left:10em;
     text-align: left;
+
+    p{font-size: 1.2rem;}
   }//box1
 
   .box2 {
