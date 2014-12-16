@@ -1,59 +1,66 @@
-@include breakpoint($small) {
-  @include single-transition(all, 1s, ease-out);
+@include breakpoint($iphone3-5) {
   @include layout(24);
 
 //header elements ---------------------------
 
 header{
+/*.h-logo-container{
+  @include span(10 at 0);
+
+}//.h-logo-container*/
+
 .h-container{
-
-  @include span(24);
-
-  .logo{
-    width: 70%;
-    max-width: 300px;
-    float: left;
-    padding-left: 1em;
-    padding-top: 0.5em;
-  }//logo
+  @include span(1 of 1);
 
   ul {
 
     li{
 
       a{
+    .globe img{
+      height: 30px;
+      width: 30px;
+    }
+
+    .magglass{
+      //float: right;
+      color: $minco-white;
+      font-size:1.7rem;
+      //padding-bottom: 0.5em;
+    }//.fa-search
   }//a
   }//li
 }//ul
 
-}//h-container
+}//.h-container
 
-
-
-.h-container3 {
-  @include span(4 omega);
-  vertical-align: middle;
-
-
-}
-
-.h-nav-container{
+/*.h-nav-container{
   @include span(10 at 12);
   float: right;
 
 }//h-nav-container*/
 
 
+.logo{
+  width: 60%;
+  //max-width: 300px;
+  float: left;
+  //padding-left: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}//logo
+
 }//header
 
-//layout ---------------------
+//main content area
 
-.layout {
-  @include container;
-  padding-top: 0em;
-  padding-bottom: 2em;
-
-}//layout
+  .content {
+    @include container;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    padding-left: 0.5em;
+  }
 
   main{
     @include span(24);
@@ -82,12 +89,6 @@ header{
          text-align: center;
        }//p
      }//col3
-
-     .slides-container{
-       @include span(1 of 1);
-       margin-bottom: 2em;
-     }
-
  }//main
 
 //slideshow -----------------
@@ -103,9 +104,6 @@ header{
     @include span(24);
   }//aside
 
-
-
-// footer -------------
   footer{
     @include span(24);
     .box1 {

@@ -9,7 +9,8 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Minco" %></title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script><!--for new menu, delete if not using it-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>for new menu, delete if not using it-->
     <!--<script type="text/javascript" src="javascripts/responsivemobilemenu.js"></script>-->
 
     <%= stylesheet_link_tag "normalize", "all" %>
@@ -23,7 +24,7 @@
   </head>
   <body class="<%= page_classes %>">
     <%= partial 'shared/header' %>
-    <div class="layout">
+    <div class="content">
       <main>
         <%= yield %>
       </main><!--main-->
