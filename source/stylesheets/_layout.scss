@@ -114,6 +114,7 @@ aside{
     text-decoration: none;
     padding: 5px;
     color: $minco-blue;
+    font-size: 0.9rem;
 
     .fa{
       top: 1px;
@@ -151,8 +152,8 @@ aside{
     display: block;
     padding: 10px 15px;
     margin-bottom: -1px;
-  }
-}
+  }//list-group-item
+}//aside
 
 //header ---------------------------
 header{
