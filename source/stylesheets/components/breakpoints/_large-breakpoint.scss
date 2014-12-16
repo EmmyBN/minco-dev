@@ -63,7 +63,7 @@
     padding-left: 0.45em;
 
     .promobox{
-      @include container(85%);
+      @include container(80%);
       padding-bottom: 3em;
       padding-left: 2.5em;
       @include span(1 of 1);
@@ -79,6 +79,8 @@
       border-top: none;
       border-bottom: none;
       border-left: none;
+
+      p{font-size: 1rem;}
     }//col1, col2
 
     .col3 {
@@ -88,6 +90,8 @@
       vertical-align: center;
       color: $minco-black;
       border: none;
+
+      p{font-size: 1rem;}
     }//col3
 
     .slides-container{
