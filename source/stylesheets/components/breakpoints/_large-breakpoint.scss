@@ -54,37 +54,14 @@
     padding-left: 4em;
   }
 
->>>>>>> 1ccdb1f8f9962e0e4f39b9e6763091bca8938fab
-
-  //layout ---------------
-
-  .layout {
-    @include container;
-    padding-top: 3em;
-    padding-bottom: 2em;
-    padding-left: 12em;
-
-  //main content
-  .content {
-    @include container;
-    padding-top: 5em;
-    padding-bottom: 4em;
-    padding-left: 4em;
-  }
-
 
   main{
     @include span(20.5 at 4.5);
     padding-left: 0.45em;
 
     .promobox{
-<<<<<<< HEAD
-      @include container(85%);
-      padding-bottom: 3em;
-=======
       @include container(95%);
       padding-bottom: 2.7em;
->>>>>>> 1ccdb1f8f9962e0e4f39b9e6763091bca8938fab
       padding-left: 2.5em;
       @include span(1 of 1);
     }
@@ -128,8 +105,6 @@
 
   aside{
     @include span(3.5 at 0);
-<<<<<<< HEAD
-=======
 
     ul.nav{
       display: inline-block;
@@ -185,7 +160,6 @@
       padding: 10px 15px;
       margin-bottom: -1px;
     }//.list-group-item
->>>>>>> 1ccdb1f8f9962e0e4f39b9e6763091bca8938fab
   }//aside
 
 
