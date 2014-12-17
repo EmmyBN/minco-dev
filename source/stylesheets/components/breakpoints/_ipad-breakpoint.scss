@@ -12,26 +12,35 @@ header{
     li{
       margin-left:0;
 
-      .globe img{
+     .globe img{
         height: 30px;
         width: 30px;
-      }
+      }//globe
 
       .magglass{
-        //float: right;
         color: $minco-white;
         font-size:1.7rem;
         padding-left: 1em;
       }//.fa-search
-    }
+
+      .animenu__nav li a{
+        padding: 1em;
+        margin-bottom: 0em;
+      }
+    }//li
 
     .logo{
       width: 40%;
+      max-width: 310px;
       float: left;
-      padding-left: 1em;
-      padding-top: 1em;
-      padding-right: 3em;
+      padding-left: 3.3em;
+      //padding-top: 1em;
+      //padding-right: 3em;
     }//logo
+
+
+
+    //.animenu__nav li a {padding: 2em;}//.animenu__nav
 
   }//h-container
 
