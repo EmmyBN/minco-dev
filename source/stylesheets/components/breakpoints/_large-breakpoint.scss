@@ -29,6 +29,13 @@
         }//spacing for language selector
       }//li
 
+
+      a {
+        img{
+          width: 150%;
+        }//img
+      }//a
+
       .logo{
         width: 70%;
         max-width: 300px;
@@ -38,10 +45,14 @@
         padding-right: 5em;
       }//logo
 
+
       .animenu__nav li a{
         padding: 2em;
         margin-bottom: 0em;
+        font-size: 1rem;
       }//.animenu__nav li a
+
+
 
     }//h-container
 
@@ -111,6 +122,8 @@
 
   aside{
     @include span(3.5 at 0);
+    border-right: solid 0.1em $minco-blue;
+    padding-bottom:1em;
 
     ul.nav{
       display: inline-block;

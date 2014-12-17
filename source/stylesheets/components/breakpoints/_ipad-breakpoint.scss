@@ -29,8 +29,15 @@ header{
 
       .animenu__nav li a{
         padding: 1em;
-        margin-bottom: 0em;
+        //margin-bottom: 1em;
+        font-size: 1rem;
       }
+
+      a {
+        img{
+          width: 80%;
+        }//img
+      }//a
     }//li
 
     .logo{
@@ -54,15 +61,15 @@ header{
 
 .layout {
   @include container(95%);
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0em;
   padding-left: 9em;
 
 //main content
 .content {
   @include container;
   padding-top: 5em;
-  padding-bottom: 4em;
+  //padding-bottom: 4em;
   padding-left: 4em;
 }
 
@@ -73,7 +80,7 @@ main{
 
   .promobox{
     @include container(90%);
-    padding-bottom: 3em;
+    padding-bottom: 0em;
     padding-left: 2.5em;
     @include span(1 of 1);
   }
@@ -113,6 +120,8 @@ main{
 
 aside{
   @include span(3.5 at 0);
+  border-right: solid 0.1em $minco-blue;
+  padding-bottom:0em;
 }//aside
 
 
@@ -149,7 +158,7 @@ footer{
       line-height: 1.35em;
     }//p
   }//box3
-}
+}//footer
 
 
 }//medium
