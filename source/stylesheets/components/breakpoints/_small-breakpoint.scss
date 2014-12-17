@@ -71,7 +71,14 @@ header{
 
   main{
     @include span(24);
-    padding-bottom: 5em;
+    padding-bottom: 15em;
+
+    .promobox{
+      @include container(170%);
+      padding-bottom: 4em;
+      padding-left: 0em;
+      @include span(1 of 1);
+    }
 
     .col1, .col2 {
       @include span(1 of 1);
