@@ -81,13 +81,13 @@ header{
   @include container;
   padding-top: 5em;
   //padding-bottom: 4em;
-  padding-left: 4em;
+  padding-left: 0em;
 }
 
 
 main{
   @include span(18 at 6 omega);
-  padding-left: 0.45em;
+  padding-left: 0em;
   height: 0;
   //padding-bottom: 2em;
 
@@ -206,7 +206,7 @@ footer{
     padding-left:3em;
     text-align: left;
 
-    p{font-size: 1.2rem;}
+    p{font-size: 1rem;}
   }//box1
 
   .box2 {
@@ -214,6 +214,8 @@ footer{
     font-size: 0.9rem;
     padding-top:0.5em;
     text-align: center;
+
+    p{font-size: 0.8rem;}
   }//box2
 
   .box3 {
@@ -221,10 +223,11 @@ footer{
     font-size: 0.9rem;
     padding-right: 3em;
     text-align: right;
-    padding-top:1.5em;
+    padding-top:1.8em;
 
     p{
       line-height: 1.3em;
+      font-size: 0.7rem;
     }//p
   }//box3
 }//footer

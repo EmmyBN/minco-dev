@@ -350,7 +350,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.6em;
-    padding-bottom: 0em;
+    padding-bottom: 4em;
     margin-left: 1.75em; }
     /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
     .layout:after {
@@ -379,8 +379,9 @@ footer {
       float: right;
       padding-left: 0.09921%;
       padding-right: 0.09921%;
-      padding-left: 0.45em; }
-      /* line 83, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      padding-left: 0.45em;
+      height: 0; }
+      /* line 84, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout main .promobox {
         max-width: 90%;
         margin-left: auto;
@@ -399,7 +400,7 @@ footer {
           content: " ";
           display: block;
           clear: both; }
-      /* line 90, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 91, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout main .col1, .layout main .col2 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -415,10 +416,10 @@ footer {
         border-top: none;
         border-bottom: none;
         border-left: none; }
-        /* line 101, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+        /* line 102, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
         .layout main .col1 p, .layout main .col2 p {
           font-size: 1rem; }
-      /* line 104, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 105, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout main .col3 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -431,10 +432,10 @@ footer {
         vertical-align: center;
         color: #3e3e40;
         border: none; }
-        /* line 112, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+        /* line 113, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
         .layout main .col3 p {
           font-size: 1rem; }
-      /* line 115, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 116, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout main .slides-container {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -445,7 +446,7 @@ footer {
         padding-right: 2.38095%;
         margin-left: 0;
         margin-bottom: 2em; }
-    /* line 123, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+    /* line 124, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
     .layout aside {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -456,11 +457,11 @@ footer {
       padding-right: 0.09921%;
       border-right: solid 0.1em RGBA(0, 129, 198, 1);
       padding-bottom: 1em; }
-      /* line 128, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 129, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout aside ul.nav {
         display: inline-block;
         padding-left: 5em; }
-      /* line 136, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 137, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout aside a {
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
@@ -472,7 +473,7 @@ footer {
         padding: 5px;
         color: RGBA(0, 129, 198, 1);
         font-size: 1rem; }
-        /* line 145, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+        /* line 146, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
         .layout aside a .fa {
           top: 1px;
           color: RGBA(0, 129, 198, 1);
@@ -481,11 +482,11 @@ footer {
           line-height: 1px;
           padding-left: 1em;
           vertical-align: baseline; }
-        /* line 157, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+        /* line 158, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
         .layout aside a:hover {
           background: RGBA(0, 129, 198, 1);
           color: RGBA(255, 255, 255, 1); }
-          /* line 162, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+          /* line 163, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
           .layout aside a:hover i {
             top: 1px;
             color: RGBA(255, 255, 255, 1);
@@ -494,14 +495,14 @@ footer {
             padding-left: 1em;
             line-height: 1;
             vertical-align: baseline; }
-      /* line 176, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 177, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       .layout aside .list-group-item {
         position: relative;
         display: block;
         padding: 10px 15px;
         margin-bottom: -1px; }
 
-  /* line 190, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+  /* line 191, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -510,7 +511,7 @@ footer {
     float: left;
     padding-left: 0.09921%;
     padding-right: 0.09921%; }
-    /* line 193, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+    /* line 194, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
     footer .box1 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -523,10 +524,10 @@ footer {
       padding-left: 10em;
       text-align: left;
       padding-bottom: 1em; }
-      /* line 200, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 201, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       footer .box1 p {
         font-size: 1.2rem; }
-    /* line 203, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+    /* line 204, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
     footer .box2 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -540,7 +541,7 @@ footer {
       padding-left: 0.75em;
       text-align: center;
       padding-top: 0.6em; }
-    /* line 212, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+    /* line 213, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
     footer .box3 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -553,7 +554,7 @@ footer {
       padding-left: 0em;
       padding-right: 11em;
       text-align: right; }
-      /* line 220, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
+      /* line 221, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_large-breakpoint.scss */
       footer .box3 p {
         line-height: 1.45em; } }
 @media (min-width: 320px) {
@@ -785,6 +786,9 @@ footer {
   transition: all 1s ease-out;
   /* line 6, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
   header .h-container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 1200px;
     -moz-box-sizing: border-box;
@@ -794,70 +798,94 @@ footer {
     float: left;
     padding-left: 0.09921%;
     padding-right: 0.09921%; }
-    /* line 11, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+    /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+    header .h-container:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    /* line 12, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     header .h-container li {
       margin-left: 0; }
-      /* line 14, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      /* line 15, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       header .h-container li .globe img {
-        height: 30px;
-        width: 30px; }
-      /* line 19, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        margin-top: 5px;
+        height: 25px;
+        width: 25px; }
+      /* line 21, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      header .h-container li .globe li a:hover {
+        color: #00ff00; }
+      /* line 25, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       header .h-container li .magglass {
         color: RGBA(255, 255, 255, 1);
-        font-size: 1.7rem;
-        padding-left: 1em; }
-    /* line 27, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        font-size: 1.5rem;
+        padding-left: 0em; }
+      /* line 31, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      header .h-container li .magglass li a:hover {
+        color: #0000ff; }
+      /* line 35, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      header .h-container li .spacing {
+        color: white;
+        border: none;
+        padding-left: 1.5em; }
+      /* line 39, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      header .h-container li .animenu__nav li a {
+        padding: 0.5em;
+        padding-right: 1em;
+        padding-right: 1em;
+        font-size: 1rem; }
+      /* line 48, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      header .h-container li a img {
+        width: 80%; }
+    /* line 54, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     header .h-container .logo {
-      width: 70%;
-      max-width: 240px;
+      width: 40%;
+      max-width: 200px;
       float: left;
-      padding-left: 1em;
-      padding-top: 1em;
-      padding-right: 3em; }
+      padding-left: 2em; }
 
-  /* line 42, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+  /* line 73, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
   .layout {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3em;
-    padding-bottom: 0em;
-    padding-left: 12em; }
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-left: 3em; }
     /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
     .layout:after {
       content: " ";
       display: block;
       clear: both; }
-    /* line 49, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+    /* line 80, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     .layout .content {
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
       padding-top: 5em;
-      padding-bottom: 4em;
-      padding-left: 4em; }
+      padding-left: 0em; }
       /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
       .layout .content:after {
         content: " ";
         display: block;
         clear: both; }
-    /* line 57, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+    /* line 88, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     .layout main {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      width: 85.41667%;
+      width: 75%;
       float: right;
       padding-left: 0.09921%;
       padding-right: 0.09921%;
-      padding-left: 0.45em; }
-      /* line 61, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      padding-left: 0em;
+      height: 0; }
+      /* line 94, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       .layout main .promobox {
-        max-width: 85%;
+        max-width: 170%;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 3em;
-        padding-left: 2.5em;
+        padding-bottom: 0em;
+        padding-left: 0em;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -870,7 +898,7 @@ footer {
           content: " ";
           display: block;
           clear: both; }
-      /* line 68, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      /* line 101, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       .layout main .col1, .layout main .col2 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -881,12 +909,15 @@ footer {
         padding-right: 0.39683%;
         text-align: center;
         vertical-align: center;
-        color: RGBA(0, 0, 0, 1);
-        border-right: solid 0.1em #000;
+        color: #3e3e40;
+        border-right: solid 0.1em #595a5c;
         border-top: none;
         border-bottom: none;
         border-left: none; }
-      /* line 80, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        /* line 112, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        .layout main .col1 p, .layout main .col2 p {
+          font-size: 0.8rem; }
+      /* line 115, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       .layout main .col3 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -897,9 +928,12 @@ footer {
         padding-right: 0.39683%;
         text-align: center;
         vertical-align: center;
-        color: RGBA(0, 0, 0, 1);
+        color: #3e3e40;
         border: none; }
-      /* line 89, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        /* line 123, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        .layout main .col3 p {
+          font-size: 0.8rem; }
+      /* line 126, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       .layout main .slides-container {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -910,17 +944,63 @@ footer {
         padding-right: 2.38095%;
         margin-left: 0;
         margin-bottom: 2em; }
-    /* line 97, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+    /* line 134, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     .layout aside {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      width: 14.58333%;
+      width: 20.83333%;
       float: left;
       padding-left: 0.09921%;
-      padding-right: 0.09921%; }
+      padding-right: 0.09921%;
+      border-right: solid 0.1em RGBA(0, 129, 198, 1);
+      padding-bottom: 0em; }
+      /* line 139, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      .layout aside ul.nav {
+        display: inline-block;
+        padding-left: 5em; }
+      /* line 147, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      .layout aside a {
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        padding-left: 5em;
+        display: block;
+        text-decoration: none;
+        padding: 0px;
+        color: RGBA(0, 129, 198, 1);
+        font-size: 0.8rem; }
+        /* line 156, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        .layout aside a .fa {
+          top: 1px;
+          color: RGBA(0, 129, 198, 1);
+          font-size: 0.7rem;
+          -webkit-font-smoothing: antialiased;
+          line-height: 1px;
+          padding-left: 1em;
+          vertical-align: baseline; }
+        /* line 168, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        .layout aside a:hover {
+          background: RGBA(0, 129, 198, 1);
+          color: RGBA(255, 255, 255, 1); }
+          /* line 173, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+          .layout aside a:hover i {
+            top: 1px;
+            color: RGBA(255, 255, 255, 1);
+            font-size: 0.7rem;
+            -webkit-font-smoothing: antialiased;
+            padding-left: 1em;
+            line-height: 1;
+            vertical-align: baseline; }
+      /* line 186, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      .layout aside .list-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px; }
 
-  /* line 106, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+  /* line 199, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -928,8 +1008,10 @@ footer {
     width: 100%;
     float: left;
     padding-left: 0.09921%;
-    padding-right: 0.09921%; }
-    /* line 109, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+    padding-right: 0.09921%;
+    padding: 0px;
+    height: auto; }
+    /* line 204, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     footer .box1 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -938,12 +1020,12 @@ footer {
       float: left;
       padding-left: 0.79365%;
       padding-right: 0.79365%;
-      padding-left: 10em;
+      padding-left: 3em;
       text-align: left; }
-      /* line 114, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      /* line 209, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       footer .box1 p {
-        font-size: 1.2rem; }
-    /* line 117, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+        font-size: 1rem; }
+    /* line 212, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     footer .box2 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -953,9 +1035,12 @@ footer {
       padding-left: 0.79365%;
       padding-right: 0.79365%;
       font-size: 0.9rem;
-      padding-left: 3em;
+      padding-top: 0.5em;
       text-align: center; }
-    /* line 124, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      /* line 218, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      footer .box2 p {
+        font-size: 0.8rem; }
+    /* line 221, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
     footer .box3 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -965,13 +1050,13 @@ footer {
       padding-left: 0.79365%;
       padding-right: 0.79365%;
       font-size: 0.9rem;
-      padding-left: 3em;
-      padding-right: 11em;
+      padding-right: 3em;
       text-align: right;
-      padding-top: 1.5em; }
-      /* line 132, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
+      padding-top: 1.8em; }
+      /* line 228, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_medium-breakpoint.scss */
       footer .box3 p {
-        line-height: 1.35em; } }
+        line-height: 1.3em;
+        font-size: 0.7rem; } }
 @media (min-width: 1024px) {
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -1039,8 +1124,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.5em;
-    padding-bottom: 0em;
-    padding-left: 9em; }
+    padding-bottom: 2em;
+    padding-left: 3em; }
     /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
     .layout:after {
       content: " ";
@@ -1067,8 +1152,9 @@ footer {
       float: right;
       padding-left: 0.09921%;
       padding-right: 0.09921%;
-      padding-left: 0.45em; }
-      /* line 89, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      padding-left: 0.45em;
+      height: 0; }
+      /* line 91, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       .layout main .promobox {
         max-width: 90%;
         margin-left: auto;
@@ -1087,7 +1173,7 @@ footer {
           content: " ";
           display: block;
           clear: both; }
-      /* line 96, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      /* line 98, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       .layout main .col1, .layout main .col2 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1103,10 +1189,10 @@ footer {
         border-top: none;
         border-bottom: none;
         border-left: none; }
-        /* line 107, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+        /* line 109, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
         .layout main .col1 p, .layout main .col2 p {
           font-size: 1rem; }
-      /* line 110, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      /* line 112, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       .layout main .col3 {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1119,10 +1205,10 @@ footer {
         vertical-align: center;
         color: #3e3e40;
         border: none; }
-        /* line 118, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+        /* line 120, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
         .layout main .col3 p {
           font-size: 1rem; }
-      /* line 121, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      /* line 123, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       .layout main .slides-container {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1133,7 +1219,7 @@ footer {
         padding-right: 2.38095%;
         margin-left: 0;
         margin-bottom: 2em; }
-    /* line 129, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+    /* line 131, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
     .layout aside {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -1145,7 +1231,7 @@ footer {
       border-right: solid 0.1em RGBA(0, 129, 198, 1);
       padding-bottom: 0em; }
 
-  /* line 140, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+  /* line 142, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
   footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1153,8 +1239,10 @@ footer {
     width: 100%;
     float: left;
     padding-left: 0.09921%;
-    padding-right: 0.09921%; }
-    /* line 143, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+    padding-right: 0.09921%;
+    padding: 0px;
+    height: auto; }
+    /* line 147, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
     footer .box1 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -1165,10 +1253,10 @@ footer {
       padding-right: 0.79365%;
       padding-left: 3em;
       text-align: left; }
-      /* line 148, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      /* line 152, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       footer .box1 p {
         font-size: 1.2rem; }
-    /* line 151, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+    /* line 155, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
     footer .box2 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -1180,7 +1268,7 @@ footer {
       font-size: 0.9rem;
       padding-top: 0.5em;
       text-align: center; }
-    /* line 158, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+    /* line 162, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
     footer .box3 {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -1193,9 +1281,9 @@ footer {
       padding-right: 3em;
       text-align: right;
       padding-top: 1.5em; }
-      /* line 165, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
+      /* line 169, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/breakpoints/_ipad-breakpoint.scss */
       footer .box3 p {
-        line-height: 1.35em; } }
+        line-height: 1.3em; } }
 /* line 7, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/components/_responsive-menu.scss */
 *, *:after, *:before {
   box-sizing: border-box; }
@@ -1364,6 +1452,6 @@ footer {
   .animenu__nav--open .animenu__nav__child {
     display: block; }
 
-/* line 37, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/all.css.scss */
+/* line 36, C:/Users/EmyBN/Desktop/minco2/source/stylesheets/all.css.scss */
 main {
   height: 500px; }

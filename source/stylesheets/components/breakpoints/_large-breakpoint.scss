@@ -63,7 +63,7 @@
   .layout {
     @include container(90%);
     padding-top: 2.6em;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
     //padding-left: 10em;
     margin-left: 1.75em;
 
@@ -82,7 +82,7 @@
     height: 0;
 
     .promobox{
-      @include container(90%);
+      @include container(85%);
       padding-bottom: 1em;
       padding-left: 2.5em;
       @include span(1 of 1);
