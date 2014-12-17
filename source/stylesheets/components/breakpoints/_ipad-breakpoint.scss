@@ -4,6 +4,7 @@
 
 header{
   .h-container{
+    @include container(80%);
     width: 100%;
     max-width: 1200px;
     @include span(24);
