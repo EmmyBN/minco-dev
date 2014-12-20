@@ -1,0 +1,27 @@
+.logo {
+  width: 70%;
+  max-width: 300px;
+  float: left;
+  padding-left: 1em;
+  padding-top: 0.5em;
+
+  @include respond-to($medium) {
+    width: 40%;
+    max-width: 200px;
+    padding-left: 2em;
+  }
+
+  @include respond-to($ipad) {
+    width: 40%;
+    max-width: 313px;
+    padding-left: 3.3em;
+  }
+
+  @include respond-to($large) {
+    width: 70%;
+    max-width: 300px;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-right: 5em;
+  }
+}
