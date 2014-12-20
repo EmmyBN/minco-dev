@@ -76,85 +76,8 @@ main {
         }//i
     }//a:hover
 
-  }//a
-
-
-}//cols
-
-
-
-
-
-//aside ------------------------------
-
-aside{
-  margin-top: .2em;
-  @include span(2 at 0);
-  background: $minco-white;
-  float: left;
-  padding-left: 5em;
-  //border-right: solid 0.1em $minco-blue;
-  //padding-bottom:0.85em;
-
-/*  .sidebar-container{
-    border-right: solid 0.1em $minco-blue;
-  }*/
-
-  ul.nav{
-    display: inline-block;
-    padding-left: 5em;
-  }//ul
-
-  li{
-  }//li
-
-  a{
-    @include single-transition(all, .5s, ease-out);
-    padding-left: 5em;
-    display: block;
-    text-decoration: none;
-    padding: 5px;
-    color: $minco-blue;
-    //font-size: 2rem;
-
-    .fa{
-      top: 1px;
-      //float: right;
-      color: $minco-blue;
-      font-size: 0.7rem;
-      -webkit-font-smoothing: antialiased;
-      line-height: 1px;
-      padding-left: 1em;
-      vertical-align: baseline;
-    }//fa
-
-
-    &:hover{
-      background: $minco-blue;
-      color: $minco-white;
-
-
-        i{
-          top: 1px;
-          //float: right;
-          color: $minco-white;
-          font-size: 0.7rem;
-          -webkit-font-smoothing: antialiased;
-          padding-left: 1em;
-          line-height: 1;
-          vertical-align: baseline;
-        }//i
-    }//a:hover
-
-  }//a
-
-  .list-group-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-  }//list-group-item
-}//aside
+  }
+}
 
 //header ---------------------------
 header{

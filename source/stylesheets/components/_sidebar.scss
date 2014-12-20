@@ -1,0 +1,49 @@
+.sidebar {
+  @include span(22);
+  @include push(1);
+  background: $minco-white;
+  margin-top: .2em;
+}
+
+.sidebar__list {
+  display: inline-block;
+  // padding-left: 1em;
+}
+
+.sidebar__link {
+  @include single-transition(all, .5s, ease-out);
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  padding-left: 5em;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: $minco-blue;
+
+  .fa {
+    top: 1px;
+    color: $minco-blue;
+    font-size: 0.7rem;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1px;
+    padding-left: 1em;
+    vertical-align: baseline;
+  }
+
+  &:hover{
+    background: $minco-blue;
+    color: $minco-white;
+
+    i {
+      top: 1px;
+      color: $minco-white;
+      font-size: 0.7rem;
+      -webkit-font-smoothing: antialiased;
+      padding-left: 1em;
+      line-height: 1;
+      vertical-align: baseline;
+    }
+  }
+}
