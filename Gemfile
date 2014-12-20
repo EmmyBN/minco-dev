@@ -20,3 +20,6 @@ gem "compass"
 gem "susy"
 
 gem "breakpoint"
+
+# Helps to deploy to github pages
+gem 'middleman-deploy', '~> 1.0'
