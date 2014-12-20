@@ -7,20 +7,19 @@
 
 @import 'settings';
 
-@import 'base';
-
-@import 'layout';
-
 @import 'lib/mixins';
+@import 'lib/grid';
 @import 'lib/placeholders';
 @import 'lib/colours';
 @import 'lib/functions';
 
+@import 'base/base';
+
+@import 'layouts/constrained';
+@import 'layouts/promobox';
+@import 'layouts/header';
 @import 'layouts/footer';
 
-// @import 'components/header';
-//@import 'components/nav';
-//@import 'components/sidebar';
 @import 'components/slideshow';
 @import 'components/footer';
 @import 'components/breakpoints/large-breakpoint';
@@ -29,6 +28,4 @@
 @import 'components/breakpoints/ipad-breakpoint';
 @import 'components/logo';
 @import 'components/sidebar';
-
-
 @import 'components/responsive-menu';
