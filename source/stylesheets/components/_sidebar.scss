@@ -3,11 +3,21 @@
   @include push(1);
   background: $minco-white;
   margin-top: .2em;
+
+  @include respond-to($medium) {
+    @include span(3);
+    @include push(0);
+    padding-bottom:0em;
+  }
+
+  @include respond-to($large) {
+    @include span(3);
+    @include push(0);
+  }
 }
 
 .sidebar__list {
   display: inline-block;
-  // padding-left: 1em;
 }
 
 .sidebar__link {
@@ -32,7 +42,7 @@
     vertical-align: baseline;
   }
 
-  &:hover{
+  &:hover {
     background: $minco-blue;
     color: $minco-white;
 
@@ -45,5 +55,23 @@
       line-height: 1;
       vertical-align: baseline;
     }
+  }
+
+  @include respond-to($medium) {
+    @include single-transition(all, .5s, ease-out);
+    padding-left: 5em;
+    display: block;
+    text-decoration: none;
+    padding: 0px;
+    color: $minco-blue;
+    font-size: 0.8rem;
+  }
+
+  @include respond-to($ipad) {
+    padding-bottom: 0em;
+  }
+
+  @include respond-to($large) {
+    font-size: 1rem;
   }
 }

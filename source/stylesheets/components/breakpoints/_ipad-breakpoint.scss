@@ -115,13 +115,7 @@ main{
     margin-bottom: 2em;
   }//.slides-container
 
-}//main
-
-aside{
-  @include span(3.5 at 0);
-  border-right: solid 0.1em $minco-blue;
-  padding-bottom:0em;
-}//aside
+}
 
 
 }//layout

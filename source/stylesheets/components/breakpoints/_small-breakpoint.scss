@@ -1,69 +1,46 @@
 @include breakpoint($small) {
   @include layout(24);
 
-//header elements ---------------------------
+  header{
+    .h-container{
+      @include span(24);
+    }
 
-header{
-.h-container{
-  @include span(24);
+    .h-container3 {
+      @include span(4 omega);
+      vertical-align: middle;
 
-  ul {
+      .fa-search{
+        float: right;
+        color: $minco-white;
+        font-size:1.3rem;
+        padding-right: 0em;
+        padding-left: 0.3em
+      }
 
-    li{
+      .fa-globe{
+        float: right;
+        color: $minco-white;
+        font-size:1.3rem;
+        padding-right: 0em;
+      }
+    }
 
-      a{
-  }//a
-  }//li
-}//ul
+    .h-nav-container{
+      @include span(10 at 12);
+      float: right;
+    }
+  }
 
-}
+  .layout {
+    @include container;
+    padding-top: 0em;
+    padding-bottom: 2em;
 
+  }
 
-
-.h-container3 {
-  @include span(4 omega);
-  vertical-align: middle;
-
-  .fa-search{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-    padding-left: 0.3em
-  }//.fa-search
-
-  .fa-globe{
-    float: right;
-    color: $minco-white;
-    font-size:1.3rem;
-    //padding-top: 1.3em;
-    padding-right: 0em;
-  }//.fa-globe
-}
-
-.h-nav-container{
-  @include span(10 at 12);
-  float: right;
-
-}//h-nav-container
-
-
-
-}//header
-
-//layout ---------------------
-
-.layout {
-  @include container;
-  padding-top: 0em;
-  padding-bottom: 2em;
-
-}//layout
-
-  main{
+  main {
     @include span(24);
-    padding-bottom: 15em;
 
     .promobox{
       @include container(170%);
@@ -82,60 +59,23 @@ header{
       p{
         line-height: 1.2em;
         text-align: center;
-      }//p
-    }//.col1 & .col2
+      }
+    }
 
-     .col3 {
-       @include span(1 of 1);
-       border: solid 0.1em #ccc;
-       padding: 1em;
-
-
-       p{
-         line-height: 1.2em;
-         text-align: center;
-       }//p
-     }//col3
-
-     .slides-container{
-       @include span(1 of 1);
-       margin-bottom: 2em;
-     }
-
- }//main
-
-
-
-// footer -------------
-  footer{
-    @include span(24);
-    .box1 {
+    .col3 {
       @include span(1 of 1);
-      text-align: center;
-      padding: 0px;
-
-      p{font-size: 1.2rem;}
-    }//.box1
-
-    .box2 {
-      @include span(1 of 1);
-      text-align: center;
-      padding-bottom: 2em;
+      border: solid 0.1em #ccc;
+      padding: 1em;
 
       p{
-        font-size: 0.9rem;
-      }//p
-    }//.box2
+        line-height: 1.2em;
+        text-align: center;
+      }
+    }
 
-    .box3 {
+    .slides-container{
       @include span(1 of 1);
-      text-align: center;
-
-      p{
-        font-size: 0.9rem;
-        line-height: 1em;
-      }//p
-    }//.box3
-  }//footer
-
-}//small
+      margin-bottom: 2em;
+    }
+  }
+}
