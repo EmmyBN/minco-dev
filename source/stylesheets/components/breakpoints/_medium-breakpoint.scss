@@ -12,12 +12,6 @@
       li{
         margin-left:0;
 
-        .globe img{
-          margin-top: 5px;
-          height: 25px;
-          width: 25px;
-        }
-
         .globe li a:hover{
           color: #00ff00;
         }
@@ -54,9 +48,9 @@
 
   .layout {
     @include container(100%);
-    padding-top: 1.5em;
+    // padding-top: 1.5em;
     padding-bottom: 0em;
-    padding-left: 1.5em;
+    // padding-left: 1.5em;
 
     .content {
       @include container;

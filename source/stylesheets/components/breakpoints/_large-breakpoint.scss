@@ -11,12 +11,6 @@
 
       li{
         margin-left:0;
-
-        .globe img{
-          height: 30px;
-          width: 30px;
-        }
-
         .magglass{
           //float: right;
           color: $minco-white;
@@ -51,9 +45,9 @@
   //layout ---------------
 
   .layout {
-    @include container(80%);
-    padding-top: 2.6em;
-    padding-bottom: 10em;
+    // @include container(80%);
+    // padding-top: 2.6em;
+    // padding-bottom: 10em;
     //padding-left: 10em;
     margin-left: 1.75em;
 
@@ -123,8 +117,10 @@
       text-align: left;
       padding-bottom:1em;
 
-      p{font-size: 1.2rem;}
-    }//box1
+      p{
+        font-size: 1.2rem;
+      }
+    }
 
     .box2 {
       @include span(1 of 3);
@@ -133,7 +129,7 @@
       padding-left:0.75em;
       text-align: center;
       padding-top:0.6em;
-    }//box2
+    }
 
     .box3 {
       @include span(1 of 3);
@@ -142,10 +138,9 @@
       padding-right: 11em;
       text-align: right;
 
-
       p{
         line-height: 1.45em;
-      }//p
-    }//box3
+      }
+    }
   }
-}//large
+}

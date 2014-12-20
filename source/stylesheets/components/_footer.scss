@@ -1,10 +1,9 @@
-//footer ---------------------------
 footer{
   color:$minco-white;
   background: $minco-black;
   margin-top: 1em;
-  padding-top: 0em;
-  padding-bottom: 0em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-top: $border-thick-footer;
 
 
@@ -20,15 +19,12 @@ footer{
       i{
         color: $minco-blue;
       }
-
     }
+  }
 
-  }//a
-
-i{
-  color: $minco-white;
-  font-size:4rem;
-  padding-right: 0.5em;
+  i{
+    color: $minco-white;
+    font-size:4rem;
+    padding-right: 0.5em;
+  }
 }
-
-}//footer

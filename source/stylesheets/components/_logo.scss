@@ -18,9 +18,8 @@
   }
 
   @include respond-to($large) {
-    width: 70%;
-    max-width: 300px;
-    padding-left: 3em;
+    @include span(5);
+    padding-left: 0;
     padding-top: 1em;
     padding-right: 5em;
   }
