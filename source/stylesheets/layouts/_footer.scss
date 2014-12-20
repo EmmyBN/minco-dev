@@ -1,0 +1,30 @@
+footer{
+  @include span(24);
+  .box1 {
+    @include span(1 of 1);
+    text-align: center;
+    padding: 0px;
+
+    p{font-size: 1.2rem;}
+  }
+
+  .box2 {
+    @include span(1 of 1);
+    text-align: center;
+    padding-bottom: 2em;
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  .box3 {
+    @include span(1 of 1);
+    text-align: center;
+
+    p{
+      font-size: 0.9rem;
+      line-height: 1em;
+    }
+  }
+}

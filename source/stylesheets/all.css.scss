@@ -16,7 +16,9 @@
 @import 'lib/colours';
 @import 'lib/functions';
 
-//@import 'components/header';
+@import 'layouts/footer';
+
+// @import 'components/header';
 //@import 'components/nav';
 //@import 'components/sidebar';
 @import 'components/slideshow';
@@ -30,11 +32,3 @@
 
 
 @import 'components/responsive-menu';
-
-
-
-////////// TEMPORARY HACKS
-
-main {
-  height: 500px;
-}
