@@ -2,6 +2,11 @@
 # Compass
 ###
 
+# Susy grids in Compass
+# First: gem install susy --pre
+require 'susy'
+require 'breakpoint'
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -52,6 +57,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+output_style = :nested
 
 # Build-specific configuration
 configure :build do

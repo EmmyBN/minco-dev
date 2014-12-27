@@ -1,8 +1,8 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.7"
+gem "middleman", "~>3.3.6"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
@@ -12,3 +12,14 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+gem "sass"
+
+gem "compass"
+
+gem "susy"
+
+gem "breakpoint"
+
+# Helps to deploy to github pages
+gem 'middleman-deploy', '~> 1.0'
