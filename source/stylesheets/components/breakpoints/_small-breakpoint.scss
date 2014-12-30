@@ -1,7 +1,7 @@
 @include breakpoint($small) {
   @include layout(24);
 
-  header{
+header{
     .h-container{
       @include span(24);
     }

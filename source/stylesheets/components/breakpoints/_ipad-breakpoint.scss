@@ -1,8 +1,6 @@
 @include breakpoint($ipad) {
   @include single-transition(all, 1s, ease-out);
   @include layout(24);
-
-
   //layout ---------------
 
   .layout {
