@@ -1,4 +1,4 @@
-header {
+header{
   overflow: hidden;
   border-bottom: $border-thick;
 
@@ -64,11 +64,15 @@ header {
     }//.fa-search
 
     .spacing{
-      color: white; border: none; padding-left: 6em;
+      color: white; border-right: none; padding-left: 6em;
+    }//spacing for language selector
+
+    .globe{
+      border-right: none;
     }//spacing for language selector
 
     .animenu__nav li a{
-      padding: 2em;
+      padding: 1.5em;
       margin-bottom: 0em;
       font-size: 1rem;
     }//.animenu__nav li a
