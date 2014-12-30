@@ -64,33 +64,5 @@
       }
     }
 
-    footer{
-      @include span(24);
-      height: auto;
 
-      .box1 {
-        @include span(1 of 3);
-        text-align: left;
-
-        p{font-size: 1.2rem;}
-      }
-
-      .box2 {
-        @include span(1 of 3);
-        font-size: 0.9rem;
-        padding-top:0.5em;
-        text-align: center;
-      }
-
-      .box3 {
-        @include span(1 of 3);
-        font-size: 0.9rem;
-        padding-right: 3em;
-        text-align: right;
-
-        p{
-          line-height: 1.3em;
-        }
-      }
-    }
   }

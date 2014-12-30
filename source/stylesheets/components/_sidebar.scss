@@ -7,12 +7,19 @@
   @include respond-to($medium) {
     @include span(3);
     @include push(0);
+    @include single-transition(all, .5s, ease-out);
+    // padding-left: 5em;
+    display: block;
+    text-decoration: none;
+    color: $minco-blue;
+    font-size: 0.8rem;
     padding-bottom:0em;
   }
 
   @include respond-to($large) {
     @include span(3);
     @include push(0);
+    font-size: 1rem;
   }
 }
 
@@ -33,7 +40,6 @@
   padding: 5px;
   color: $minco-blue;
 
-a{
   .fa-chevron-right {
     display: none;
     top: 1px;
@@ -58,19 +64,5 @@ a{
       line-height: 1;
       vertical-align: baseline;
     }
-  }
-}
-
-  @include respond-to($medium) {
-    @include single-transition(all, .5s, ease-out);
-    // padding-left: 5em;
-    display: block;
-    text-decoration: none;
-    color: $minco-blue;
-    font-size: 0.8rem;
-  }
-
-  @include respond-to($large) {
-    font-size: 1rem;
   }
 }

@@ -27,4 +27,111 @@ footer{
     font-size:4rem;
     padding-right: 0.5em;
   }
-}
+
+  @include respond-to($medium) {
+      @include span(24);
+      padding: 0px;
+      height: auto;
+
+      .box1 {
+        @include span(1 of 3);
+        padding-left:3em;
+        text-align: left;
+
+        p {
+          font-size: 1rem;
+        }
+      }//box1
+
+      .box2 {
+        @include span(1 of 3);
+        font-size: 0.9rem;
+        padding-top:0.5em;
+        text-align: center;
+
+        p {
+          font-size: 0.8rem;
+        }
+      }//box2
+
+      .box3 {
+        @include span(1 of 3);
+        font-size: 0.9rem;
+        padding-right: 3em;
+        text-align: right;
+        padding-top:1.8em;
+
+        p {
+          line-height: 1.3em;
+          font-size: 0.7rem;
+        }
+      }//box3
+  }//medium breakpoint
+
+  @include respond-to($ipad) {
+    @include span(24);
+    height: auto;
+
+    .box1 {
+      @include span(1 of 3);
+      text-align: left;
+
+      p{font-size: 1.2rem;}
+    }//box1
+
+    .box2 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-top:0.5em;
+      text-align: center;
+    }//box2
+
+    .box3 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-right: 3em;
+      text-align: right;
+
+      p{
+        line-height: 1.3em;
+      }
+    }//box 3
+  }//ipad breakpoint
+
+  @include respond-to($large) {
+    @include span(24);
+
+    .box1 {
+      @include span(1 of 3);
+      font-size: 1rem;
+      padding-left:10em;
+      text-align: left;
+      padding-bottom:1em;
+
+      p{
+        font-size: 1.2rem;
+      }
+    }//box1
+
+    .box2 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-top: 0.3em;
+      padding-left:0.75em;
+      text-align: center;
+      padding-top:0.6em;
+    }//box2
+
+    .box3 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-left:0em;
+      padding-right: 11em;
+      text-align: right;
+
+      p{
+        line-height: 1.45em;
+      }
+    }//box3
+  }//large breakpoint
+}//footer

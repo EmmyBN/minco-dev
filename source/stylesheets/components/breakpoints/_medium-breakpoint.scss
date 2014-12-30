@@ -60,45 +60,5 @@
         margin-bottom: 2em;
       }
     }
-
-    footer{
-      @include span(24);
-      padding: 0px;
-      height: auto;
-
-      .box1 {
-        @include span(1 of 3);
-        padding-left:3em;
-        text-align: left;
-
-        p {
-          font-size: 1rem;
-        }
-      }
-
-      .box2 {
-        @include span(1 of 3);
-        font-size: 0.9rem;
-        padding-top:0.5em;
-        text-align: center;
-
-        p {
-          font-size: 0.8rem;
-        }
-      }
-
-      .box3 {
-        @include span(1 of 3);
-        font-size: 0.9rem;
-        padding-right: 3em;
-        text-align: right;
-        padding-top:1.8em;
-
-        p {
-          line-height: 1.3em;
-          font-size: 0.7rem;
-        }
-      }
-    }
   }
 }

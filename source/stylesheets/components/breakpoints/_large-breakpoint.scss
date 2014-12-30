@@ -68,7 +68,7 @@
 
   }
 
-  footer{
+  /*footer{
     @include span(24);
 
     .box1 {
@@ -81,7 +81,7 @@
       p{
         font-size: 1.2rem;
       }
-    }
+    }//box1
 
     .box2 {
       @include span(1 of 3);
@@ -90,7 +90,7 @@
       padding-left:0.75em;
       text-align: center;
       padding-top:0.6em;
-    }
+    }//box2
 
     .box3 {
       @include span(1 of 3);
@@ -102,6 +102,6 @@
       p{
         line-height: 1.45em;
       }
-    }
-  }
+    }//box3
+  }//footer*/
 }
