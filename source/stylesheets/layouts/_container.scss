@@ -9,12 +9,13 @@
     @include single-transition(all, 1s, ease-out);
     @include container(100%);
     padding-bottom: 0em;
+    padding-top: 2em;
   }
 
   @include respond-to($ipad) {
     @include single-transition(all, 1s, ease-out);
     // @include container(80%);
-    // padding-top: 1.5em;
+    padding-top: 2em;
     // padding-bottom: 2em;
     // padding-left: 3em;
   }
@@ -26,5 +27,6 @@
     // padding-bottom: 10em;
     //padding-left: 10em;
     margin-left: 1.75em;
+    padding-top:3em;
   }
 }//layout
