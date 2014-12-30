@@ -1,0 +1,30 @@
+.layout {
+  @include single-transition(all, 1s, ease-out);
+  @include container;
+  padding-top: 0em;
+  padding-bottom: 2em;
+
+
+  @include respond-to($medium) {
+    @include single-transition(all, 1s, ease-out);
+    @include container(100%);
+    padding-bottom: 0em;
+  }
+
+  @include respond-to($ipad) {
+    @include single-transition(all, 1s, ease-out);
+    // @include container(80%);
+    // padding-top: 1.5em;
+    // padding-bottom: 2em;
+    // padding-left: 3em;
+  }
+
+  @include respond-to($large) {
+    @include single-transition(all, 1s, ease-out);
+    // @include container(80%);
+    // padding-top: 2.6em;
+    // padding-bottom: 10em;
+    //padding-left: 10em;
+    margin-left: 1.75em;
+  }
+}//layout
