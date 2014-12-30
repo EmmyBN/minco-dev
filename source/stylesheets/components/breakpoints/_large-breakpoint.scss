@@ -2,40 +2,6 @@
   @include single-transition(all, 1s, ease-out);
   @include layout(24);
 
-  header{
-    .h-container{
-      width: 100%;
-      max-width: 1200px;
-      margin-left:2em;
-      @include span(24);
-
-      li{
-        margin-left:0;
-        .magglass{
-          //float: right;
-          color: $minco-white;
-          font-size:1.7rem;
-          padding-left: 0em;
-        }//.fa-search
-
-        .spacing{
-          color: white; border: none; padding-left: 6em;
-        }//spacing for language selector
-      }//li
-
-
-
-      .animenu__nav li a{
-        padding: 2em;
-        margin-bottom: 0em;
-        font-size: 1rem;
-      }//.animenu__nav li a
-
-
-
-    }//h-container
-
-  }//header
 
   //layout ---------------
 

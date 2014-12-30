@@ -5,32 +5,7 @@
     .h-container{
       @include span(24);
     }
-
-    .h-container3 {
-      @include span(4 omega);
-      vertical-align: middle;
-
-      .fa-search{
-        float: right;
-        color: $minco-white;
-        font-size:1.3rem;
-        padding-right: 0em;
-        padding-left: 0.3em
-      }
-
-      .fa-globe{
-        float: right;
-        color: $minco-white;
-        font-size:1.3rem;
-        padding-right: 0em;
-      }
-    }
-
-    .h-nav-container{
-      @include span(10 at 12);
-      float: right;
-    }
-  }
+  }//can't delete this because otherwise the responsive menu disappears :(
 
   .layout {
     @include container;

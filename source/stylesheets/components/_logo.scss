@@ -5,15 +5,15 @@
   padding-left: 1em;
   padding-top: 0.5em;
 
-  @include respond-to($medium) {
-    width: 40%;
-    max-width: 200px;
+  //@include respond-to($medium)
+
+  @include breakpoint($medium) {
+    width: 30%;
     padding-left: 2em;
   }
 
   @include respond-to($ipad) {
     width: 40%;
-    max-width: 313px;
     padding-left: 3.3em;
   }
 

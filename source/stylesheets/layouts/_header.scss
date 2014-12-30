@@ -14,8 +14,92 @@ header{
   background-image: -webkit-linear-gradient(bottom, #595658 0%, #000000 100%);
   background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
   background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
+
+  @include respond-to($small) {
+    .h-container{
+      @include span(24);
+    }
+
+    .animenu__nav li a{
+      padding: 1em;
+      font-size: 1rem;
+    }
+  }//small
+
+  @include respond-to($medium) {
+    @include single-transition(all, 1s, ease-out);
+    @include layout(24);
+
+    .h-container{
+      @include container(80%);
+      width: 100%;
+      max-width: 1200px;
+      @include span(24);
+    }
+
+    .magglass{
+      color: $minco-white;
+      font-size:1.7rem;
+      padding-left: 0em;
+    }//.fa-search
+
+    .spacing{
+      color: white; border: none; padding-left: 1em;
+    }
+
+    .animenu__nav li a{
+      padding: 1em;
+      font-size: 1rem;
+    }
+  }//medium
+
+    @include respond-to($large) {
+    @include single-transition(all, 1s, ease-out);
+    @include layout(24);
+    .h-container{
+      width: 100%;
+      max-width: 1200px;
+      margin-left:2em;
+      @include span(24);
+    }
+
+    .magglass{
+      color: $minco-white;
+      font-size:1.7rem;
+      padding-left: 0em;
+    }//.fa-search
+
+    .spacing{
+      color: white; border-right: none; padding-left: 6em;
+    }//spacing for language selector
+
+    .globe{
+      border-right: none;
+    }//spacing for language selector
+
+    .animenu__nav li a{
+      padding: 1.5em;
+      margin-bottom: 0em;
+      font-size: 1rem;
+    }//.animenu__nav li a
+  }//large
+
+}//header
+
+/*.menu {
+  float: right;
+}*/
+
+.globe li a:hover{
+  color: #00ff00;
 }
 
-.menu {
-  float: right;
+.magglass{
+  color: $minco-white;
+  font-size:1.5rem;
+  padding-left: 0em;
+}
+
+.magglass li a:hover{
+  color: #0000ff;
 }
