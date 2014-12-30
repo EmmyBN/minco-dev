@@ -33,7 +33,8 @@
   padding: 5px;
   color: $minco-blue;
 
-  .fa {
+a{
+  .fa-chevron-right {
     display: none;
     top: 1px;
     color: $minco-blue;
@@ -58,6 +59,7 @@
       vertical-align: baseline;
     }
   }
+}
 
   @include respond-to($medium) {
     @include single-transition(all, .5s, ease-out);
