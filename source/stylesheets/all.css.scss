@@ -20,12 +20,12 @@
 @import 'layouts/header';
 @import 'layouts/footer';
 
+@import 'components/responsive-menu';
+@import 'components/logo';
 @import 'components/slideshow';
 @import 'components/footer';
 @import 'components/breakpoints/large-breakpoint';
 @import 'components/breakpoints/small-breakpoint';
 @import 'components/breakpoints/medium-breakpoint';
 @import 'components/breakpoints/ipad-breakpoint';
-@import 'components/logo';
 @import 'components/sidebar';
-@import 'components/responsive-menu';
