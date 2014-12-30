@@ -19,52 +19,5 @@
       padding-bottom: 2em;
       padding-left: 4em;
     }
-
-
-    main{
-      @include span(20.5 at 4.5);
-      padding-left: 0.45em;
-      //height: 0;
-
-      .promobox{
-        @include container(80%);
-        padding-bottom: 1em;
-        padding-left: 2.5em;
-        @include span(1 of 1);
-      }
-
-      .col1, .col2 {
-        @include span(2 of 6);
-        //padding-left:1em;
-        text-align: center;
-        vertical-align: center;
-        color: #3e3e40;
-        border-right: solid 0.1em #595a5c;
-        border-top: none;
-        border-bottom: none;
-        border-left: none;
-
-        p{font-size: 1rem;}
-      }//col1, col2
-
-      .col3 {
-        @include span(2 of 6);
-        //padding-left:1em;
-        text-align: center;
-        vertical-align: center;
-        color: #3e3e40;
-        border: none;
-
-        p{font-size: 1rem;}
-      }//col3
-
-      .slides-container{
-        @include span(1 of 1);
-        margin-left: 0;
-        margin-bottom: 2em;
-      }
-
-    }
-
   }
 }

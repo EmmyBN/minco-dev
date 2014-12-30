@@ -13,44 +13,4 @@ header{
     padding-bottom: 2em;
 
   }
-
-  main {
-    @include span(24);
-
-    .promobox{
-      @include container(170%);
-      padding-bottom: 4em;
-      padding-left: 0em;
-      @include span(1 of 1);
-    }
-
-    .col1, .col2 {
-      @include span(1 of 1);
-      border-left: solid 0.1em #ccc;
-      border-top: solid 0.1em #ccc;
-      border-right: solid 0.1em #ccc;
-      padding: 1em;
-
-      p{
-        line-height: 1.2em;
-        text-align: center;
-      }
-    }
-
-    .col3 {
-      @include span(1 of 1);
-      border: solid 0.1em #ccc;
-      padding: 1em;
-
-      p{
-        line-height: 1.2em;
-        text-align: center;
-      }
-    }
-
-    .slides-container{
-      @include span(1 of 1);
-      margin-bottom: 2em;
-    }
-  }
 }

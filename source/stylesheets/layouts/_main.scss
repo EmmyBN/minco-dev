@@ -1,0 +1,140 @@
+main{
+  @include span(24);
+
+  .promobox{
+    @include container(170%);
+    padding-bottom: 4em;
+    padding-left: 0em;
+    @include span(1 of 1);
+  }
+
+  .col1, .col2 {
+    @include span(1 of 1);
+    border-left: solid 0.1em #ccc;
+    border-top: solid 0.1em #ccc;
+    border-right: solid 0.1em #ccc;
+    padding: 1em;
+
+    p{
+      line-height: 1.2em;
+      text-align: center;
+    }
+  }
+
+  .col3 {
+    @include span(1 of 1);
+    border: solid 0.1em #ccc;
+    padding: 1em;
+
+    p{
+      line-height: 1.2em;
+      text-align: center;
+    }
+  }
+
+  .slides-container{
+    @include span(1 of 1);
+    margin-bottom: 2em;
+  }
+
+
+@include respond-to($medium) {
+  @include span(20.2 at 3.9 omega);
+  padding-left: 0em;
+
+  .promobox{
+    @include span(1 of 1);
+    @include container(170%);
+    padding-bottom: 0em;
+    padding-left: 0em;
+  }
+
+  .col1,
+  .col2 {
+    @include span(2 of 6);
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em #595a5c;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .col3 {
+    @include span(2 of 6);
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border: none;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .slides-container{
+    @include span(1 of 1);
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+}//medium breakpoint
+
+@include respond-to($ipad) {
+
+
+}//ipad breakpoint
+
+
+@include respond-to($large) {
+  @include span(20.5 at 4.5);
+  padding-left: 0.45em;
+  //height: 0;
+
+  .promobox{
+    @include container(80%);
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    @include span(1 of 1);
+  }
+
+  .col1, .col2 {
+    @include span(2 of 6);
+    //padding-left:1em;
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em #595a5c;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+
+    p{font-size: 1rem;}
+  }//col1, col2
+
+  .col3 {
+    @include span(2 of 6);
+    //padding-left:1em;
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border: none;
+
+    p{font-size: 1rem;}
+  }//col3
+
+  .slides-container{
+    @include span(1 of 1);
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+}//ipad breakpoint
+
+
+}//main

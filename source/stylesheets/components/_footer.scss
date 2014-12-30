@@ -6,6 +6,38 @@ footer{
   padding-bottom: 1em;
   border-top: $border-thick-footer;
 
+  .box1 {
+    @include span(1 of 1);
+    text-align: center;
+    //padding-top: 1.1em;
+
+    p {
+      font-size: 1rem;
+    }
+  }//box1
+
+  .box2 {
+    @include span(1 of 1);
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top:1.3em;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }//box2
+
+  .box3 {
+    @include span(1 of 1);
+    font-size: 0.9rem;
+    text-align: center;
+    //padding-top:1em;
+
+    p {
+      line-height: 1.3em;
+      font-size: 0.7rem;
+    }
+  }//box3
 
   a{
     @include single-transition(all, .5s, ease-out);
@@ -18,9 +50,9 @@ footer{
       color: $minco-blue;
       i{
         color: $minco-blue;
-      }
-    }
-  }
+      }//i
+    }//link states
+  }//a
 
   i{
     color: $minco-white;
@@ -37,6 +69,8 @@ footer{
         @include span(1 of 3);
         padding-left:3em;
         text-align: left;
+        padding-top: 1.1em;
+
 
         p {
           font-size: 1rem;
@@ -48,6 +82,7 @@ footer{
         font-size: 0.9rem;
         padding-top:0.5em;
         text-align: center;
+        padding-top:1.3em;
 
         p {
           font-size: 0.8rem;
@@ -59,7 +94,7 @@ footer{
         font-size: 0.9rem;
         padding-right: 3em;
         text-align: right;
-        padding-top:1.8em;
+        padding-top:1em;
 
         p {
           line-height: 1.3em;
@@ -75,6 +110,7 @@ footer{
     .box1 {
       @include span(1 of 3);
       text-align: left;
+      padding-top:1.5em;
 
       p{font-size: 1.2rem;}
     }//box1
@@ -82,7 +118,7 @@ footer{
     .box2 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      padding-top:0.5em;
+      padding-top:1.8em;
       text-align: center;
     }//box2
 
@@ -91,6 +127,8 @@ footer{
       font-size: 0.9rem;
       padding-right: 3em;
       text-align: right;
+      padding-top: 1.5em;
+
 
       p{
         line-height: 1.3em;
@@ -106,7 +144,7 @@ footer{
       font-size: 1rem;
       padding-left:10em;
       text-align: left;
-      padding-top:1.8em;
+      padding-top:1.5em;
 
       p{
         font-size: 1.2rem;
@@ -119,7 +157,7 @@ footer{
       padding-top: 0.3em;
       padding-left:0.75em;
       text-align: center;
-      padding-top:2.3em;
+      padding-top:2em;
     }//box2
 
     .box3 {
@@ -128,7 +166,6 @@ footer{
       padding-left:0em;
       padding-right: 11em;
       text-align: right;
-      margin-bottom: 2em;
 
       p{
         line-height: 1.45em;
