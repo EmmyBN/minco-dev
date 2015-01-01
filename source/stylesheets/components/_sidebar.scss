@@ -2,7 +2,9 @@
   @include span(22);
   @include push(1);
   background: $minco-white;
-  margin-top: .2em;
+  margin-top: 0.2em;
+  border-right: solid 1px $minco-blue;
+
 
   @include respond-to($medium) {
     @include span(3);

@@ -4,7 +4,7 @@ main{
   .promobox{
     @include container(170%);
     padding-bottom: 4em;
-    padding-left: 0em;
+    padding-left: 0px;
     @include span(1 of 1);
   }
 
@@ -93,13 +93,12 @@ main{
 
 @include respond-to($large) {
   @include span(20.5 at 4.5);
-  padding-left: 0.45em;
-  //height: 0;
+  //padding-left: 0.45em;
 
   .promobox{
     @include container(80%);
     padding-bottom: 1em;
-    padding-left: 2.5em;
+    padding-left: 0px;
     @include span(1 of 1);
   }
 
