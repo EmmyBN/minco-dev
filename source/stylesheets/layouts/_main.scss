@@ -83,6 +83,14 @@ main{
     margin-bottom: 2em;
   }
 
+  a {
+    color: $minco-blue;
+    text-decoration: none;
+
+    &:hover
+    &:visited {}
+  }
+
 }//medium breakpoint
 
 @include respond-to($ipad) {

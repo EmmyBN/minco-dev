@@ -1,7 +1,8 @@
 .logo {
-    @include single-transition(all, 1s, ease-out);
+
 
     img {
+      @include single-transition(all, 1s, ease-out);
       width: 80%;
       max-width: 300px;
       float: left;
@@ -9,13 +10,101 @@
       padding-top: 0.5em;
     }
 
-    //@include respond-to($medium)
+    @include breakpoint(350px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 70%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(370px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 70%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(390px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 70%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(410px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 60%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(430px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 60%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(460px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 50%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(540px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 40%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(650px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 40%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(680px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 40%;
+        //padding-left: 2em;
+      }
+    }
+
+    @include breakpoint(700px) {
+      @include single-transition(all, 1s, ease-out);
+
+      img {
+        width: 30%;
+        //padding-left: 2em;
+      }
+    }
 
     @include breakpoint($medium) {
       @include single-transition(all, 1s, ease-out);
 
       img {
-        width: 25%;
+        width: 30%;
         padding-left: 2em;
       }
     }
