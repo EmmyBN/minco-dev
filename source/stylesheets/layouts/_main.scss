@@ -4,6 +4,7 @@ main{
   .promobox{
     @include container(170%);
     padding-bottom: 4em;
+    padding-top: 2em;
     padding-left: 0px;
     @include span(1 of 1);
   }
@@ -47,6 +48,7 @@ main{
     @include container(170%);
     padding-bottom: 0em;
     padding-left: 0em;
+    padding-top: 0em;
   }
 
   .col1,
@@ -107,6 +109,7 @@ main{
     @include container(80%);
     padding-bottom: 1em;
     padding-left: 0px;
+    padding-top: 0em;
     @include span(1 of 1);
   }
 
