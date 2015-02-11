@@ -14,8 +14,10 @@
     display: block;
     text-decoration: none;
     color: $minco-blue;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-bottom:0em;
+
+    .sidebar__link {font-size: 1rem;}
   }
 
   @include respond-to($large) {
