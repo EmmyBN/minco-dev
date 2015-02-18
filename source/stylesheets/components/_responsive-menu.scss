@@ -105,7 +105,7 @@ $gutter: 0.5em;                      // Base gutter
       background: $minco-blue;
     }//a:hover
 
-    .globe img{
+    .globe-img img{
       height: 25px;
       width: 25px;
     }//.globe
@@ -207,7 +207,7 @@ $gutter: 0.5em;                      // Base gutter
         border-color: $baseMenuBackground;
         position: relative; //dropdown caret
 
-        .globe img{
+        .globe-img img{
           height: 30px;
           width: 30px;
         }//.globe

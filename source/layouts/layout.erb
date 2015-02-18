@@ -21,6 +21,20 @@
 <![endif]-->
 
 <%= javascript_include_tag  "all" %>
+
+  <script>
+        // Load function on document ready.
+        $(document).ready(function () {
+            $('.globe').mouseover(function () {
+                $('.globe').find('*').css("color", "3e4dfcb");
+                $('#globe').attr("src", "images/europe-globe-blue.png");
+            });
+
+            $('.globe').mouseleave(function () {
+                $('#globe').attr("src", "images/europe-globe.png");
+            });
+        });
+    </script>
 </head>
 
 <body class="<%= page_classes %>">

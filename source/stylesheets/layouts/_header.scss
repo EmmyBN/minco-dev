@@ -78,6 +78,8 @@ header{
       border-right: none;
     }//spacing for language selector
 
+
+
     .animenu__nav li a{
       padding: 1.5em;
       margin-bottom: 0em;
@@ -103,4 +105,42 @@ header{
 
 .magglass li a:hover{
   color: #0000ff;
+}
+.globe {
+  padding: 1em 1em 0 0 !important;
+}
+.globe:hover, .magglass:hover {
+  background: none !important;
+}
+
+.globe-wrapper ul {
+    padding: 0;
+    list-style: none;
+}
+
+.globe-wrapper ul li {
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 21px;
+}
+
+.globe-wrapper ul li a {
+	display: block;
+	padding: 5px 10px;
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+}
+
+ .globe-wrapper  ul li a:hover {
+	color: #007bc0;
+}
+
+.globe-wrapper ul {
+	display: none;
+}
+
+.globe-wrapper:hover ul {
+	display: block; /* display the dropdown */
 }
