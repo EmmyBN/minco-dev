@@ -7,7 +7,6 @@
 require 'susy'
 require 'breakpoint'
 
-require 'middleman-gh-pages'
 
 # Change Compass configuration
 # compass_config do |config|
