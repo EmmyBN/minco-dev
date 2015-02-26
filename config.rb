@@ -4,10 +4,8 @@
 
 # Susy grids in Compass
 # First: gem install susy --pre
-
 require 'susy'
 require 'breakpoint'
-
 
 #Telling Middleman to use relative URLs
 activate :relative_assets
