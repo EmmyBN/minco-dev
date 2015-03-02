@@ -7,6 +7,10 @@
 require 'susy'
 require 'breakpoint'
 
+#Telling Middleman to use relative URLs
+activate :relative_assets
+set :relative_links, true
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
