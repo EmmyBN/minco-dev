@@ -115,8 +115,13 @@ header{
 }
 
 .globe:hover {
-        background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
+      background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
     }
+
+.globe a:hover {
+      background: none !important;
+      font-color: $minco-blue;
+    } 
 
 
 .magglass:hover {
