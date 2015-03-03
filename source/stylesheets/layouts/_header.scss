@@ -74,6 +74,10 @@ header{
       color: white; border-right: none; padding-left: 6em;
     }//spacing for language selector
 
+    .globe{
+      border-right: none;
+    }//spacing for language selector
+
 
 
     .animenu__nav li a{
@@ -89,6 +93,9 @@ header{
   float: right;
 }*/
 
+.globe li a:hover{
+  color: #00ff00;
+}
 
 .magglass{
   color: $minco-white;
@@ -99,24 +106,12 @@ header{
 .magglass li a:hover{
   color: #0000ff;
 }
-
-.magglass:hover {
-  background: none !important;
-  font-color: $minco-blue;
-}
-
-
 .globe {
-    padding: 1em 1em 0 0 !important;
-    background: none url(images/globe.png) no-repeat scroll right center;
+  padding: 1em 1em 0 0 !important;
 }
-
-.globe:hover {
-        background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
-    }
-
-.globe a:hover {
- color: none !important;
+.globe:hover, .magglass:hover {
+  background: none !important;
+  font-color: #007bc0;
 }
 
 .globe-wrapper ul {
@@ -129,7 +124,6 @@ header{
 	width: 100px;
 	text-align: center;
 	line-height: 21px;
-
 }
 
 .globe-wrapper ul li a {
@@ -142,6 +136,10 @@ header{
 
  .globe-wrapper  ul li a:hover {
 	color: #007bc0;
+}
+
+.globe-wrapper ul {
+	display: none;
 }
 
 .globe-wrapper:hover ul {
