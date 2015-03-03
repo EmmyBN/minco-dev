@@ -74,10 +74,6 @@ header{
       color: white; border-right: none; padding-left: 6em;
     }//spacing for language selector
 
-    .globe{
-      border-right: none;
-    }//spacing for language selector
-
 
 
     .animenu__nav li a{
@@ -104,15 +100,24 @@ header{
   color: #0000ff;
 }
 
-.globe {
-  padding: 1em 1em 0 0 !important;
-}
-.globe:hover a, .magglass:hover {
+.magglass:hover {
   background: none !important;
   font-color: $minco-blue;
 }
 
 
+.globe {
+    padding: 1em 1em 0 0 !important;
+    background: none url(images/globe.png) no-repeat scroll right center;
+}
+
+.globe:hover {
+        background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
+    }
+
+.globe a:hover {
+ color: none !important;
+}
 
 .globe-wrapper ul {
     padding: 0;
