@@ -106,10 +106,20 @@ header{
 .magglass li a:hover{
   color: #0000ff;
 }
+
+
+
 .globe {
-  padding: 1em 1em 0 0 !important;
+    padding: 1em 1em 0 0 !important;
+    background: none url(images/globe.png) no-repeat scroll right center;
 }
-.globe:hover, .magglass:hover {
+
+.globe:hover {
+        background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
+    }
+
+
+.magglass:hover {
   background: none !important;
   font-color: #007bc0;
 }
