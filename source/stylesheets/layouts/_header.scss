@@ -121,7 +121,7 @@ header{
 .globe a:hover {
       background: none !important;
       font-color: $minco-blue;
-    } 
+    }
 
 
 .magglass:hover {
@@ -160,3 +160,22 @@ header{
 .globe-wrapper:hover ul {
 	display: block; /* display the dropdown */
 }
+
+.language ul li {
+                float: left;
+                width: 100px;
+                text-align: center;
+                line-height: 21px;
+            }
+
+  .language ul li a {
+                    display: block;
+                    padding: 5px 10px;
+                    color: #fff;
+                    background: #000;
+                    text-decoration: none;
+                }
+
+  .language ul li a:hover {
+                        color: #007bc0;
+                    }
