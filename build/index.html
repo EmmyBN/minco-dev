@@ -11,7 +11,7 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script><!--for new menu, delete if not using it-->
   <!--<script type="text/javascript" src="javascripts/responsivemobilemenu.js"></script>-->
 
-  <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
 
   <!--[if lt IE 9]>
   <script>
@@ -20,7 +20,21 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
-<script src="/javascripts/all.js" type="text/javascript"></script>
+<script src="javascripts/all.js" type="text/javascript"></script>
+
+  <script>
+        // Load function on document ready.
+        $(document).ready(function () {
+            $('.globe').mouseover(function () {
+                $('.globe').find('*').css("color", "3e4dfcb");
+                $('#globe').attr("src", "images/europe-globe-blue.png");
+            });
+
+            $('.globe').mouseleave(function () {
+                $('#globe').attr("src", "images/europe-globe.png");
+            });
+        });
+    </script>
 </head>
 
 <body class="index">
@@ -32,7 +46,7 @@
            <h1>
              <div class="logo">
                <a href="#">
-                 <img src="/images/MincoLogo.png" />
+                 <img src="images/MincoLogo.png" />
                </a>
              </div>
            </h1>
@@ -44,21 +58,40 @@
                <span class="animenu__toggle__bar"></span>
                <span class="animenu__toggle__bar"></span>
              </button>
-           <ul style="padding-left: 2em;" class="animenu__nav">
+           <ul style="float: left;  padding-left: 2em;" class="animenu__nav">
              <li style="company"><a style="company" href="#">Company</a></li>
              <li><a href="#">Products</a></li>
              <li><a href="#">Washing</a></li>
              <li><a href="#">CSR</a></li>
              <li><a href="#">Contact Us</a></li>
-             <li style="border: none;" class="spacing"><a class="globe" href="#"><div style="padding: 0;" class="globe"><img src="/images/europe-globe.png" /></div></a></li>
-             <li style="color: white; border: none; padding-left: 0em;"><a class="magglass" href="#"><i class="magglass fa fa-search"></i></a></li>
+           </ul>
+
+            <ul>
+              <li style="list-style-type: none; color: white; border: none; padding-left: 0em;"><a class="magglass" href="#"><i class="magglass fa fa-search"></i></a></li>
+
+              <li style="list-style-type: none; border: none;" class="spacing globe-wrapper">
+
+                <div style="padding: 0;">
+                  <a class="globe" href="#">
+                    <img src='europe-globe.png' id="globe" class="globe-img"/> English
+                  </a>
+                </div>
+                <ul>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">Русский</a></li>
+                    <li><a href="#">官话</a></li>
+                    <li><a href="#">العربية</a></li>
+                </ul>
+
+             </li>
              <!--<li style="color: white; border: none; padding-left: 2em; padding-right: 0;"><a href="#"><i class="fa fa-globe"></i></a></li>
              <li valign="middle" style="color: white; border: none; padding-left: 0em;"><a href="#"><i class="fa fa-search"></i></a></li>-->
-           </ul>
+            </ul>
+
          </nav>
          <script src="javascripts/animenu.js"></script>
        </li><!--li-menu-->
-       <!--<li style="float:right;"><a class="globe" href="#"><img src="/images/europe-globe.png" /></a><a href="#"><i class="magglass fa fa-search"></i></a></li>-->
+       <!--<li style="float:right;"><a class="globe" href="#"><img src="images/europe-globe.png" /></a><a href="#"><i class="magglass fa fa-search"></i></a></li>-->
     </ul><!--ul-->
     </div><!--l-constrained -->
   </div><!--h-container -->
@@ -71,10 +104,10 @@
           <div class="promobox">
     <div class="slides-container">
       <ul class="rslides" id="slider1">
-        <li><img src="/images/slide-00.jpg" /></li>
-        <li><img src="/images/slide-01.jpg" /></li>
-        <li><img src="/images/slide-02.jpg" /></li>
-        <li><img src="/images/slide-03.jpg" /></li>
+        <li><img src="images/slide-00.jpg" /></li>
+        <li><img src="images/slide-01.jpg" /></li>
+        <li><img src="images/slide-02.jpg" /></li>
+        <li><img src="images/slide-03.jpg" /></li>
       </ul>
     </div>
     <!-- JS -->
@@ -107,6 +140,7 @@
           <p style="line-height: 2.5em;"><a href="#">Use our calculator <i class="fa fa-chevron-circle-right"></i></a></p>
         </div><!--box3-->
     </div><!--promobox-->
+
 
       </main>
 
