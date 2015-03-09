@@ -74,9 +74,6 @@ header{
       color: white; border-right: none; padding-left: 6em;
     }//spacing for language selector
 
-    .globe{
-      border-right: none;
-    }//spacing for language selector
 
 
 
@@ -93,9 +90,7 @@ header{
   float: right;
 }*/
 
-.globe li a:hover{
-  color: #00ff00;
-}
+
 
 .magglass{
   color: $minco-white;
@@ -107,75 +102,7 @@ header{
   color: #0000ff;
 }
 
-
-
-.globe {
-    padding: 1em 1em 0 0 !important;
-    background: none url(images/globe.png) no-repeat scroll right center;
-}
-
-.globe:hover {
-      background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
-    }
-
-.globe a:hover {
-      background: none !important;
-      font-color: $minco-blue;
-    }
-
-
 .magglass:hover {
   background: none !important;
   font-color: #007bc0;
 }
-
-.globe-wrapper ul {
-    padding: 0;
-    list-style: none;
-}
-
-.globe-wrapper ul li {
-	float: left;
-	width: 100px;
-	text-align: center;
-	line-height: 21px;
-}
-
-.globe-wrapper ul li a {
-	display: block;
-	padding: 5px 10px;
-	color: #fff;
-	background: #000;
-	text-decoration: none;
-}
-
- .globe-wrapper  ul li a:hover {
-	color: #007bc0;
-}
-
-.globe-wrapper ul {
-	display: none;
-}
-
-.globe-wrapper:hover ul {
-	display: block; /* display the dropdown */
-}
-
-.language ul li {
-                float: left;
-                width: 100px;
-                text-align: center;
-                line-height: 21px;
-            }
-
-  .language ul li a {
-                    display: block;
-                    padding: 5px 10px;
-                    color: #fff;
-                    background: #000;
-                    text-decoration: none;
-                }
-
-  .language ul li a:hover {
-                        color: #007bc0;
-                    }
