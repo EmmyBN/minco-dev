@@ -47,20 +47,21 @@ color: #007bc0 !important;
 
 .globe-wrapper ul {
 display: none !important;
+list-style-type: none !important;
 }
 
 .globe-wrapper:hover ul {
 display: block !important; /* display the dropdown */
 }
 
-.language ul li {
-            float: left !important;
+.globe-wrapper ul li {
+             float:none !important;
             width: 100px !important;
             text-align: center !important;
             line-height: 21px !important;
         }
 
-.language ul li a {
+.globe-wrapper ul li a {
                 display: block !important;
                 padding: 5px 10px !important;
                 color: #fff !important;
@@ -68,8 +69,9 @@ display: block !important; /* display the dropdown */
                 text-decoration: none !important;
             }
 
-.language ul li a:hover {
-                    color: #007bc0 !important;
+.globe-wrapper ul li a:hover {
+                    font-color: #007bc0 !important;
+                    background: none  !important;
                 }
 
 }
