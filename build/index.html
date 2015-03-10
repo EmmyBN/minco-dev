@@ -26,7 +26,7 @@
         // Load function on document ready.
         $(document).ready(function () {
             $('.globe').mouseover(function () {
-                $('.globe').find('*').css("color", "3e4dfcb");
+                $('.globe').find('*').css("color", "3e4dfcb !important");
                 $('#globe').attr("src", "images/europe-globe-blue.png");
             });
 
@@ -73,7 +73,7 @@
                    <img src='images/europe-globe.png' id="globe" class="globe-img"/> English
                  </a>
                </div>
-               <ul class="globe-wrapper" style="position: absolute; z-index:999;">
+               <ul style="position: absolute; z-index:999;">
                    <li><a href="#">Español</a></li>
                    <li><a href="#">Русский</a></li>
                    <li><a href="#">官话</a></li>

@@ -80,3 +80,88 @@ display: block !important;
                 }
 
 }
+
+
+@include respond-to($medium) {
+@include single-transition(all, 1s, ease-out);
+@include layout(24);
+
+.globe {
+border-right: none;
+padding: 1em 1em 0 0 !important;
+background: none url(images/globe.png) no-repeat scroll right center;
+}
+
+.globe:hover {
+  background: none  url(images/blue-globe.png) no-repeat scroll right center !important;
+}
+
+.globe a:hover {
+  background: none !important;
+  font-color: $minco-blue;
+}
+
+.globe li a:hover{
+color: #00ff00 !important;
+}
+
+li.globe-wrapper {
+  position : static;
+}
+.globe-wrapper ul {
+padding: 0 !important;
+list-style: none !important;
+}
+
+.globe-wrapper ul li {
+float: left !important;
+width: 100px !important;
+text-align: center !important;
+line-height: 21px !important;
+display: block;
+background-color : black !important;
+}
+
+.globe-wrapper ul li a {
+display: block !important;
+padding: 5px 10px !important;
+color: #fff !important;
+background: #000 !important;
+text-decoration: none !important;
+}
+
+.globe-wrapper  ul li a:hover {
+color: #007bc0 !important;
+}
+
+.globe-wrapper ul {
+display: none !important;
+list-style-type: none !important;
+}
+
+.globe-wrapper:hover ul {
+display: block !important;
+}
+
+.globe-wrapper ul li {
+    float:none !important;
+    width: 100px !important;
+    text-align: center !important;
+    line-height: 21px !important;
+}
+
+.globe-wrapper ul li a {
+                display: block !important;
+                padding: 5px 10px !important;
+                color: #fff !important;
+                background: #000 !important;
+                text-decoration: none !important;
+            }
+
+.globe-wrapper ul li a:hover {
+                    font-color: #007bc0 !important;
+                    background: none  !important;
+                }
+
+
+}
