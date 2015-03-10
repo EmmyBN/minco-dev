@@ -21,6 +21,9 @@ background: none url(images/globe.png) no-repeat scroll right center;
 color: #00ff00 !important;
 }
 
+li.globe-wrapper {
+  position : static;
+}
 .globe-wrapper ul {
 padding: 0 !important;
 list-style: none !important;
@@ -31,6 +34,8 @@ float: left !important;
 width: 100px !important;
 text-align: center !important;
 line-height: 21px !important;
+display: block;
+background-color : black !important;
 }
 
 .globe-wrapper ul li a {
@@ -51,15 +56,15 @@ list-style-type: none !important;
 }
 
 .globe-wrapper:hover ul {
-display: block !important; /* display the dropdown */
+display: block !important;
 }
 
 .globe-wrapper ul li {
-            float:none !important;
-            width: 100px !important;
-            text-align: center !important;
-            line-height: 21px !important;
-        }
+    float:none !important;
+    width: 100px !important;
+    text-align: center !important;
+    line-height: 21px !important;
+}
 
 .globe-wrapper ul li a {
                 display: block !important;
