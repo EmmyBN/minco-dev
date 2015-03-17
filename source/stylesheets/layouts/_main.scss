@@ -140,11 +140,12 @@ main{
 
   .slides-container{
     @include span(1 of 1);
+    width: 110% !important;
     margin-left: 0;
     margin-bottom: 2em;
   }
 
-}//ipad breakpoint
+}//large breakpoint
 
 
 }//main
