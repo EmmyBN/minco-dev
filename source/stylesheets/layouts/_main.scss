@@ -51,6 +51,16 @@ main{
   @include span(20.2 at 3.9 omega);
   padding-left: 0em;
 
+.prom-container{
+  @include container(100%);
+  width: 110% !important;
+  padding-bottom: 0.5em;
+  padding-left: 1.5em !important;
+  padding-top: 0em;
+  @include span(1 of 1);
+
+}
+
   .promobox{
     @include span(1 of 1);
     @include container(170%);
@@ -130,7 +140,7 @@ main{
   .prom-container{
     @include container(130%);
     width: 110% !important;
-    padding-bottom: 1em;
+    padding-bottom: 0.4em;
     padding-left: 1.5em !important;
     padding-top: 0em;
     @include span(1 of 1);
