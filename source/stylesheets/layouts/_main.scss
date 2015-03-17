@@ -3,14 +3,14 @@ main{
 
   .promobox{
     @include container(170%);
-    padding-bottom: 4em;
+    padding-bottom: 0em;
     padding-top: 2em;
     padding-left: 0px;
     @include span(1 of 1);
   }
 
   .prom-container{
-    @include container(80%);
+    @include container(100%);
     padding-bottom: 1em;
     padding-left: 0.2em !important;
     padding-top: 0em;

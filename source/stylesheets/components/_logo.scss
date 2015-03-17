@@ -2,7 +2,7 @@
 
     img {
       @include single-transition(all, 1s, ease-out);
-      width: 80%;
+      width: 100%;
       max-width: 178px;
       float: left;
       padding-left: 1em;
