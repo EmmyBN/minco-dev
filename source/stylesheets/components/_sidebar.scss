@@ -25,7 +25,7 @@
     @include push(0);
     font-size: 1rem;
   }
-}
+
 
 .sidebar__list {
   display: inline-block;
@@ -43,6 +43,8 @@
   text-decoration: none;
   padding: 5px;
   color: $minco-blue;
+
+}
 
   .fa-chevron-right {
     display: none;
@@ -67,6 +69,6 @@
       padding-left: 1em;
       line-height: 1;
       vertical-align: baseline;
-    }
-  }
-}
+    }//i
+  }//&:hover
+}//sidebar

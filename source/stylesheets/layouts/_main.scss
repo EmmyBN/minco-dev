@@ -108,7 +108,7 @@ main{
   .promobox{
     @include container(80%);
     padding-bottom: 1em;
-    padding-left: 0px;
+    padding-left: 1.38095% !important;
     padding-top: 0em;
     @include span(1 of 1);
   }
