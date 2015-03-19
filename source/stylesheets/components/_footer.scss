@@ -163,11 +163,13 @@ footer{
       @include span(1 of 3);
       font-size: 0.9rem;
       padding-left:0em;
-      padding-right: 11em;
+      padding-top:1.8em;
+      //padding-right: 11em;
       text-align: right;
 
       p{
-        line-height: 1.45em;
+        font-size: 0.8rem;
+        line-height: 1.4em;
       }
     }//box3
   }//large breakpoint
