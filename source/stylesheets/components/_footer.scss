@@ -9,12 +9,9 @@ footer{
   .box1 {
     @include span(1 of 1);
     text-align: center;
-    //padding-top: 1.1em;
 
-    p {
-      font-size: 1rem;
-    }
-  }//box1
+    p {font-size: 1rem;}
+    }//box1
 
   .box2 {
     @include span(1 of 1);
@@ -22,10 +19,10 @@ footer{
     text-align: center;
     padding-top:1.3em;
 
-    p {
-      font-size: 0.8rem;
-    }
+    p {font-size: 0.8rem;}
+
   }//box2
+
 
   .box3 {
     @include span(1 of 1);
@@ -56,8 +53,10 @@ footer{
 
   i{
     color: $minco-white;
-    font-size:4rem;
+    font-size:1.4rem !important;
     padding-right: 0.5em;
+    padding-top: 0.6em;
+    vertical-align: text-middle;
   }
 
   @include respond-to($medium) {
@@ -172,4 +171,15 @@ footer{
       }
     }//box3
   }//large breakpoint
+
+  .phone-no{
+  @include respond-to($medium) {}
+  @include respond-to($ipad) {
+    font-size: 0.98rem !important;
+    padding-bottom: 1em !important;
+    vertical-align: text-middle !important;
+  }
+  @include respond-to($large) {}
+ }//phone-no
+
 }//footer
