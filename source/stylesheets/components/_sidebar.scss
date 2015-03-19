@@ -4,6 +4,7 @@
   background: $minco-white;
   margin-top: 0.2em;
   border-right: solid 1px $minco-blue;
+  padding-left:1em;
 
 
   @include respond-to($medium) {
@@ -38,11 +39,24 @@
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  padding-left: 5em;
+  padding-left: 6em;
   display: block;
   text-decoration: none;
   padding: 5px;
   color: $minco-blue;
+
+  @include respond-to($ipad) {
+    font-size:1rem;
+  }
+
+}
+
+.sidebar__list-item{
+  padding-left: 0.7em !important;
+
+  @include respond-to($ipad) {
+    padding-left: 0.4em !important;
+  }
 
 }
 
