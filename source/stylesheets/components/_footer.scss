@@ -55,7 +55,7 @@ footer{
     color: $minco-white;
     font-size:1.4rem !important;
     padding-right: 0.5em;
-    padding-top: 0.6em;
+    //padding-top: 0.6em;
     vertical-align: text-middle;
   }
 
@@ -74,6 +74,24 @@ footer{
         p {
           font-size: 1rem;
         }
+
+
+        a{
+          @include single-transition(all, .5s, ease-out);
+          text-decoration: none;
+          color: $minco-white;
+          margin-bottom: 20px !important;
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $minco-blue;
+            i{
+              color: $minco-blue;
+            }//i
+          }//link states
+        }//a
+
       }//box1
 
       .box2 {
@@ -109,16 +127,25 @@ footer{
     .box1 {
       @include span(1 of 3);
       text-align: left;
-      padding-top:1.5em;
+      //padding-top:1.5em;
+      //vertical-align: top !important;
 
-      p{font-size: 1.2rem;}
+      p{
+        font-size: 1.2rem;
+        vertical-align: text-center;
+        }
     }//box1
 
     .box2 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      padding-top:1.8em;
+      //padding-top:1.8em;
       text-align: center;
+      vertical-align: top !important;
+
+      p{
+        //vertical-align: text-center;
+        }
     }//box2
 
     .box3 {
@@ -126,7 +153,8 @@ footer{
       font-size: 0.9rem;
       padding-right: 3em;
       text-align: right;
-      padding-top: 1.5em;
+      //padding-top: 1.5em;
+      vertical-align: top !important;
 
 
       p{
@@ -140,10 +168,12 @@ footer{
 
     .box1 {
       @include span(1 of 3);
-      font-size: 1rem;
-      padding-left:10em;
       text-align: left;
-      padding-top:1.5em;
+      //padding-top:1em;
+      //vertical-align: center;
+
+      .tel{padding-top:10px !important;}
+
 
       p{
         font-size: 1.2rem;
@@ -156,16 +186,18 @@ footer{
       padding-top: 0.3em;
       padding-left:0.75em;
       text-align: center;
-      padding-top:2.4em;
+      //padding-top:2.1em;
+      vertical-align: center;
     }//box2
 
     .box3 {
       @include span(1 of 3);
       font-size: 0.9rem;
       padding-left:0em;
-      padding-top:1.8em;
+      //padding-top:1.6em;
       //padding-right: 11em;
       text-align: right;
+      vertical-align: center;
 
       p{
         font-size: 0.8rem;
@@ -179,7 +211,7 @@ footer{
   @include respond-to($medium) {}
   @include respond-to($ipad) {
     font-size: 0.98rem !important;
-    padding-bottom: 1em !important;
+    //padding-bottom: 1em !important;
     vertical-align: text-middle !important;
   }
   @include respond-to($large) {}
