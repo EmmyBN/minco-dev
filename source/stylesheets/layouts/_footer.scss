@@ -1,15 +1,12 @@
 footer{
   color:$minco-white;
   background: $minco-black;
-  margin-top: 1em;
-  height: 300px;
+  height: 230px;
   border-top: $border-thick-footer;
 
   .box1 {
     @include span(1 of 1);
     text-align: center;
-
-    .tel{align: center !important;}
 
     p {font-size: 1rem;}
     }//box1
@@ -19,7 +16,6 @@ footer{
     @include span(1 of 1);
     font-size: 0.9rem;
     text-align: center;
-    padding-top:1.3em;
 
     p {font-size: 0.8rem;}
 
