@@ -1,6 +1,7 @@
 footer{
   color:$minco-white;
   background: $minco-black;
+  //height: auto;
   height: 230px;
   border-top: $border-thick-footer;
 
@@ -35,7 +36,7 @@ footer{
 
     p {
       line-height: 1.3em;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
   }//box3
 
@@ -62,12 +63,14 @@ footer{
     vertical-align: text-middle;
   }
 
+/*
+
   @include respond-to($medium) {
       @include span(24);
       padding: 0px;
       height: auto;
 
-      
+
 
       .box1 {
         @include span(1 of 3);
@@ -121,7 +124,7 @@ footer{
 
         p {
           line-height: 1.3em;
-          font-size: 0.7rem;
+          font-size: 0.8rem;
         }
       }//box3
   }//medium breakpoint
@@ -164,9 +167,11 @@ footer{
 
       p{
         line-height: 1.3em;
+        font-size: 0.8rem;
       }
     }//box 3
-  }//ipad breakpoint
+  }//ipad breakpoint */
+
 
   @include respond-to($large) {
     @include span(24);
@@ -176,8 +181,10 @@ footer{
 
 
       td{text-align: center !important;}
-      .tel{padding-top:30px !important;}
-
+      .tel{
+          //padding-top:30px !important;
+          //padding-bottom:5px !important;
+          }
 
       p{
         font-size: 1.2rem;
@@ -190,20 +197,22 @@ footer{
       //padding-left:0.75em;
       text-align: center;
 
-      //.t-c{padding-top: 15px !important;}
+      .t-c{padding-bottom: 9px !important;}
     }//box2
 
     .box3 {
       @include span(1 of 3);
       font-size: 0.9rem;
       padding-left:0em;
-      text-align: right;
+      padding-bottom: 16px;
+
 
 
       p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.4em;
-        letter-spacing: 0.0625em;
+        //letter-spacing: 0.0625em;
+        text-align: right !important;
       }
     }//box3
   }//large breakpoint
