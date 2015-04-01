@@ -124,10 +124,10 @@ main{
  }
 
  .prom-container{
-   @include container(110%);
-   width: 110% !important;
-   padding-bottom: 0.4em;
-   padding-left: 1.5em !important;
+   @include container(125%);
+   width: 125% !important;
+   margin-bottom: 1.1em;
+   margin-left: 0em !important;
    padding-top: 0em;
    @include span(1 of 1);
    font-size: 0.7rem;
@@ -167,10 +167,11 @@ main{
 
  .slides-container{
    @include span(1 of 1);
-   width: 110% !important;
-   margin-left: 0;
+   @include container(120%);
+   width: 120% !important;
+   margin-left: 0.8em !important;
    margin-bottom: 2em;
-   padding-left:0.2% !important;
+   //padding-left:0.2% !important;
  }
 
 
@@ -191,9 +192,9 @@ main{
 
   .prom-container{
     @include container(130%);
-    width: 110% !important;
-    padding-bottom: 0.4em;
-    padding-left: 1.5em !important;
+    width: 100% !important;
+    padding-bottom: 1.5em;
+    padding-left: 0.4em !important;
     padding-top: 0em;
     @include span(1 of 1);
 
@@ -232,10 +233,11 @@ main{
 
   .slides-container{
     @include span(1 of 1);
+    @include container(100%);
     width: 110% !important;
-    margin-left: 0;
     margin-bottom: 2em;
-    padding-left:1.5% !important;
+    //padding-left:1.5% !important;
+    margin-left: 0em !important;
   }
 
 }//large breakpoint
