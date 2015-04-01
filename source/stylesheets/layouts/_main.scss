@@ -65,7 +65,7 @@ main{
     @include span(1 of 1);
     @include container(170%);
     padding-bottom: 0em;
-    padding-left: 0em;
+    padding-left: 0.7em;
     padding-top: 0em;
   }
 
@@ -99,6 +99,7 @@ main{
 
   .slides-container{
     @include span(1 of 1);
+    @include container(99%);
     margin-left: 0;
     margin-bottom: 2em;
   }

@@ -129,6 +129,10 @@ $gutter: 0.5em;                      // Base gutter
 .animenu__nav {
   background-color: none;
 
+  @include respond-to($medium) {float: left;  padding-left: 3.45em !important;}
+  @include respond-to($ipad) {float: left;  padding-left: 4.05em !important;}
+  @include respond-to($large) {float: left;  padding-left: 3.45em !important;}
+
    li {
     position: relative;
     border-right: 1px solid lighten($baseMenuBackground, 20%);

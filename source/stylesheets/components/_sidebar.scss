@@ -8,7 +8,7 @@
 
 
   @include respond-to($medium) {
-    @include span(3);
+    @include span(3.5);
     @include push(0);
     @include single-transition(all, .5s, ease-out);
     // padding-left: 5em;
@@ -18,7 +18,7 @@
     font-size: 1rem;
     padding-bottom:0em;
 
-    .sidebar__link {font-size: 1rem;}
+    .sidebar__link {font-size: 0.9rem;}
   }
 
   @include respond-to($large) {
@@ -45,14 +45,29 @@
   padding: 5px;
   color: $minco-blue;
 
+  @include respond-to($medium) {
+    font-size:0.9rem;
+    padding: 3px !important;
+  }
+
   @include respond-to($ipad) {
     font-size:1rem;
+    padding: 20px;
+  }
+
+
+
+  @include respond-to($large) {
+    font-size:1rem;
+    padding: 5px !important;
   }
 
 }
 
 .sidebar__list-item{
-  padding-left: 0.7em !important;
+  //padding-left: 0.7em;
+
+  @include respond-to($medium) {padding-left: none !important;}
 
   @include respond-to($ipad) {
     padding-left: 0.4em !important;
