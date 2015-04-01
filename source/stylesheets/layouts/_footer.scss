@@ -1,7 +1,6 @@
 footer{
   color:$minco-white;
   background: $minco-black;
-  //height: auto;
   height: 230px;
   border-top: $border-thick-footer;
 
@@ -62,8 +61,6 @@ footer{
     //padding-top: 0.6em;
     vertical-align: text-middle;
   }
-
-/*
 
   @include respond-to($medium) {
       @include span(24);
@@ -170,7 +167,7 @@ footer{
         font-size: 0.8rem;
       }
     }//box 3
-  }//ipad breakpoint */
+  }//ipad breakpoint
 
 
   @include respond-to($large) {
