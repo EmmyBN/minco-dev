@@ -4,11 +4,16 @@ footer{
   height: 230px;
   border-top: $border-thick-footer;
 
-  .box1 {
-    @include span(1 of 1);
-    text-align: center;
+  table.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
 
-    p {font-size: 1rem;}
+  .box1 {
+      @include span(1 of 1);
+      text-align: center;
+
+      p {font-size: 1rem;}
     }//box1
 
 
@@ -61,6 +66,8 @@ footer{
       @include span(24);
       padding: 0px;
       height: auto;
+
+      
 
       .box1 {
         @include span(1 of 3);
