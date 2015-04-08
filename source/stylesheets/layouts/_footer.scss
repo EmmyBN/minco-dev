@@ -133,6 +133,7 @@ footer{
     .box1 {
       @include span(1 of 3);
       text-align: left;
+      padding-right: 8em;
 
       .tel{padding-top:30px !important;}
 
@@ -147,6 +148,7 @@ footer{
       font-size: 0.9rem;
       //padding-top:1.8em;
       text-align: center;
+      padding-right: 5.6em;
 
       p{
         //vertical-align: text-center;
@@ -156,9 +158,8 @@ footer{
     .box3 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      padding-right: 3em;
+      padding-left: 3.3em;
       text-align: right;
-      //padding-top: 1.5em;
       vertical-align: top !important;
 
 
