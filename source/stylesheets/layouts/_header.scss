@@ -112,6 +112,14 @@ header{
     }//.animenu__nav li a
   }//large
 
+  .sg-icons{
+    padding-top: 5px !important;
+
+    @include respond-to($medium) {padding-top: 15px !important;}
+    @include respond-to($ipad) {padding-top: 10px !important;}
+    @include respond-to($large) {padding-top: 15px !important;}
+  }
+
 }//header
 
 /*.menu {
