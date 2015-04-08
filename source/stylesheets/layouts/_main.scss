@@ -101,9 +101,9 @@ main{
     @include span(1 of 1);
     @include container(99%);
     margin-left: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
-  
+
 
   a {
     color: $minco-blue;
