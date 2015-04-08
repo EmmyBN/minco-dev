@@ -15,6 +15,13 @@ header{
   background-image: -ms-linear-gradient(bottom, #595658 0%, #000000 100%);
   background-image: linear-gradient(to bottom, #595658 0%, #000000 100%);
 
+  .magglass{
+    color: $minco-white;
+    font-size:1.7rem;
+    padding-left: 0.7em;
+  }//.fa-search
+
+
   @include respond-to($small) {
     .h-container{
       @include span(24);
@@ -40,7 +47,7 @@ header{
     .magglass{
       color: $minco-white;
       font-size:1.7rem;
-      padding-left: 0em;
+      padding-left: 0.2em;
     }//.fa-search
 
     .spacing{
@@ -48,7 +55,7 @@ header{
     }
 
     .animenu__nav li a{
-      padding: 1em;
+      padding: 0.8em;
       font-size: 1rem;
     }
   }//medium
@@ -113,9 +120,10 @@ header{
   }//large
 
   .sg-icons{
-    padding-top: 5px !important;
+    //padding-bottom: 10px !important;
+    padding-left: 137px !important;
 
-    @include respond-to($medium) {padding-top: 9px !important; padding-left: 137px !important;}
+    @include respond-to($medium) {padding-top: 2px !important; padding-left: 137px !important;}
     @include respond-to($ipad) {padding-top: 10px !important; padding-left: 137px !important;}
     @include respond-to($large) {padding-top: 15px !important; padding-left: 137px !important;}
   }
