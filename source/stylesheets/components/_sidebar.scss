@@ -15,7 +15,7 @@
     display: block;
     text-decoration: none;
     color: $minco-blue;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-bottom:0em;
 
     .sidebar__link {font-size: 0.9rem;}
@@ -31,6 +31,8 @@
 .sidebar__list {
   display: inline-block;
   width: 100%;
+
+  @include respond-to($medium) {padding-left: 0.5em;}
 }
 
 .sidebar__link {
@@ -46,7 +48,7 @@
   color: $minco-blue;
 
   @include respond-to($medium) {
-    font-size:0.9rem;
+    font-size:0.85rem;
     padding: 3px !important;
   }
 
@@ -67,7 +69,7 @@
 .sidebar__list-item{
   //padding-left: 0.7em;
 
-  @include respond-to($medium) {padding-left: none !important;}
+  @include respond-to($medium) {padding-left: none !important;   font-size: 0.8rem;}
 
   @include respond-to($ipad) {
     padding-left: 0.4em !important;

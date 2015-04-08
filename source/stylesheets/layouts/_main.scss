@@ -54,9 +54,9 @@ main{
 .prom-container{
   @include container(100%);
   width: 110% !important;
-  padding-bottom: 0.5em;
-  padding-left: 1.5em !important;
-  padding-top: 0em;
+  padding-bottom: 1.6em;
+  padding-left: 0.4em !important;
+  padding-top: 0.7em;
   @include span(1 of 1);
 
 }
@@ -79,6 +79,7 @@ main{
     border-top: none;
     border-bottom: none;
     border-left: none;
+    padding: 0.15em;
 
     p {
       font-size: 0.8rem;
@@ -91,6 +92,7 @@ main{
     vertical-align: center;
     color: #3e3e40;
     border: none;
+    padding: 0.15em;
 
     p {
       font-size: 0.8rem;

@@ -2,14 +2,14 @@
 
     img {
       @include single-transition(all, 1s, ease-out);
-      width: 100%;
+      width: 120%;
       max-width: 178px;
       float: left;
       padding-left: 1em !important;
       padding-top: 0.36em !important;
       vertical-align: middle;
 
-      @include respond-to($medium) {padding-top: 0.2em !important; margin-left: 0em !important;}
+      @include respond-to($medium) {width: 60% !important; padding-top: 0.2em !important; margin-left: 0em !important;}
       @include respond-to($ipad) {padding-top: 0.55em !important; margin-left: 1.15em !important;}
       @include respond-to($large) {padding-top: 0.7em !important;   margin-left: 4.2em !important;}
     }
