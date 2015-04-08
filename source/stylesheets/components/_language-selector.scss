@@ -4,8 +4,10 @@
 
 .globe {
 border-right: none;
-padding: 1em 1em 0 0 !important;
+//padding: 1em 1em 0 !important;
 background: none url(images/globe.png) no-repeat scroll right center;
+padding-left: 137px !important;
+
 }
 
 .globe:hover {
@@ -23,6 +25,7 @@ color: #00ff00 !important;
 
 li.globe-wrapper {
   position : static;
+  //padding-left: 137px !important;
 }
 .globe-wrapper ul {
 padding: 0 !important;
@@ -88,7 +91,7 @@ display: block !important;
 
 .globe {
 border-right: none;
-padding: 1em 1em 0 0 !important;
+//padding: 1em 1em 0 0 !important;
 background: none url(images/globe.png) no-repeat scroll right center;
 }
 
@@ -107,7 +110,9 @@ color: #00ff00 !important;
 
 li.globe-wrapper {
   position : static;
+  //padding-left: 137px !important;
 }
+
 .globe-wrapper ul {
 padding: 0 !important;
 list-style: none !important;

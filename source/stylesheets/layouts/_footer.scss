@@ -191,7 +191,7 @@ footer{
     .box2 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      //padding-left:0.75em;
+      padding-right:6.7em;
       text-align: center;
 
       .t-c{padding-bottom: 9px !important;}
@@ -200,7 +200,7 @@ footer{
     .box3 {
       @include span(1 of 3);
       font-size: 0.9rem;
-      padding-left:0em;
+      padding-right:6.5em;
       padding-bottom: 16px;
 
 

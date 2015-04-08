@@ -68,7 +68,7 @@ header{
     .magglass{
       color: $minco-white;
       font-size:1.7rem;
-      padding-left: 0em;
+      padding-left: 1em;
     }//.fa-search
 
     .spacing{
@@ -95,7 +95,7 @@ header{
     .magglass{
       color: $minco-white;
       font-size:1.7rem;
-      padding-left: 0em;
+      padding-left: 1em;
     }//.fa-search
 
     .spacing{
@@ -115,9 +115,9 @@ header{
   .sg-icons{
     padding-top: 5px !important;
 
-    @include respond-to($medium) {padding-top: 15px !important;}
-    @include respond-to($ipad) {padding-top: 10px !important;}
-    @include respond-to($large) {padding-top: 15px !important;}
+    @include respond-to($medium) {padding-top: 9px !important; padding-left: 137px !important;}
+    @include respond-to($ipad) {padding-top: 10px !important; padding-left: 137px !important;}
+    @include respond-to($large) {padding-top: 15px !important; padding-left: 137px !important;}
   }
 
 }//header
@@ -131,7 +131,7 @@ header{
 .magglass{
   color: $minco-white;
   font-size:1.5rem;
-  padding-left: 0em;
+  padding-left: 2em;
 }
 
 .magglass li a:hover{
