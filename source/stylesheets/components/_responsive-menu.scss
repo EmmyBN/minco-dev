@@ -130,7 +130,7 @@ $gutter: 0.5em;                      // Base gutter
   background-color: none;
 
   @include respond-to($medium) {float: left;  padding-left: 0.4em !important; padding-right: 55px !important;}
-  @include respond-to($ipad) {float: left;  padding-left: 1.6em !important; padding-right: 185px !important;}
+  @include respond-to($ipad) {float: left;  padding-left: 1.6em !important; padding-right: 140px !important;}
   @include respond-to($large) {float: left;  padding-left: 2.8em !important; padding-right: 137px !important;}
 
    li {
