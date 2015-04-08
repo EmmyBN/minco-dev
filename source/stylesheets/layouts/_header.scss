@@ -124,8 +124,8 @@ header{
     padding-left: 137px !important;
 
     @include respond-to($medium) {padding-top: 2px !important; padding-left: 137px !important;}
-    @include respond-to($ipad) {padding-top: 10px !important; padding-left: 137px !important;}
-    @include respond-to($large) {padding-top: 15px !important; padding-left: 137px !important;}
+    @include respond-to($ipad) {padding-top: 12px !important; padding-left: 137px !important;}
+    @include respond-to($large) {padding-top: 16px !important; padding-left: 137px !important;}
   }
 
 }//header
