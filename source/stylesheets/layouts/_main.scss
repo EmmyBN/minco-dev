@@ -16,6 +16,12 @@ main{
   }//medium breakpoint
 
 
+  @include respond-to($semi-large) {
+    @include span(20.5 at 4.5);
+    padding-left: 0em;
+    margin-left: 0em;
+  }//semi-large breakpoint
+
   @include respond-to($large) {
     @include span(20.5 at 4.5);
   }//large breakpoint
@@ -46,18 +52,18 @@ main{
     }//ipad
 
 
-    /*@include respond-to($semi-large) {
-      @include container(80%);
+    @include respond-to($semi-large) {
+      //@include container(80%);
       padding-bottom: 0.6em;
-      padding-left: 0.2em !important;
+      margin-left: 0.17em !important;
       padding-top: 0em;
       @include span(1 of 1);
-    }//semi-large*/
+    }//semi-large
 
     @include respond-to($large) {
         @include container(80%);
         padding-bottom: 0.6em;
-        padding-left: 0.2em !important;
+        margin-left: 0.1em !important;
         padding-top: 0em;
         @include span(1 of 1);
     }//large
@@ -99,6 +105,10 @@ main{
         font-size: 0.7rem;
     }//ipad
 
+    @include respond-to($semi-large) {
+      @include container(108.5%);
+    }//semi-large
+
     @include respond-to($large) {
         @include container(130%);
         width: 100% !important;
@@ -108,11 +118,7 @@ main{
         @include span(1 of 1);
     }//large
 
-    @include respond-to($semi-large) {
-      @include container(105%);
-      padding-left: 0em !important;
-      padding-left: 1.5em !important;
-    }//semi-large
+
   }//prom-container
 
   .col1, .col2 {
@@ -261,6 +267,15 @@ main{
         margin-bottom: 2em;
     }//ipad
 
+    @include respond-to($semi-large) {
+      @include span(1 of 1);
+      @include container(116.7%);
+      width: 116.7% !important;
+      margin-bottom: 2em;
+      //padding-left:1.5% !important;
+      margin-left: 0em !important;
+    }//semi-large
+
     @include respond-to($large) {
         @include span(1 of 1);
         @include container(100%);
@@ -270,7 +285,7 @@ main{
         margin-left: 0em !important;
     }//large
 
-    @include respond-to($semi-large) {}//semi-large
+
 
   }//slides-container
 
