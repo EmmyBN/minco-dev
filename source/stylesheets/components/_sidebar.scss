@@ -21,6 +21,12 @@
     .sidebar__link {font-size: 0.9rem;}
   }
 
+  @include respond-to($semi-large) {
+    @include span(3);
+    @include push(0);
+    font-size: 1rem;
+  }
+
   @include respond-to($large) {
     @include span(3);
     @include push(0);
