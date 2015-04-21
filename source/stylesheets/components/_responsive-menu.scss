@@ -132,6 +132,8 @@ $gutter: 0.5em;                      // Base gutter
 
   @include respond-to($medium) {float: left;  padding-left: 0.4em !important; padding-right: 55px !important;}
   @include respond-to($medium2) {float: left;  padding-left: 0.4em !important; padding-right: 31px !important;}
+  @include respond-to($medium3) {float: left;  padding-left: 0.4em !important; padding-right: 31px !important;}
+  @include respond-to($medium4) {float: left;  padding-left: 0.4em !important; padding-right: 31px !important;}
   @include respond-to($ipad) {float: left;  padding-left: 1.6em !important; padding-right: 180px !important;}
   @include respond-to($semi-large) {float: left;  padding-left: 1.65em !important; padding-right: 190px !important;}
   @include respond-to($large) {float: left;  padding-left: 2.8em !important; padding-right: 137px !important;}

@@ -20,6 +20,16 @@ main{
     padding-left: 0em;
   }//semi-large breakpoint
 
+  @include respond-to($medium3) {
+    @include span(20.2 at 3.9 omega);
+    padding-left: 0em;
+  }//semi-large breakpoint
+
+  @include respond-to($medium4) {
+    @include span(20.2 at 3.9 omega);
+    padding-left: 0em;
+  }//semi-large breakpoint
+
 
   @include respond-to($semi-large) {
     @include span(20.5 at 4.5);
@@ -46,7 +56,12 @@ main{
       padding-top: 0em;
     }//medium
 
+
     @include respond-to($medium2) {}//medium2
+
+    @include respond-to($medium3) {}//medium3
+
+    @include respond-to($medium4) {}//medium4
 
     @include respond-to($ipad) {
         @include container(80%);
@@ -102,6 +117,28 @@ main{
       @include span(1 of 1);
       font-size: 0.7rem;
     }//medium2
+
+    @include respond-to($medium3) {
+      @include container(100%);
+      width: 100% !important;
+      max-width: 704px;
+      margin-bottom: 1em;
+      margin-left: 0em !important;
+      padding-top: 1em;
+      @include span(1 of 1);
+      font-size: 0.7rem;
+    }//medium3
+
+    @include respond-to($medium4) {
+      @include container(100%);
+      width: 100% !important;
+      max-width: 704px;
+      margin-bottom: 1em;
+      margin-left: 0em !important;
+      padding-top: 1em;
+      @include span(1 of 1);
+      font-size: 0.7rem;
+    }//medium4
 
     @include respond-to($ipad) {
         @include container(125%);
@@ -162,6 +199,8 @@ main{
     }//medium
 
     @include respond-to($medium2) {}//medium2
+    @include respond-to($medium3) {}//medium3
+    @include respond-to($medium4) {}//medium4
 
     @include respond-to($ipad) {
       @include span(7 of 21);
@@ -245,6 +284,8 @@ main{
     }//medium
 
     @include respond-to($medium2) {}//medium2
+    @include respond-to($medium3) {}//medium3
+    @include respond-to($medium4) {}//medium4
 
     @include respond-to($ipad) {
         @include span(7 of 21 omega);
@@ -301,6 +342,8 @@ main{
     }//medium
 
     @include respond-to($medium2) {}//medium2
+    @include respond-to($medium3) {}//medium3
+    @include respond-to($medium4) {}//medium4
 
     @include respond-to($ipad) {
         @include span(1 of 1);

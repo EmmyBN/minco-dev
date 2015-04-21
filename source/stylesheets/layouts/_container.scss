@@ -14,6 +14,30 @@
     padding-left: 1.7em;
   }
 
+  @include respond-to($medium2) {
+    @include single-transition(all, 1s, ease-out);
+    @include container(100%);
+    padding-bottom: 0em;
+    padding-top: 2em;
+    padding-left: 1.7em;
+  }
+
+  @include respond-to($medium3) {
+    @include single-transition(all, 1s, ease-out);
+    @include container(100%);
+    padding-bottom: 0em;
+    padding-top: 2em;
+    padding-left: 1.7em;
+  }
+
+  @include respond-to($medium4) {
+    @include single-transition(all, 1s, ease-out);
+    @include container(100%);
+    padding-bottom: 0em;
+    padding-top: 2em;
+    padding-left: 1.7em;
+  }
+
   @include respond-to($ipad) {
     @include single-transition(all, 1s, ease-out);
     padding-top: 2em;

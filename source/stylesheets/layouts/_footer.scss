@@ -10,6 +10,10 @@ footer{
       height: auto;
   }
 
+  @include respond-to($medium2) {}//medium2
+  @include respond-to($medium3) {}//medium3
+  @include respond-to($medium4) {}//medium4
+
   @include respond-to($ipad) {
     @include span(24);
     height: auto;
@@ -64,6 +68,37 @@ footer{
         }
 
       }//medium2 breakpoint
+
+      @include respond-to($medium3) {
+        @include span(1 of 3);
+        padding-right:3.9em;
+        padding-left:0em;
+        text-align: left;
+
+        .tel{padding-top:0.5em !important; font-size:0.85rem !important;}
+
+
+        p {
+          font-size: 1rem;
+        }
+
+      }//medium3 breakpoint
+
+
+      @include respond-to($medium4) {
+        @include span(1 of 3);
+        padding-right:3.9em;
+        padding-left:0em;
+        text-align: left;
+
+        .tel{padding-top:0.5em !important; font-size:0.85rem !important;}
+
+
+        p {
+          font-size: 1rem;
+        }
+
+      }//medium4 breakpoint
 
       @include respond-to($ipad) {
         @include span(1 of 3);
@@ -135,6 +170,30 @@ footer{
       }
     }//medium2 breakpoint
 
+    @include respond-to($medium3) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-top: 0.1em;
+      padding-right: 6.3em;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }//medium3 breakpoint
+
+    @include respond-to($medium4) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-top: 0.1em;
+      padding-right: 6.3em;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }//medium4 breakpoint
+
+
+
     @include respond-to($ipad) {
       @include span(1 of 3);
       font-size: 0.85rem;
@@ -191,6 +250,10 @@ footer{
         font-size: 0.7rem;
       }
     }//medium breakpoint
+
+    @include respond-to($medium2) {}
+    @include respond-to($medium3) {}
+    @include respond-to($medium4) {}
 
     @include respond-to($ipad) {
       @include span(1 of 3);
