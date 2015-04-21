@@ -14,6 +14,8 @@ footer{
       text-align: center;
 
       p {font-size: 1rem;}
+
+      .tel{padding-top:10px !important; font-size:0.85rem;}
     }//box1
 
 
@@ -135,7 +137,8 @@ footer{
       text-align: left;
       padding-right: 7.5em;
 
-      .tel{padding-top:30px !important;}
+      .tel{padding-top:30px !important; font-size:0.85rem;}
+
 
       p{
         font-size: 1.2rem;
@@ -180,10 +183,7 @@ footer{
 
 
       td{text-align: center !important;}
-      .tel{
-          //padding-top:30px !important;
-          //padding-bottom:5px !important;
-          }
+      .tel{padding-top:10px !important; font-size:0.85rem;}
 
       p{
         font-size: 1.2rem;
