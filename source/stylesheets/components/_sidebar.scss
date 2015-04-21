@@ -77,6 +77,8 @@
 
   @include respond-to($medium) {padding-left: none !important;   font-size: 0.8rem;}
 
+  @include respond-to($medium4) {padding-left: 1.5em !important;   font-size: 0.8rem;}
+
   @include respond-to($ipad) {
     padding-left: 0.4em !important;
   }
