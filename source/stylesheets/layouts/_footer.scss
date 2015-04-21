@@ -4,6 +4,25 @@ footer{
   height: 230px;
   border-top: $border-thick-footer;
 
+  @include respond-to($medium) {
+      @include span(24);
+      padding: 0px;
+      height: auto;
+  }
+
+  @include respond-to($ipad) {
+    @include span(24);
+    height: auto;
+  }
+
+  @include respond-to($semi-large) {
+    @include span(24);
+  }
+
+  @include respond-to($large) {
+    @include span(24);
+  }
+
   table.center {
     margin-left:auto;
     margin-right:auto;
@@ -16,6 +35,74 @@ footer{
       p {font-size: 1rem;}
 
       .tel{padding-top:10px !important; font-size:0.85rem !important;}
+
+      @include respond-to($medium) {
+        @include span(1 of 3);
+        padding-right:3.9em;
+        text-align: left;
+
+        .tel{padding-top:0.55em !important; font-size:0.85rem !important;}
+
+
+        p {
+          font-size: 1rem;
+        }
+
+      }//medium breakpoint
+
+      @include respond-to($medium2) {
+        @include span(1 of 3);
+        padding-right:3.9em;
+        padding-left:0em;
+        text-align: left;
+
+        .tel{padding-top:0.5em !important; font-size:0.85rem !important;}
+
+
+        p {
+          font-size: 1rem;
+        }
+
+      }//medium2 breakpoint
+
+      @include respond-to($ipad) {
+        @include span(1 of 3);
+        text-align: left;
+        padding-right: 7.5em;
+
+        .tel{padding-top:1em !important; font-size:1rem !important;}
+
+
+        p{
+          font-size: 1.2rem;
+          vertical-align: text-center;
+          }
+      }//ipad breakpoint
+
+      @include respond-to($semi-large) {
+        @include span(1 of 3);
+
+        .tel{padding-top:29px !important; font-size:1rem !important; padding-left: 9px;}
+
+        td{text-align: center !important;}
+
+        p{
+          font-size: 1.2rem;
+        }
+      }//semi-large breakpoint
+
+      @include respond-to($large) {
+        @include span(1 of 3);
+
+        .tel{padding-top:2em !important; font-size:1rem !important;}
+
+        td{text-align: center !important;}
+
+        p{
+          font-size: 1.2rem;
+        }
+      }//large breakpoint
+
     }//box1
 
 
@@ -26,6 +113,59 @@ footer{
 
     p {font-size: 0.8rem;}
 
+    @include respond-to($medium) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-top: 0.3em;
+      padding-right: 6.3em;
+
+      p {
+        font-size: 0.8rem;
+      }
+    }//medium breakpoint
+
+    @include respond-to($medium2) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-top: 0.1em;
+      padding-right: 6.3em;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }//medium2 breakpoint
+
+    @include respond-to($ipad) {
+      @include span(1 of 3);
+      font-size: 0.85rem;
+      padding-right: 5.6em;
+      padding-top: 0.65em;
+
+      p{
+        //vertical-align: text-center;
+        }
+    }//ipad breakpoint
+
+    @include respond-to($semi-large) {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-right:6.7em;
+      padding-top: 1.35em;
+
+
+      .t-c{padding-bottom: 9px !important;}
+    }//semi-large breakpoint
+
+    @include respond-to($large) {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-right:6.6em;
+      padding-top: 1.35em;
+
+
+      .t-c{padding-bottom: 9px !important;}
+    }//large breakpoint
+
   }//box2
 
 
@@ -33,13 +173,74 @@ footer{
     @include span(1 of 1);
     font-size: 0.9rem;
     text-align: center;
-    //padding-top:1em;
 
     p {
       line-height: 1.3em;
       font-size: 0.9rem;
     }
-  }//box3
+
+    @include respond-to($medium) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-right: 1.1em;
+      text-align: right;
+      padding-top:0.3em;
+
+      p {
+        line-height: 1.3em;
+        font-size: 0.7rem;
+      }
+    }//medium breakpoint
+
+    @include respond-to($ipad) {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-left: 4.2em;
+      text-align: right;
+      vertical-align: top !important;
+      padding-top: 0.5em;
+      padding-right: 2.2em;
+
+
+      p{
+        line-height: 1.3em;
+        font-size: 0.8rem;
+        text-align: right !important;
+      }
+    }//ipad breakpoint
+
+      @include respond-to($semi-large) {
+        @include span(1 of 3);
+        font-size: 0.9rem;
+        padding-right:6.5em;
+        padding-bottom: 16px;
+        padding-top: 1em;
+
+
+
+        p{
+          font-size: 0.9rem;
+          line-height: 1.4em;
+          text-align: right !important;
+        }
+      }//semi-large breakpoint
+
+      @include respond-to($large) {
+        @include span(1 of 3);
+        font-size: 0.9rem;
+        padding-right:6.9em;
+        padding-bottom: 16px;
+        padding-top: 1em;
+
+        p{
+          font-size: 0.9rem;
+          line-height: 1.4em;
+          //letter-spacing: 0.0625em;
+          text-align: right !important;
+        }
+      }//large breakpoint
+    }//box3
+
 
   a{
     @include single-transition(all, .5s, ease-out);
@@ -63,207 +264,6 @@ footer{
     //padding-top: 0.6em;
     vertical-align: text-middle;
   }
-
-  @include respond-to($medium) {
-      @include span(24);
-      padding: 0px;
-      height: auto;
-
-
-
-      .box1 {
-        @include span(1 of 3);
-        padding-right:3.9em;
-        text-align: left;
-
-        .tel{padding-top:10px !important; font-size:0.85rem !important;}
-
-
-        p {
-          font-size: 1rem;
-        }
-
-
-        a{
-          @include single-transition(all, .5s, ease-out);
-          text-decoration: none;
-          color: $minco-white;
-          //margin-bottom: 20px !important;
-
-          &:hover,
-          &:active,
-          &:focus {
-            color: $minco-blue;
-            i{
-              color: $minco-blue;
-            }//i
-          }//link states
-        }//a
-
-      }//box1
-
-      .box2 {
-        @include span(1 of 3);
-        font-size: 0.7rem;
-        //padding-top:0.5em;
-        text-align: center;
-        padding-top:1.3em;
-
-        p {
-          font-size: 0.8rem;
-        }
-      }//box2
-
-      .box3 {
-        @include span(1 of 3);
-        font-size: 0.7rem;
-        padding-right: 3em;
-        text-align: right;
-        padding-top:1em;
-
-        p {
-          line-height: 1.3em;
-          font-size: 0.7rem;
-        }
-      }//box3
-  }//medium breakpoint
-
-  @include respond-to($ipad) {
-    @include span(24);
-    height: auto;
-
-    .box1 {
-      @include span(1 of 3);
-      text-align: left;
-      padding-right: 7.5em;
-
-      .tel{padding-top:23px !important; font-size:1rem !important;}
-
-
-      p{
-        font-size: 1.2rem;
-        vertical-align: text-center;
-        }
-    }//box1
-
-    .box2 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      //padding-top:1.8em;
-      text-align: center;
-      padding-right: 5.6em;
-      padding-top: 0.8em;
-
-      p{
-        //vertical-align: text-center;
-        }
-    }//box2
-
-    .box3 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      padding-left: 4.2em;
-      text-align: right;
-      vertical-align: top !important;
-
-
-      p{
-        line-height: 1.3em;
-        font-size: 0.8rem;
-        text-align: right !important;
-      }
-    }//box 3
-  }//ipad breakpoint
-
-
-
-  @include respond-to($semi-large) {
-    @include span(24);
-
-    .box1 {
-      @include span(1 of 3);
-
-
-
-      .tel{padding-top:29px !important; font-size:1rem !important; padding-left: 9px;}
-
-      td{text-align: center !important;}
-
-      p{
-        font-size: 1.2rem;
-      }
-    }//box1
-
-    .box2 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      padding-right:6.7em;
-      text-align: center;
-
-      .t-c{padding-bottom: 9px !important;}
-    }//box2
-
-    .box3 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      padding-right:6.5em;
-      padding-bottom: 16px;
-
-
-
-      p{
-        font-size: 0.9rem;
-        line-height: 1.4em;
-        //letter-spacing: 0.0625em;
-        text-align: right !important;
-      }
-    }//box3
-  }//semi-large breakpoint
-
-
-
-  @include respond-to($large) {
-    @include span(24);
-
-    .box1 {
-      @include span(1 of 3);
-
-
-
-      .tel{padding-top:25px !important; font-size:1rem !important;}
-
-      td{text-align: center !important;}
-
-      p{
-        font-size: 1.2rem;
-      }
-    }//box1
-
-    .box2 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      padding-right:6.7em;
-      text-align: center;
-
-      .t-c{padding-bottom: 9px !important;}
-    }//box2
-
-    .box3 {
-      @include span(1 of 3);
-      font-size: 0.9rem;
-      padding-right:6.5em;
-      padding-bottom: 16px;
-
-
-
-      p{
-        font-size: 0.9rem;
-        line-height: 1.4em;
-        //letter-spacing: 0.0625em;
-        text-align: right !important;
-      }
-    }//box3
-  }//large breakpoint
 
 
 }//footer
