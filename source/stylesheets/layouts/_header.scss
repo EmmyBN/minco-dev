@@ -109,7 +109,7 @@ header{
   }
 
   .animenu__nav li a{
-    padding: 1.2em;
+    padding: 1.5em;
     font-size: 0.85rem;
   }
 }//medium3
@@ -208,7 +208,7 @@ header{
 
     @include respond-to($medium) {padding-top: 2px !important; padding-left: 170px !important;}
     @include respond-to($medium2) {padding-top: 4px !important; padding-left: 10px !important;}
-    @include respond-to($medium3) {padding-top: 4px !important; padding-left: 10px !important;}
+    @include respond-to($medium3) {padding-top: 9px !important; padding-left: 10px !important;}
     @include respond-to($medium4) {padding-top: 4px !important; padding-left: 10px !important;}
     @include respond-to($ipad) {padding-top: 12px !important; padding-left: 137px !important;}
     @include respond-to($semi-large) {padding-top: 12px !important; padding-left: 137px !important;}

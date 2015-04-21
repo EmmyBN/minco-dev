@@ -11,6 +11,8 @@
 
       @include respond-to($medium) {width: 60% !important; padding-top: 0.2em !important; margin-left: 0em !important;}
       @include respond-to($medium2) {width: 30% !important; padding-top: 0.2em !important; margin-left: 0em !important;}
+      @include respond-to($medium3) {width: 30% !important; padding-top: 0.4em !important; margin-left: 1em !important;}
+      @include respond-to($medium4) {width: 30% !important; padding-top: 0.2em !important; margin-left: 0em !important;}
       @include respond-to($ipad) {padding-top: 0.55em !important; margin-left: 1.15em !important;}
       @include respond-to($semi-large) {padding-top: 0.45em !important;   margin-left: 6em !important;}
       @include respond-to($large) {padding-top: 0.7em !important;   margin-left: 4.2em !important;}
