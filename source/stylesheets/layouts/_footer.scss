@@ -137,7 +137,7 @@ footer{
       text-align: left;
       padding-right: 7.5em;
 
-      .tel{padding-top:30px !important; font-size:0.85rem !important;}
+      .tel{padding-top:23px !important; font-size:1rem !important;}
 
 
       p{
@@ -152,6 +152,7 @@ footer{
       //padding-top:1.8em;
       text-align: center;
       padding-right: 5.6em;
+      padding-top: 0.8em;
 
       p{
         //vertical-align: text-center;
@@ -173,6 +174,52 @@ footer{
       }
     }//box 3
   }//ipad breakpoint
+
+
+
+  @include respond-to($semi-large) {
+    @include span(24);
+
+    .box1 {
+      @include span(1 of 3);
+
+
+
+      .tel{padding-top:29px !important; font-size:1rem !important; padding-left: 9px;}
+
+      td{text-align: center !important;}
+
+      p{
+        font-size: 1.2rem;
+      }
+    }//box1
+
+    .box2 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-right:6.7em;
+      text-align: center;
+
+      .t-c{padding-bottom: 9px !important;}
+    }//box2
+
+    .box3 {
+      @include span(1 of 3);
+      font-size: 0.9rem;
+      padding-right:6.5em;
+      padding-bottom: 16px;
+
+
+
+      p{
+        font-size: 0.9rem;
+        line-height: 1.4em;
+        //letter-spacing: 0.0625em;
+        text-align: right !important;
+      }
+    }//box3
+  }//semi-large breakpoint
+
 
 
   @include respond-to($large) {
