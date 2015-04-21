@@ -23,7 +23,7 @@
 
     @include respond-to($semi-large) {
       @include single-transition(all, 1s, ease-out);
-      padding-left: 9.6em;
+      padding-left: 9.2em;
       padding-top:2.5em;
     }
 

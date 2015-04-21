@@ -15,7 +15,7 @@ footer{
 
       p {font-size: 1rem;}
 
-      .tel{padding-top:10px !important; font-size:0.85rem;}
+      .tel{padding-top:10px !important; font-size:0.85rem !important;}
     }//box1
 
 
@@ -76,7 +76,7 @@ footer{
         padding-right:3.9em;
         text-align: left;
 
-        .tel{padding-top:10px !important; font-size:0.85rem;}
+        .tel{padding-top:10px !important; font-size:0.85rem !important;}
 
 
         p {
@@ -137,7 +137,7 @@ footer{
       text-align: left;
       padding-right: 7.5em;
 
-      .tel{padding-top:30px !important; font-size:0.85rem;}
+      .tel{padding-top:30px !important; font-size:0.85rem !important;}
 
 
       p{
@@ -182,8 +182,10 @@ footer{
       @include span(1 of 3);
 
 
+
+      .tel{padding-top:25px !important; font-size:1rem !important;}
+
       td{text-align: center !important;}
-      .tel{padding-top:10px !important; font-size:0.85rem;}
 
       p{
         font-size: 1.2rem;
