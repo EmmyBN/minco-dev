@@ -85,9 +85,9 @@ main{
 
     @include respond-to($medium) {
       width: 110% !important;
-      max-width: 704px;
+      max-width: 530px;
       padding-bottom: 1.6em;
-      padding-left: 0.4em !important;
+      margin-left: 0.6em !important;
       padding-top: 0.7em;
       @include span(1 of 1);
     }//medium
@@ -96,9 +96,9 @@ main{
       @include container(100%);
       width: 100% !important;
       max-width: 704px;
-      margin-bottom: 1.1em;
+      margin-bottom: 1em;
       margin-left: 0em !important;
-      padding-top: 0em;
+      padding-top: 1em;
       @include span(1 of 1);
       font-size: 0.7rem;
     }//medium2
@@ -106,17 +106,17 @@ main{
     @include respond-to($ipad) {
         @include container(125%);
         width: 125% !important;
-        max-width: 704px;
+        max-width: 750px;
         margin-bottom: 1.1em;
-        margin-left: 0em !important;
-        padding-top: 0em;
+        margin-left: 1.1em !important;
+        padding-top: 1em;
         @include span(1 of 1);
         font-size: 0.7rem;
     }//ipad
 
     @include respond-to($semi-large) {
       //@include container(108.5%);
-      padding-left: 1.3em !important;
+      margin-left: 0em !important;
       max-width: 741px;
     }//semi-large
 
@@ -125,7 +125,7 @@ main{
         //width: 100% !important;
         max-width: 741px;
         padding-bottom: 1.5em;
-        padding-left: 1.2em !important;
+        margin-left: 0.8em !important;
         padding-top: 0em;
         @include span(1 of 1);
     }//large
