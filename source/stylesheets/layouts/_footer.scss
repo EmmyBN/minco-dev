@@ -87,7 +87,7 @@ footer{
 
       @include respond-to($medium4) {
         @include span(1 of 3);
-        padding-right:3.9em;
+        padding-right:5.5em;
         padding-left:0em;
         text-align: left;
 
@@ -242,6 +242,7 @@ footer{
       @include span(1 of 3);
       font-size: 0.7rem;
       padding-right: 1.1em;
+      padding-left: 0em;
       text-align: right;
       padding-top:0.3em;
 
@@ -251,9 +252,22 @@ footer{
       }
     }//medium breakpoint
 
-    @include respond-to($medium2) {}
-    @include respond-to($medium3) {}
-    @include respond-to($medium4) {}
+    @include respond-to($medium2) {}//medium2 breakpoint
+    @include respond-to($medium3) {}//medium3 breakpoint
+    @include respond-to($medium4) {
+      @include span(1 of 3);
+      font-size: 0.7rem;
+      padding-right: 0em;
+      padding-left: 2.5em;
+      text-align: right;
+      padding-top:0.3em;
+
+      p {
+        line-height: 1.3em;
+        font-size: 0.7rem;
+      }
+
+    }//medium4 breakpoint
 
     @include respond-to($ipad) {
       @include span(1 of 3);
