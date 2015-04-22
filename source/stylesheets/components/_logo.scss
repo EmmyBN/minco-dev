@@ -5,8 +5,8 @@
       width: 120%;
       max-width: 178px;
       float: left;
-      padding-left: 1em !important;
-      padding-top: 0.36em !important;
+      padding-left: 0.85em !important;
+      padding-top: 0.5em !important;
       vertical-align: middle;
 
       @include respond-to($medium) {width: 60% !important; padding-top: 0.2em !important; margin-left: 0em !important;}
