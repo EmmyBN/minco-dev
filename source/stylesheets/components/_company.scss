@@ -117,8 +117,9 @@
       height: auto;
       }
 
-      .info{
-        @include container(100%);        
+      .info {
+        @include container(100%);
+        width: 350px;
       }
 
   }//large
