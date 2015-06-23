@@ -62,12 +62,23 @@
     //@include container(108.5%);
     margin-left: 0em !important;
     max-width: 741px;
+
+    img{
+      width: 750px;
+      max-width: 750px;
+    }
   }//semi-large
 
   @include respond-to($large) {
+
+      img{
+        width: 750px;
+        max-width: 750px;
+      }
+
       @include container(130%);
       //width: 100% !important;
-      max-width: 741px;
+      //max-width: 741px;
       padding-bottom: 1.5em;
       margin-left: 0.8em !important;
       padding-top: 0em;
