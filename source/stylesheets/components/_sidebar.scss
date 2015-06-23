@@ -6,6 +6,8 @@
   border-right: solid 1px $minco-blue;
   padding-left:1em;
 
+  .sidebar__link:hover{background:$minco-blue}
+
 
   @include respond-to($medium) {
     @include span(3.5);

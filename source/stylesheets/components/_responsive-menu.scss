@@ -8,12 +8,7 @@ $gutter: 0.5em;                      // Base gutter
   box-sizing: border-box;
 }//*, *:after, *:before
 
-// The classic hamburger icon
-// <button class="animenu__toggle">
-//   <span class="animenu__toggle__bar"></span>
-//   <span class="animenu__toggle__bar"></span>
-//   <span class="animenu__toggle__bar"></span>
-// </button>
+
 .animenu__toggle {
   display: none;
   float: right !important;

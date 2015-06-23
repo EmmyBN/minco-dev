@@ -85,6 +85,18 @@ display: block !important;
 
 }
 
+/*****************EDITED*********************/
+
+/*** We are hding the element until it is collapse ;) **/
+
+li#emy_show_me_only_on_collapsed_menu  {
+
+display:none;
+}
+
+
+/****************************************/
+
 
 @include respond-to($medium) {
 @include single-transition(all, 1s, ease-out);
