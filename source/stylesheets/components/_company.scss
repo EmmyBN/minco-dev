@@ -1,0 +1,78 @@
+.img-container{
+  @include container(100%);
+  padding-bottom: 1em;
+  padding-left: 0.2em !important;
+  padding-top: 0em;
+  @include span(1 of 1);
+
+  @include respond-to($medium) {
+    width: 110% !important;
+    max-width: 530px;
+    padding-bottom: 1.6em;
+    margin-left: 0.6em !important;
+    padding-top: 0.7em;
+    @include span(1 of 1);
+  }//medium
+
+  @include respond-to($medium2) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium2
+
+  @include respond-to($medium3) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium3
+
+  @include respond-to($medium4) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    margin-left: 1em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium4
+
+  @include respond-to($ipad) {
+      @include container(125%);
+      width: 125% !important;
+      max-width: 750px;
+      margin-bottom: 1.1em;
+      margin-left: 1.1em !important;
+      padding-top: 1em;
+      @include span(1 of 1);
+      font-size: 0.7rem;
+  }//ipad
+
+  @include respond-to($semi-large) {
+    //@include container(108.5%);
+    margin-left: 0em !important;
+    max-width: 741px;
+  }//semi-large
+
+  @include respond-to($large) {
+      @include container(130%);
+      //width: 100% !important;
+      max-width: 741px;
+      padding-bottom: 1.5em;
+      margin-left: 0.8em !important;
+      padding-top: 0em;
+      @include span(1 of 1);
+  }//large
+
+
+}//img-container
