@@ -126,3 +126,81 @@
 
 
 }//img-container
+
+.company_text{
+
+  width: 95%;
+  line-height: 1.2em;
+  padding-bottom: 3em;
+  padding-left: 20px;
+
+  p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+
+  @include respond-to($medium) {
+    width: 90%;
+    line-height: 1.5em;
+    padding-bottom: 3em;
+
+    p{
+      font-size: 1rem;
+      text-align: justify;
+
+    }
+
+  }
+
+  @include respond-to($medium2) {}
+
+  @include respond-to($medium3) {}
+
+  @include respond-to($medium4) {}
+
+  @include respond-to($semi-large) {}
+
+  @include respond-to($ipad) {}
+
+  @include respond-to($large) {
+    width: 80%;
+    line-height: 1.5em;
+    text-align: justify;
+    padding-bottom: 3em;
+  }
+
+
+}
+
+.headings{
+  color: $minco-blue;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-bottom: 1em;
+}
+
+.btn {
+  background: $minco-blue;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 0.9rem;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
