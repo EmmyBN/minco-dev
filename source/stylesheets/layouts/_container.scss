@@ -1,6 +1,6 @@
 .layout {
   @include single-transition(all, 1s, ease-out);
-  @include container;
+  @include container(100%);
   padding-top: 0em;
   padding-bottom: 2em;
   padding-left: 0em;
