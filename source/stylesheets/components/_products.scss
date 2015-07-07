@@ -1,0 +1,89 @@
+.product1, .product2 {
+  @include span(1 of 1);
+  border-left: solid 0.1em #ccc;
+  border-top: solid 0.1em #ccc;
+  border-right: solid 0.1em #ccc;
+  padding: 1em;
+
+  p{
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  @include respond-to($medium) {
+        @include span(2 of 4);
+        text-align: center;
+        vertical-align: center;
+        color: #3e3e40;
+        border-right: solid 0.1em #595a5c;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        padding: 0.15em;
+
+        p {
+          font-size: 0.8rem;
+        }
+  }//medium
+
+  @include respond-to($medium2) {}//medium2
+  @include respond-to($medium3) {}//medium3
+  @include respond-to($medium4) {}//medium4
+
+  @include respond-to($ipad) {
+    @include span(10.5 of 21);
+    //padding-left:1em;
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em #595a5c;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+
+    p{font-size: 0.9rem;}
+
+  }//ipad
+
+  @include respond-to($semi-large) {
+    @include span(10.5 of 21);
+    text-align: center;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em #595a5c;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+
+    p{font-size: 1rem;}
+
+  }//semi-large
+
+  @include respond-to($large) {
+      @include span(10.5 of 21);
+      text-align: center;
+      vertical-align: center;
+      color: #3e3e40;
+      border-right: solid 0.1em #595a5c;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-bottom: 0;
+
+
+      p{font-size: 1rem;}
+
+  }//large
+
+
+} //col1, col2
