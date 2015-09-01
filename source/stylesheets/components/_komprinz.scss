@@ -1,0 +1,493 @@
+.img-container{
+  @include container(60%);
+  padding-bottom: 1em;
+  //padding-left: 0.2em !important;
+  padding-top: 0em;
+  @include span(1 of 1);
+
+  img {
+  max-width: 150%;
+  height: auto;
+  }
+
+  @include respond-to($medium) {
+    width: 110% !important;
+    max-width: 530px;
+    padding-bottom: 1.6em;
+    //margin-left: 0.6em !important;
+    padding-top: 0.7em;
+    @include span(1 of 1);
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+
+  }//medium
+
+  @include respond-to($medium2) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+  }//medium2
+
+  @include respond-to($medium3) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+  }//medium3
+
+  @include respond-to($medium4) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 1em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+
+  }//medium4
+
+  @include respond-to($ipad) {
+      @include container(125%);
+      width: 125% !important;
+      max-width: 750px;
+      margin-bottom: 1.1em;
+      //margin-left: 1.1em !important;
+      padding-top: 1em;
+      @include span(1 of 1);
+      font-size: 0.7rem;
+
+      img {
+      max-width: 100%;
+      height: auto;
+      }
+  }//ipad
+
+  @include respond-to($semi-large) {
+    //@include container(108.5%);
+    //margin-left: 0em !important;
+    width: 700px;
+    max-width: 741px;
+
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+
+  }//semi-large
+
+  @include respond-to($large) {
+      @include container(130%);
+      padding-bottom: 1.5em;
+      //margin-left: 0.8em !important;
+      padding-top: 0em;
+      @include span(1 of 1);
+
+      img {
+      max-width: 100%;
+      height: auto;
+      }
+
+      .info {
+        @include container(100%);
+        width: 350px;
+      }
+
+  }//large
+
+
+}//img-container
+
+.company_text{
+
+  width: 90%;
+  padding-bottom: 3em;
+  padding-left: 15px;
+
+  p{
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.4em;
+  }
+
+
+  @include respond-to($medium) {
+    width: 90%;
+    line-height: 1.5em;
+    padding-bottom: 3em;
+
+    p{
+      font-size: 1rem;
+      text-align: justify;
+
+    }
+
+  }
+
+  @include respond-to($medium2) {}
+
+  @include respond-to($medium3) {}
+
+  @include respond-to($medium4) {}
+
+  @include respond-to($semi-large) {}
+
+  @include respond-to($ipad) {}
+
+  @include respond-to($large) {
+    width: 80%;
+    line-height: 1.5em;
+    text-align: justify;
+    padding-bottom: 3em;
+  }
+
+
+}
+
+.headings-pkgt{
+  color: $minco-blue;
+  font-weight: bold;
+  font-size: 1.1rem;
+  //padding-bottom: 1em;
+}
+
+.pkgt-container{
+  @include container(80%);
+  @include span(1 of 1);
+  padding-bottom: 1em;
+  padding-left: 0.2em !important;
+  padding-top: 0em;
+
+
+
+
+  @include respond-to($medium) {
+    width: 110% !important;
+    max-width: 530px;
+    padding-bottom: 1.6em;
+    //margin-left: 0.6em !important;
+    padding-top: 0.7em;
+    @include span(1 of 1);
+  }//medium
+
+  @include respond-to($medium2) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium2
+
+  @include respond-to($medium3) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 0em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium3
+
+  @include respond-to($medium4) {
+    @include container(100%);
+    width: 100% !important;
+    max-width: 704px;
+    margin-bottom: 1em;
+    //margin-left: 1em !important;
+    padding-top: 1em;
+    @include span(1 of 1);
+    font-size: 0.7rem;
+  }//medium4
+
+  @include respond-to($ipad) {
+      @include container(125%);
+      width: 125% !important;
+      max-width: 750px;
+      margin-bottom: 1.1em;
+      //margin-left: 1.1em !important;
+      padding-top: 1em;
+      @include span(1 of 1);
+      font-size: 0.7rem;
+  }//ipad
+
+  @include respond-to($semi-large) {
+    //@include container(108.5%);
+    //margin-left: 0em !important;
+    max-width: 741px;
+  }//semi-large
+
+  @include respond-to($large) {
+      @include container(80%);
+      //width: 100% !important;
+      //max-width: 741px;
+      padding-bottom: 1.5em;
+      //margin-left: 10em !important;
+      padding-top: 0em;
+      @include span(1 of 1);
+  }//large
+
+
+}//prom-container
+
+
+
+.pkgt1 {
+  @include span(1 of 1);
+  border-left: solid 0.1em #ccc;
+  border-top: solid 0.1em #ccc;
+  border-right: solid 0.1em #ccc;
+  padding: 1em;
+  padding-left: 20px;
+  text-align: left;
+  vertical-align: middle;
+
+  p{
+    line-height: 1.2em;
+    text-align: left;
+  }
+
+  @include respond-to($medium) {
+        @include span(1 of 4 alpha);
+        text-align: left;
+        vertical-align: center;
+        color: #3e3e40;
+        border-right:none;
+        border-top: none;
+        border-left: none;
+        padding: 0.15em;
+        padding-left: 20px;
+
+
+        p {
+          font-size: 0.8rem;
+          text-align: left;
+        }
+  }//medium
+
+  @include respond-to($medium2) {}//medium2
+  @include respond-to($medium3) {}//medium3
+  @include respond-to($medium4) {}//medium4
+
+  @include respond-to($ipad) {
+    @include span(6.5 of 21 alpha);
+    //padding-left:1em;
+    text-align: left;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-bottom: 0;
+
+
+    p{font-size: 0.9rem; text-align: left;}
+
+  }//ipad
+
+  @include respond-to($semi-large) {
+    @include span(6.5 of 21 alpha);
+    text-align: left;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em  none;
+    border-top: none;
+    border-left: none;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-bottom: 0;
+
+
+    p{font-size: 1rem; text-align: left;}
+
+  }//semi-large
+
+  @include respond-to($large) {
+      @include span(6.5 of 21 alpha);
+      text-align: left;
+      vertical-align: center;
+      color: #3e3e40;
+      border-right: solid 0.1em  none;
+      border-top: none;
+      border-left: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 20px;
+      vertical-align: middle;
+
+
+      p{font-size: 1rem; text-align: left;}
+
+  }//large
+
+
+} //pkgt1,
+
+.pkgt2 {
+  @include span(1 of 1);
+  border-left: solid 0.1em #ccc;
+  border-top: solid 0.1em #ccc;
+  border-right: solid 0.1em #ccc;
+  padding-left: 20px;
+  padding: 1em;
+  text-align: left;
+  vertical-align: middle;
+
+  p{
+    line-height: 1.2em;
+    text-align: left;
+  }
+
+  @include respond-to($medium) {
+        @include span(3 of 4 omega);
+        text-align: left;
+        vertical-align: center;
+        color: #3e3e40;
+        border-right:none;
+        border-top: none;
+        border-left: none;
+        padding: 0.15em;
+        padding-left: 20px;
+
+
+        p {
+          font-size: 0.8rem;
+          text-align: left;
+        }
+  }//medium
+
+  @include respond-to($medium2) {}//medium2
+  @include respond-to($medium3) {}//medium3
+  @include respond-to($medium4) {}//medium4
+
+  @include respond-to($ipad) {
+    @include span(14.5 at 6.5 of 21 omega);
+    //padding-left:1em;
+    text-align: left;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+
+    p{font-size: 0.9rem; text-align: left;}
+
+  }//ipad
+
+  @include respond-to($semi-large) {
+    @include span(14.5 at 6.5 of 21 omega);
+    text-align: left;
+    vertical-align: center;
+    color: #3e3e40;
+    border-right: solid 0.1em  none;
+    border-top: none;
+    border-left: none;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+
+    p{font-size: 1rem; text-align: left;}
+
+  }//semi-large
+
+  @include respond-to($large) {
+      @include span(14.5 at 6.5 of 21 omega);
+      text-align: left;
+      vertical-align: center;
+      color: #3e3e40;
+      border-right: solid 0.1em  none;
+      border-top: none;
+      border-left: none;
+      padding-left: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-bottom: 0;
+      vertical-align: middle;
+
+
+      p{font-size: 1rem; text-align: left;}
+
+  }//large
+
+
+} //pkgt2
+
+.side-heading{
+
+  padding-bottom: 40px;
+
+  p{
+    font-size: 1.2rem;
+    font-color: $minco-blue;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}//side-headings
+
+.Features-Benefits{
+
+  ul{
+    list-style-type: circle;
+    color: $minco-blue;
+    padding-left: 20px;
+  }
+
+  li{
+    list-style-type: circle;
+    font-size: 1rem;
+  }
+
+  ul li p {
+        color:$minco-black;
+          }
+}//Features-Benefits
+
+.backtotop a {
+  color: $minco-black;
+}
+
+.backtotop2 {
+  text-align: right;
+  font-size: 1.1rem;
+}
