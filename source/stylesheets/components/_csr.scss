@@ -3,6 +3,7 @@
   color: $minco-blue;
   font-weight: bold;
   font-size: 1.1rem;
+  line-height: 1.2em;
   //padding-bottom: 1em;
 }
 
@@ -282,20 +283,20 @@
 
 
 .csr-sub-container{
-  @include container(80%);
+  @include container(100%);
   @include span(1 of 1);
   padding-bottom: 1em;
-  padding-left: 0.2em !important;
+  //padding-left: 0.2em !important;
   padding-top: 0em;
   border-bottom: solid 0.1em $minco-blue;
 
 
 
   @include respond-to($medium) {
-    width: 110% !important;
+    width: 100% !important;
     max-width: 530px;
     padding-bottom: 1.6em;
-    margin-left: 0.6em !important;
+    //margin-left: 0.6em !important;
     padding-top: 0.7em;
     @include span(1 of 1);
   }//medium
@@ -316,7 +317,7 @@
     width: 100% !important;
     max-width: 704px;
     margin-bottom: 1em;
-    margin-left: 0em !important;
+    //margin-left: 0em !important;
     padding-top: 1em;
     @include span(1 of 1);
     font-size: 0.7rem;
@@ -327,18 +328,18 @@
     width: 100% !important;
     max-width: 704px;
     margin-bottom: 1em;
-    margin-left: 1em !important;
+    //margin-left: 1em !important;
     padding-top: 1em;
     @include span(1 of 1);
     font-size: 0.7rem;
   }//medium4
 
   @include respond-to($ipad) {
-      @include container(125%);
+      @include container(100%);
       width: 125% !important;
       max-width: 750px;
       margin-bottom: 1.1em;
-      margin-left: 1.1em !important;
+      //margin-left: 1.1em !important;
       padding-top: 1em;
       @include span(1 of 1);
       font-size: 0.7rem;
@@ -351,11 +352,11 @@
   }//semi-large
 
   @include respond-to($large) {
-      @include container(70%);
+      @include container(100%);
       //width: 100% !important;
       //max-width: 741px;
       padding-bottom: 1.5em;
-      margin-left: 10em !important;
+      //margin-left: 10em !important;
       padding-top: 0em;
       @include span(1 of 1);
   }//large
