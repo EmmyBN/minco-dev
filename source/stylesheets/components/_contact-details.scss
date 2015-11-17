@@ -15,4 +15,6 @@
     top: 162px;
     background-color: #F7FAFB;
     border: 1px solid #007bc0;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
