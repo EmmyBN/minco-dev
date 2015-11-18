@@ -1,8 +1,8 @@
-form    {
+form {
 background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
 background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
 margin:auto;
-position:relative;
+//position:relative;
 width:550px;
 height:600px;
 padding-left: 5.8em;
@@ -21,6 +21,7 @@ border: inset 1px solid #333;
 -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+float: left;
 }
 
 input    {
@@ -91,4 +92,51 @@ color:#09C;
 
 textarea:focus, input:focus {
 border: 1px solid #09C;
+}
+
+.contactBox {
+  padding-left: 2em;
+  padding-top: 0.6em;
+  width: 15em;
+  height: 190px;
+  z-index: 3;
+  left: 284px;
+  top: 162px;
+  background-color: #F7FAFB;
+  border: 1px solid #007bc0;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.btn {
+  background-color: Transparent;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #0086ca;
+  font-size: 20px;
+  width: 24em;
+  padding: 10px 20px 10px 20px;
+  border: solid #0087ca 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.right-container{
+  float: right;
+}
+
+.call-us {
+  p{
+    color: $minco-blue;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+  }
+
 }
